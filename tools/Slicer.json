@@ -1,0 +1,244 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--all_axial",
+            "name": "All axial",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ALL_AXIAL]",
+            "type": "Number",
+            "id": "all_axial",
+            "description": "A boolean. Output all axial slices into one picture."
+        },
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--colour_map",
+            "name": "Colour map",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[COLOUR_MAP]",
+            "type": "File",
+            "id": "colour_map",
+            "description": "An existing file name. Use different colour map from that stored in nifti header."
+        },
+        {
+            "command-line-flag": "--dither_edges",
+            "name": "Dither edges",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[DITHER_EDGES]",
+            "type": "Number",
+            "id": "dither_edges",
+            "description": "A boolean. Produce semi-transparent (dithered) edges."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--image_edges",
+            "name": "Image edges",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IMAGE_EDGES]",
+            "type": "File",
+            "id": "image_edges",
+            "description": "An existing file name. Volume to display edge overlay for (useful for checking registration."
+        },
+        {
+            "command-line-flag": "--image_width",
+            "name": "Image width",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IMAGE_WIDTH]",
+            "type": "Number",
+            "id": "image_width",
+            "description": "An integer (int or long). Max picture width."
+        },
+        {
+            "command-line-flag": "--in_file",
+            "name": "In file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[IN_FILE]",
+            "type": "File",
+            "id": "in_file",
+            "description": "An existing file name. Input volume."
+        },
+        {
+            "command-line-flag": "--intensity_range",
+            "name": "Intensity range",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[INTENSITY_RANGE]",
+            "type": "Number",
+            "id": "intensity_range",
+            "description": "A tuple of the form: (a float, a float). Min and max intensities to display."
+        },
+        {
+            "command-line-flag": "--label_slices",
+            "name": "Label slices",
+            "default-value": true,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[LABEL_SLICES]",
+            "type": "Number",
+            "id": "label_slices",
+            "description": "A boolean. Display slice number."
+        },
+        {
+            "command-line-flag": "--middle_slices",
+            "name": "Middle slices",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MIDDLE_SLICES]",
+            "type": "Number",
+            "id": "middle_slices",
+            "description": "A boolean. Output picture of mid-sagittal, axial, and coronal slices."
+        },
+        {
+            "command-line-flag": "--nearest_neighbour",
+            "name": "Nearest neighbour",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[NEAREST_NEIGHBOUR]",
+            "type": "Number",
+            "id": "nearest_neighbour",
+            "description": "A boolean. Use nearest neighbor interpolation for output."
+        },
+        {
+            "command-line-flag": "--out_file",
+            "name": "Out file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_FILE]",
+            "type": "String",
+            "id": "out_file",
+            "description": "A file name. Picture to write."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--sample_axial",
+            "name": "Sample axial",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SAMPLE_AXIAL]",
+            "type": "Number",
+            "id": "sample_axial",
+            "description": "An integer (int or long). Output every n axial slices into one picture."
+        },
+        {
+            "command-line-flag": "--scaling",
+            "name": "Scaling",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SCALING]",
+            "type": "Number",
+            "id": "scaling",
+            "description": "A float. Image scale."
+        },
+        {
+            "command-line-flag": "--show_orientation",
+            "name": "Show orientation",
+            "default-value": true,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SHOW_ORIENTATION]",
+            "type": "Number",
+            "id": "show_orientation",
+            "description": "A boolean. Label left-right orientation."
+        },
+        {
+            "command-line-flag": "--single_slice",
+            "name": "Single slice",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SINGLE_SLICE]",
+            "type": "String",
+            "id": "single_slice",
+            "description": "'x' or 'y' or 'z'. Output picture of single slice in the x, y, or z plane."
+        },
+        {
+            "command-line-flag": "--slice_number",
+            "name": "Slice number",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SLICE_NUMBER]",
+            "type": "Number",
+            "id": "slice_number",
+            "description": "An integer (int or long). Slice number to save in picture."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--threshold_edges",
+            "name": "Threshold edges",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[THRESHOLD_EDGES]",
+            "type": "Number",
+            "id": "threshold_edges",
+            "description": "A float. Use threshold for edges."
+        }
+    ],
+    "name": "Slicer",
+    "command-line": "nipype_cmd nipype.interfaces.fsl Slicer [ALL_AXIAL] [ARGS] [COLOUR_MAP] [DITHER_EDGES] [ENVIRON] [IGNORE_EXCEPTION] [IMAGE_EDGES] [IMAGE_WIDTH] [IN_FILE] [INTENSITY_RANGE] [LABEL_SLICES] [MIDDLE_SLICES] [NEAREST_NEIGHBOUR] [OUT_FILE] [OUTPUT_TYPE] [SAMPLE_AXIAL] [SCALING] [SHOW_ORIENTATION] [SINGLE_SLICE] [SLICE_NUMBER] [TERMINAL_OUTPUT] [THRESHOLD_EDGES] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[OUT_FILE]",
+            "optional": true,
+            "type": "File",
+            "name": "Out file",
+            "id": "out_file"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "Slicer, as implemented in Nipype (module: nipype.interfaces.fsl, interface: Slicer)."
+}

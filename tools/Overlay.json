@@ -1,0 +1,204 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--auto_thresh_bg",
+            "name": "Auto thresh bg",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[AUTO_THRESH_BG]",
+            "type": "Number",
+            "id": "auto_thresh_bg",
+            "description": "A boolean. Automatically threshold the background image."
+        },
+        {
+            "command-line-flag": "--background_image",
+            "name": "Background image",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[BACKGROUND_IMAGE]",
+            "type": "File",
+            "id": "background_image",
+            "description": "An existing file name. Image to use as background."
+        },
+        {
+            "command-line-flag": "--bg_thresh",
+            "name": "Bg thresh",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[BG_THRESH]",
+            "type": "Number",
+            "id": "bg_thresh",
+            "description": "A tuple of the form: (a float, a float). Min and max values for background intensity."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--full_bg_range",
+            "name": "Full bg range",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[FULL_BG_RANGE]",
+            "type": "Number",
+            "id": "full_bg_range",
+            "description": "A boolean. Use full range of background image."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--out_file",
+            "name": "Out file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_FILE]",
+            "type": "String",
+            "id": "out_file",
+            "description": "A file name. Combined image volume."
+        },
+        {
+            "command-line-flag": "--out_type",
+            "name": "Out type",
+            "default-value": "float",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_TYPE]",
+            "type": "String",
+            "id": "out_type",
+            "description": "'float' or 'int'. Write output with float or int."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--show_negative_stats",
+            "name": "Show negative stats",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SHOW_NEGATIVE_STATS]",
+            "type": "Number",
+            "id": "show_negative_stats",
+            "description": "A boolean. Display negative statistics in overlay."
+        },
+        {
+            "command-line-flag": "--stat_image",
+            "name": "Stat image",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[STAT_IMAGE]",
+            "type": "File",
+            "id": "stat_image",
+            "description": "An existing file name. Statistical image to overlay in color."
+        },
+        {
+            "command-line-flag": "--stat_image2",
+            "name": "Stat image2",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[STAT_IMAGE2]",
+            "type": "File",
+            "id": "stat_image2",
+            "description": "An existing file name. Second statistical image to overlay in color."
+        },
+        {
+            "command-line-flag": "--stat_thresh",
+            "name": "Stat thresh",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[STAT_THRESH]",
+            "type": "Number",
+            "id": "stat_thresh",
+            "description": "A tuple of the form: (a float, a float). Min and max values for the statistical overlay."
+        },
+        {
+            "command-line-flag": "--stat_thresh2",
+            "name": "Stat thresh2",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[STAT_THRESH2]",
+            "type": "Number",
+            "id": "stat_thresh2",
+            "description": "A tuple of the form: (a float, a float). Min and max values for second statistical overlay."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--transparency",
+            "name": "Transparency",
+            "default-value": true,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TRANSPARENCY]",
+            "type": "Number",
+            "id": "transparency",
+            "description": "A boolean. Make overlay colors semi-transparent."
+        },
+        {
+            "command-line-flag": "--use_checkerboard",
+            "name": "Use checkerboard",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[USE_CHECKERBOARD]",
+            "type": "Number",
+            "id": "use_checkerboard",
+            "description": "A boolean. Use checkerboard mask for overlay."
+        }
+    ],
+    "name": "Overlay",
+    "command-line": "nipype_cmd nipype.interfaces.fsl Overlay [ARGS] [AUTO_THRESH_BG] [BACKGROUND_IMAGE] [BG_THRESH] [ENVIRON] [FULL_BG_RANGE] [IGNORE_EXCEPTION] [OUT_FILE] [OUT_TYPE] [OUTPUT_TYPE] [SHOW_NEGATIVE_STATS] [STAT_IMAGE] [STAT_IMAGE2] [STAT_THRESH] [STAT_THRESH2] [TERMINAL_OUTPUT] [TRANSPARENCY] [USE_CHECKERBOARD] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[OUT_FILE]",
+            "optional": true,
+            "type": "File",
+            "name": "Out file",
+            "id": "out_file"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "Overlay, as implemented in Nipype (module: nipype.interfaces.fsl, interface: Overlay)."
+}

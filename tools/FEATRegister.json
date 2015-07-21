@@ -1,0 +1,62 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--feat_dirs",
+            "name": "Feat dirs",
+            "optional": false,
+            "list": true,
+            "command-line-key": "[FEAT_DIRS]",
+            "type": "String",
+            "id": "feat_dirs",
+            "description": "A list of items which are an existing directory name. Lower level feat dirs."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--reg_dof",
+            "name": "Reg dof",
+            "default-value": 12,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[REG_DOF]",
+            "type": "Number",
+            "id": "reg_dof",
+            "description": "An integer (int or long). Registration degrees of freedom."
+        },
+        {
+            "command-line-flag": "--reg_image",
+            "name": "Reg image",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[REG_IMAGE]",
+            "type": "File",
+            "id": "reg_image",
+            "description": "An existing file name. Image to register to (will be treated as standard)."
+        }
+    ],
+    "name": "FEATRegister",
+    "command-line": "nipype_cmd nipype.interfaces.fsl FEATRegister [FEAT_DIRS] [IGNORE_EXCEPTION] [REG_DOF] [REG_IMAGE] ",
+    "tool-version": null,
+    "outputs": [
+        {
+            "path-template": "register.fsf",
+            "optional": true,
+            "type": "File",
+            "name": "Fsf file",
+            "id": "fsf_file"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "FEATRegister, as implemented in Nipype (module: nipype.interfaces.fsl, interface: FEATRegister)."
+}

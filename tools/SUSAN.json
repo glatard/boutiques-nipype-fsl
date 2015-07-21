@@ -1,0 +1,145 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--brightness_threshold",
+            "name": "Brightness threshold",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[BRIGHTNESS_THRESHOLD]",
+            "type": "Number",
+            "id": "brightness_threshold",
+            "description": "A float. Brightness threshold and should be greater than noise level and less than contrast of edges to be preserved."
+        },
+        {
+            "command-line-flag": "--dimension",
+            "name": "Dimension",
+            "default-value": 3,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[DIMENSION]",
+            "type": "String",
+            "id": "dimension",
+            "description": "3 or 2. Within-plane (2) or fully 3d (3)."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--fwhm",
+            "name": "Fwhm",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[FWHM]",
+            "type": "Number",
+            "id": "fwhm",
+            "description": "A float. Fwhm of smoothing, in mm, gets converted using sqrt(8*log(2))."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--in_file",
+            "name": "In file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[IN_FILE]",
+            "type": "File",
+            "id": "in_file",
+            "description": "An existing file name. Filename of input timeseries."
+        },
+        {
+            "command-line-flag": "--out_file",
+            "name": "Out file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_FILE]",
+            "type": "String",
+            "id": "out_file",
+            "description": "A file name. Output file name."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--usans",
+            "name": "Usans",
+            "default-value": [],
+            "optional": true,
+            "list": true,
+            "command-line-key": "[USANS]",
+            "type": "File",
+            "id": "usans",
+            "description": "A list of at most 2 items which are a tuple of the form: (an existing file name, a float). Determines whether the smoothing area (usan) is to be found from secondary images (0, 1 or 2). a negative value for any brightness threshold will auto-set the threshold at 10% of the robust range."
+        },
+        {
+            "command-line-flag": "--use_median",
+            "name": "Use median",
+            "default-value": 1,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[USE_MEDIAN]",
+            "type": "String",
+            "id": "use_median",
+            "description": "1 or 0. Whether to use a local median filter in the cases where single-point noise is detected."
+        }
+    ],
+    "name": "SUSAN",
+    "command-line": "nipype_cmd nipype.interfaces.fsl SUSAN [ARGS] [BRIGHTNESS_THRESHOLD] [DIMENSION] [ENVIRON] [FWHM] [IGNORE_EXCEPTION] [IN_FILE] [OUT_FILE] [OUTPUT_TYPE] [TERMINAL_OUTPUT] [USANS] [USE_MEDIAN] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[OUT_FILE]",
+            "optional": true,
+            "type": "File",
+            "name": "Smoothed file",
+            "id": "smoothed_file"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "SUSAN, as implemented in Nipype (module: nipype.interfaces.fsl, interface: SUSAN)."
+}

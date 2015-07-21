@@ -1,0 +1,162 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--datatype",
+            "name": "Datatype",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[DATATYPE]",
+            "type": "String",
+            "id": "datatype",
+            "description": "'char' or 'short' or 'int' or 'float' or 'double'. Force output data type."
+        },
+        {
+            "command-line-flag": "--encoding_file",
+            "name": "Encoding file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[ENCODING_FILE]",
+            "type": "File",
+            "id": "encoding_file",
+            "description": "An existing file name. Name of text file with pe directions/times."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--in_files",
+            "name": "In files",
+            "optional": false,
+            "list": true,
+            "command-line-key": "[IN_FILES]",
+            "type": "File",
+            "id": "in_files",
+            "description": "A list of items which are an existing file name. Name of 4d file with images."
+        },
+        {
+            "command-line-flag": "--in_index",
+            "name": "In index",
+            "optional": false,
+            "list": true,
+            "command-line-key": "[IN_INDEX]",
+            "type": "Number",
+            "id": "in_index",
+            "description": "A list of items which are an integer (int or long). Comma separated list of indicies into --datain of the input image (to be corrected)."
+        },
+        {
+            "command-line-flag": "--in_topup_fieldcoef",
+            "name": "In topup fieldcoef",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IN_TOPUP_FIELDCOEF]",
+            "type": "File",
+            "id": "in_topup_fieldcoef",
+            "description": "An existing file name. Topup file containing the field coefficients."
+        },
+        {
+            "command-line-flag": "--in_topup_movpar",
+            "name": "In topup movpar",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IN_TOPUP_MOVPAR]",
+            "type": "File",
+            "id": "in_topup_movpar",
+            "description": "An existing file name. Topup movpar.txt file."
+        },
+        {
+            "command-line-flag": "--interp",
+            "name": "Interp",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[INTERP]",
+            "type": "String",
+            "id": "interp",
+            "description": "'trilinear' or 'spline'. Interpolation method."
+        },
+        {
+            "command-line-flag": "--method",
+            "name": "Method",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[METHOD]",
+            "type": "String",
+            "id": "method",
+            "description": "'jac' or 'lsr'. Use jacobian modulation (jac) or least-squares resampling (lsr)."
+        },
+        {
+            "command-line-flag": "--out_corrected",
+            "name": "Out corrected",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_CORRECTED]",
+            "type": "String",
+            "id": "out_corrected",
+            "description": "A file name. Output (warped) image."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        }
+    ],
+    "name": "ApplyTOPUP",
+    "command-line": "nipype_cmd nipype.interfaces.fsl ApplyTOPUP [ARGS] [DATATYPE] [ENCODING_FILE] [ENVIRON] [IGNORE_EXCEPTION] [IN_FILES] [IN_INDEX] [IN_TOPUP_FIELDCOEF] [IN_TOPUP_MOVPAR] [INTERP] [METHOD] [OUT_CORRECTED] [OUTPUT_TYPE] [TERMINAL_OUTPUT] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[OUT_CORRECTED]",
+            "optional": true,
+            "type": "File",
+            "name": "Out corrected",
+            "id": "out_corrected"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "ApplyTOPUP, as implemented in Nipype (module: nipype.interfaces.fsl, interface: ApplyTOPUP)."
+}

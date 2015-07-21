@@ -1,0 +1,171 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--affine_file",
+            "name": "Affine file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[AFFINE_FILE]",
+            "type": "File",
+            "id": "affine_file",
+            "description": "An existing file name. Affine matrix to use (e.g. img2std.mat) (does not re-run registration)."
+        },
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--brain_extracted",
+            "name": "Brain extracted",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[BRAIN_EXTRACTED]",
+            "type": "Number",
+            "id": "brain_extracted",
+            "description": "A boolean. Input structural image is already brain-extracted."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--in_file",
+            "name": "In file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[IN_FILE]",
+            "type": "File",
+            "id": "in_file",
+            "description": "An existing file name. Input data file."
+        },
+        {
+            "command-line-flag": "--list_of_specific_structures",
+            "name": "List of specific structures",
+            "optional": true,
+            "list": true,
+            "command-line-key": "[LIST_OF_SPECIFIC_STRUCTURES]",
+            "type": "String",
+            "id": "list_of_specific_structures",
+            "description": "A list of at least 1 items which are a string. Runs only on the specified structures (e.g. l_hipp, r_hippl_accu, r_accu, l_amyg, r_amygl_caud, r_caud, l_pall, r_palll_puta, r_puta, l_thal, r_thal, brstem."
+        },
+        {
+            "command-line-flag": "--method",
+            "name": "Method",
+            "default-value": "auto",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[METHOD]",
+            "type": "String",
+            "id": "method",
+            "description": "'auto' or 'fast' or 'none'. Method must be one of auto, fast, none, or it can be entered using the 'method_as_numerical_threshold' input."
+        },
+        {
+            "command-line-flag": "--method_as_numerical_threshold",
+            "name": "Method as numerical threshold",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[METHOD_AS_NUMERICAL_THRESHOLD]",
+            "type": "Number",
+            "id": "method_as_numerical_threshold",
+            "description": "A float. Specify a numerical threshold value or use the 'method' input to choose auto, fast, or none."
+        },
+        {
+            "command-line-flag": "--no_cleanup",
+            "name": "No cleanup",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[NO_CLEANUP]",
+            "type": "Number",
+            "id": "no_cleanup",
+            "description": "A boolean. Input structural image is already brain-extracted."
+        },
+        {
+            "command-line-flag": "--out_file",
+            "name": "Out file",
+            "default-value": "segmented",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[OUT_FILE]",
+            "type": "String",
+            "id": "out_file",
+            "description": "A file name. Output data file."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--verbose",
+            "name": "Verbose",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[VERBOSE]",
+            "type": "Number",
+            "id": "verbose",
+            "description": "A boolean. Use verbose logging."
+        }
+    ],
+    "name": "FIRST",
+    "command-line": "nipype_cmd nipype.interfaces.fsl FIRST [AFFINE_FILE] [ARGS] [BRAIN_EXTRACTED] [ENVIRON] [IGNORE_EXCEPTION] [IN_FILE] [LIST_OF_SPECIFIC_STRUCTURES] [METHOD] [METHOD_AS_NUMERICAL_THRESHOLD] [NO_CLEANUP] [OUT_FILE] [OUTPUT_TYPE] [TERMINAL_OUTPUT] [VERBOSE] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[OUT_FILE]_all_none_origsegs.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Original segmentations",
+            "id": "original_segmentations"
+        },
+        {
+            "path-template": "[OUT_FILE]_all_none_firstseg.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Segmentation file",
+            "id": "segmentation_file"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "FIRST, as implemented in Nipype (module: nipype.interfaces.fsl, interface: FIRST)."
+}

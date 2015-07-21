@@ -1,0 +1,283 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--center",
+            "name": "Center",
+            "optional": true,
+            "list": true,
+            "command-line-key": "[CENTER]",
+            "type": "Number",
+            "id": "center",
+            "description": "A list of at most 3 items which are an integer (int or long). Center of gravity in voxels."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--frac",
+            "name": "Frac",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[FRAC]",
+            "type": "Number",
+            "id": "frac",
+            "description": "A float. Fractional intensity threshold."
+        },
+        {
+            "command-line-flag": "--functional",
+            "name": "Functional",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[FUNCTIONAL]",
+            "type": "Number",
+            "id": "functional",
+            "description": "A boolean. Apply to 4d fmri data."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--in_file",
+            "name": "In file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[IN_FILE]",
+            "type": "File",
+            "id": "in_file",
+            "description": "An existing file name. Input file to skull strip."
+        },
+        {
+            "command-line-flag": "--mask",
+            "name": "Mask",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MASK]",
+            "type": "Number",
+            "id": "mask",
+            "description": "A boolean. Create binary mask image."
+        },
+        {
+            "command-line-flag": "--mesh",
+            "name": "Mesh",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MESH]",
+            "type": "Number",
+            "id": "mesh",
+            "description": "A boolean. Generate a vtk mesh brain surface."
+        },
+        {
+            "command-line-flag": "--no_output",
+            "name": "No output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[NO_OUTPUT]",
+            "type": "Number",
+            "id": "no_output",
+            "description": "A boolean. Don't generate segmented output."
+        },
+        {
+            "command-line-flag": "--out_file",
+            "name": "Out file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_FILE]",
+            "type": "String",
+            "id": "out_file",
+            "description": "A file name. Name of output skull stripped image."
+        },
+        {
+            "command-line-flag": "--outline",
+            "name": "Outline",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTLINE]",
+            "type": "Number",
+            "id": "outline",
+            "description": "A boolean. Create surface outline image."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--padding",
+            "name": "Padding",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[PADDING]",
+            "type": "Number",
+            "id": "padding",
+            "description": "A boolean. Improve bet if fov is very small in z (by temporarily padding end slices)."
+        },
+        {
+            "command-line-flag": "--radius",
+            "name": "Radius",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[RADIUS]",
+            "type": "Number",
+            "id": "radius",
+            "description": "An integer (int or long). Head radius."
+        },
+        {
+            "command-line-flag": "--reduce_bias",
+            "name": "Reduce bias",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[REDUCE_BIAS]",
+            "type": "Number",
+            "id": "reduce_bias",
+            "description": "A boolean. Bias field and neck cleanup."
+        },
+        {
+            "command-line-flag": "--remove_eyes",
+            "name": "Remove eyes",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[REMOVE_EYES]",
+            "type": "Number",
+            "id": "remove_eyes",
+            "description": "A boolean. Eye & optic nerve cleanup (can be useful in siena)."
+        },
+        {
+            "command-line-flag": "--robust",
+            "name": "Robust",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ROBUST]",
+            "type": "Number",
+            "id": "robust",
+            "description": "A boolean. Robust brain centre estimation (iterates bet several times)."
+        },
+        {
+            "command-line-flag": "--skull",
+            "name": "Skull",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SKULL]",
+            "type": "Number",
+            "id": "skull",
+            "description": "A boolean. Create skull image."
+        },
+        {
+            "command-line-flag": "--surfaces",
+            "name": "Surfaces",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SURFACES]",
+            "type": "Number",
+            "id": "surfaces",
+            "description": "A boolean. Run bet2 and then betsurf to get additional skull and scalp surfaces (includes registrations)."
+        },
+        {
+            "command-line-flag": "--t2_guided",
+            "name": "T2 guided",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[T2_GUIDED]",
+            "type": "String",
+            "id": "t2_guided",
+            "description": "A file name. As with creating surfaces, when also feeding in non-brain-extracted t2 (includes registrations)."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--threshold",
+            "name": "Threshold",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[THRESHOLD]",
+            "type": "Number",
+            "id": "threshold",
+            "description": "A boolean. Apply thresholding to segmented brain image and mask."
+        },
+        {
+            "command-line-flag": "--vertical_gradient",
+            "name": "Vertical gradient",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[VERTICAL_GRADIENT]",
+            "type": "Number",
+            "id": "vertical_gradient",
+            "description": "A float. Vertical gradient in fractional intensity threshold (-1, 1)."
+        }
+    ],
+    "name": "BET",
+    "command-line": "nipype_cmd nipype.interfaces.fsl BET [ARGS] [CENTER] [ENVIRON] [FRAC] [FUNCTIONAL] [IGNORE_EXCEPTION] [IN_FILE] [MASK] [MESH] [NO_OUTPUT] [OUT_FILE] [OUTLINE] [OUTPUT_TYPE] [PADDING] [RADIUS] [REDUCE_BIAS] [REMOVE_EYES] [ROBUST] [SKULL] [SURFACES] [T2_GUIDED] [TERMINAL_OUTPUT] [THRESHOLD] [VERTICAL_GRADIENT] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[OUT_FILE]_mask.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Mask file",
+            "id": "mask_file"
+        },
+        {
+            "path-template": "[OUT_FILE]_mesh.vtk",
+            "optional": true,
+            "type": "File",
+            "name": "Meshfile",
+            "id": "meshfile"
+        },
+        {
+            "path-template": "[OUT_FILE]",
+            "optional": true,
+            "type": "File",
+            "name": "Out file",
+            "id": "out_file"
+        },
+        {
+            "path-template": "[OUT_FILE]_overlay.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Outline file",
+            "id": "outline_file"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "BET, as implemented in Nipype (module: nipype.interfaces.fsl, interface: BET)."
+}

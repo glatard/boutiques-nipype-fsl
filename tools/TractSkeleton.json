@@ -1,0 +1,190 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--alt_data_file",
+            "name": "Alt data file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ALT_DATA_FILE]",
+            "type": "File",
+            "id": "alt_data_file",
+            "description": "An existing file name. 4d non-fa data to project onto skeleton."
+        },
+        {
+            "command-line-flag": "--alt_skeleton",
+            "name": "Alt skeleton",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ALT_SKELETON]",
+            "type": "File",
+            "id": "alt_skeleton",
+            "description": "An existing file name. Alternate skeleton to use."
+        },
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--data_file",
+            "name": "Data file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[DATA_FILE]",
+            "type": "File",
+            "id": "data_file",
+            "description": "An existing file name. 4d data to project onto skeleton (usually fa)."
+        },
+        {
+            "command-line-flag": "--distance_map",
+            "name": "Distance map",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[DISTANCE_MAP]",
+            "type": "File",
+            "id": "distance_map",
+            "description": "An existing file name. Distance map image."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--in_file",
+            "name": "In file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[IN_FILE]",
+            "type": "File",
+            "id": "in_file",
+            "description": "An existing file name. Input image (typcially mean fa volume)."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--project_data",
+            "name": "Project data",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[PROJECT_DATA]",
+            "type": "Number",
+            "id": "project_data",
+            "description": "A boolean. Project data onto skeleton."
+        },
+        {
+            "command-line-flag": "--projected_data",
+            "name": "Projected data",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[PROJECTED_DATA]",
+            "type": "String",
+            "id": "projected_data",
+            "description": "A file name. Input data projected onto skeleton."
+        },
+        {
+            "command-line-flag": "--search_mask_file",
+            "name": "Search mask file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SEARCH_MASK_FILE]",
+            "type": "File",
+            "id": "search_mask_file",
+            "description": "An existing file name. Mask in which to use alternate search rule."
+        },
+        {
+            "command-line-flag": "--skeleton_file",
+            "name": "Skeleton file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SKELETON_FILE]",
+            "type": "Number",
+            "id": "skeleton_file",
+            "description": "A boolean or a file name. Write out skeleton image."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--threshold",
+            "name": "Threshold",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[THRESHOLD]",
+            "type": "Number",
+            "id": "threshold",
+            "description": "A float. Skeleton threshold value."
+        },
+        {
+            "command-line-flag": "--use_cingulum_mask",
+            "name": "Use cingulum mask",
+            "default-value": true,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[USE_CINGULUM_MASK]",
+            "type": "Number",
+            "id": "use_cingulum_mask",
+            "description": "A boolean. Perform alternate search using built-in cingulum mask."
+        }
+    ],
+    "name": "TractSkeleton",
+    "command-line": "nipype_cmd nipype.interfaces.fsl TractSkeleton [ALT_DATA_FILE] [ALT_SKELETON] [ARGS] [DATA_FILE] [DISTANCE_MAP] [ENVIRON] [IGNORE_EXCEPTION] [IN_FILE] [OUTPUT_TYPE] [PROJECT_DATA] [PROJECTED_DATA] [SEARCH_MASK_FILE] [SKELETON_FILE] [TERMINAL_OUTPUT] [THRESHOLD] [USE_CINGULUM_MASK] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[PROJECTED_DATA]",
+            "optional": true,
+            "type": "File",
+            "name": "Projected data",
+            "id": "projected_data"
+        },
+        {
+            "path-template": "[IN_FILE]_skeleton",
+            "optional": true,
+            "type": "File",
+            "name": "Skeleton file",
+            "id": "skeleton_file"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "TractSkeleton, as implemented in Nipype (module: nipype.interfaces.fsl, interface: TractSkeleton)."
+}

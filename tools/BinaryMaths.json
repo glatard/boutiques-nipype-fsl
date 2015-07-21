@@ -1,0 +1,152 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--in_file",
+            "name": "In file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[IN_FILE]",
+            "type": "File",
+            "id": "in_file",
+            "description": "An existing file name. Image to operate on."
+        },
+        {
+            "command-line-flag": "--internal_datatype",
+            "name": "Internal datatype",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[INTERNAL_DATATYPE]",
+            "type": "String",
+            "id": "internal_datatype",
+            "description": "'float' or 'char' or 'int' or 'short' or 'double' or 'input'. Datatype to use for calculations (default is float)."
+        },
+        {
+            "command-line-flag": "--nan2zeros",
+            "name": "Nan2zeros",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[NAN2ZEROS]",
+            "type": "Number",
+            "id": "nan2zeros",
+            "description": "A boolean. Change nans to zeros before doing anything."
+        },
+        {
+            "command-line-flag": "--operand_file",
+            "name": "Operand file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[OPERAND_FILE]",
+            "type": "File",
+            "id": "operand_file",
+            "description": "An existing file name. Second image to perform operation with."
+        },
+        {
+            "command-line-flag": "--operand_value",
+            "name": "Operand value",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[OPERAND_VALUE]",
+            "type": "Number",
+            "id": "operand_value",
+            "description": "A float. Value to perform operation with."
+        },
+        {
+            "command-line-flag": "--operation",
+            "name": "Operation",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[OPERATION]",
+            "type": "String",
+            "id": "operation",
+            "description": "'add' or 'sub' or 'mul' or 'div' or 'rem' or 'max' or 'min'. Operation to perform."
+        },
+        {
+            "command-line-flag": "--out_file",
+            "name": "Out file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_FILE]",
+            "type": "String",
+            "id": "out_file",
+            "description": "A file name. Image to write."
+        },
+        {
+            "command-line-flag": "--output_datatype",
+            "name": "Output datatype",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_DATATYPE]",
+            "type": "String",
+            "id": "output_datatype",
+            "description": "'float' or 'char' or 'int' or 'short' or 'double' or 'input'. Datatype to use for output (default uses input type)."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        }
+    ],
+    "name": "BinaryMaths",
+    "command-line": "nipype_cmd nipype.interfaces.fsl BinaryMaths [ARGS] [ENVIRON] [IGNORE_EXCEPTION] [IN_FILE] [INTERNAL_DATATYPE] [NAN2ZEROS] [OPERAND_FILE] [OPERAND_VALUE] [OPERATION] [OUT_FILE] [OUTPUT_DATATYPE] [OUTPUT_TYPE] [TERMINAL_OUTPUT] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[OUT_FILE]",
+            "optional": true,
+            "type": "File",
+            "name": "Out file",
+            "id": "out_file"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "BinaryMaths, as implemented in Nipype (module: nipype.interfaces.fsl, interface: BinaryMaths)."
+}

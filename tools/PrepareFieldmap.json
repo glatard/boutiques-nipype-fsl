@@ -1,0 +1,135 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--delta_TE",
+            "name": "Delta te",
+            "default-value": 2.46,
+            "optional": false,
+            "list": false,
+            "command-line-key": "[DELTA_TE]",
+            "type": "Number",
+            "id": "delta_TE",
+            "description": "A float. Echo time difference of the fieldmap sequence in ms. (usually 2.46ms in siemens)."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--in_magnitude",
+            "name": "In magnitude",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[IN_MAGNITUDE]",
+            "type": "File",
+            "id": "in_magnitude",
+            "description": "An existing file name. Magnitude difference map, brain extracted."
+        },
+        {
+            "command-line-flag": "--in_phase",
+            "name": "In phase",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[IN_PHASE]",
+            "type": "File",
+            "id": "in_phase",
+            "description": "An existing file name. Phase difference map, in siemens format range from 0-4096 or 0-8192)."
+        },
+        {
+            "command-line-flag": "--nocheck",
+            "name": "Nocheck",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[NOCHECK]",
+            "type": "Number",
+            "id": "nocheck",
+            "description": "A boolean. Do not perform sanity checks for image size/range/dimensions."
+        },
+        {
+            "command-line-flag": "--out_fieldmap",
+            "name": "Out fieldmap",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_FIELDMAP]",
+            "type": "String",
+            "id": "out_fieldmap",
+            "description": "A file name. Output name for prepared fieldmap."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--scanner",
+            "name": "Scanner",
+            "default-value": "SIEMENS",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SCANNER]",
+            "type": "String",
+            "id": "scanner",
+            "description": "A string. Must be siemens."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        }
+    ],
+    "name": "PrepareFieldmap",
+    "command-line": "nipype_cmd nipype.interfaces.fsl PrepareFieldmap [ARGS] [DELTA_TE] [ENVIRON] [IGNORE_EXCEPTION] [IN_MAGNITUDE] [IN_PHASE] [NOCHECK] [OUT_FIELDMAP] [OUTPUT_TYPE] [SCANNER] [TERMINAL_OUTPUT] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[OUT_FIELDMAP]",
+            "optional": true,
+            "type": "File",
+            "name": "Out fieldmap",
+            "id": "out_fieldmap"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "PrepareFieldmap, as implemented in Nipype (module: nipype.interfaces.fsl, interface: PrepareFieldmap)."
+}

@@ -1,0 +1,223 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--in_file",
+            "name": "In file",
+            "optional": false,
+            "list": true,
+            "command-line-key": "[IN_FILE]",
+            "type": "File",
+            "id": "in_file",
+            "description": "An existing file name or a list of items which are an existing file name. File or list of files with columns of timecourse information."
+        },
+        {
+            "command-line-flag": "--labels",
+            "name": "Labels",
+            "optional": true,
+            "list": true,
+            "command-line-key": "[LABELS]",
+            "type": "String",
+            "id": "labels",
+            "description": "A string or a list of items which are a string. Label or list of labels."
+        },
+        {
+            "command-line-flag": "--legend_file",
+            "name": "Legend file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[LEGEND_FILE]",
+            "type": "File",
+            "id": "legend_file",
+            "description": "An existing file name. Legend file."
+        },
+        {
+            "command-line-flag": "--out_file",
+            "name": "Out file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_FILE]",
+            "type": "String",
+            "id": "out_file",
+            "description": "A file name. Image to write."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--plot_finish",
+            "name": "Plot finish",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[PLOT_FINISH]",
+            "type": "Number",
+            "id": "plot_finish",
+            "description": "An integer (int or long). Final column from in-file to plot."
+        },
+        {
+            "command-line-flag": "--plot_range",
+            "name": "Plot range",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[PLOT_RANGE]",
+            "type": "Number",
+            "id": "plot_range",
+            "description": "A tuple of the form: (an integer (int or long), an integer (int or long)). First and last columns from the in-file to plot."
+        },
+        {
+            "command-line-flag": "--plot_size",
+            "name": "Plot size",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[PLOT_SIZE]",
+            "type": "Number",
+            "id": "plot_size",
+            "description": "A tuple of the form: (an integer (int or long), an integer (int or long)). Plot image height and width."
+        },
+        {
+            "command-line-flag": "--plot_start",
+            "name": "Plot start",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[PLOT_START]",
+            "type": "Number",
+            "id": "plot_start",
+            "description": "An integer (int or long). First column from in-file to plot."
+        },
+        {
+            "command-line-flag": "--sci_notation",
+            "name": "Sci notation",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SCI_NOTATION]",
+            "type": "Number",
+            "id": "sci_notation",
+            "description": "A boolean. Switch on scientific notation."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--title",
+            "name": "Title",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TITLE]",
+            "type": "String",
+            "id": "title",
+            "description": "A string. Plot title."
+        },
+        {
+            "command-line-flag": "--x_precision",
+            "name": "X precision",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[X_PRECISION]",
+            "type": "Number",
+            "id": "x_precision",
+            "description": "An integer (int or long). Precision of x-axis labels."
+        },
+        {
+            "command-line-flag": "--x_units",
+            "name": "X units",
+            "default-value": 1,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[X_UNITS]",
+            "type": "Number",
+            "id": "x_units",
+            "description": "An integer (int or long). Scaling units for x-axis (between 1 and length of in file)."
+        },
+        {
+            "command-line-flag": "--y_max",
+            "name": "Y max",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[Y_MAX]",
+            "type": "Number",
+            "id": "y_max",
+            "description": "A float. Maximum y value."
+        },
+        {
+            "command-line-flag": "--y_min",
+            "name": "Y min",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[Y_MIN]",
+            "type": "Number",
+            "id": "y_min",
+            "description": "A float. Minumum y value."
+        },
+        {
+            "command-line-flag": "--y_range",
+            "name": "Y range",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[Y_RANGE]",
+            "type": "Number",
+            "id": "y_range",
+            "description": "A tuple of the form: (a float, a float). Min and max y axis values."
+        }
+    ],
+    "name": "PlotTimeSeries",
+    "command-line": "nipype_cmd nipype.interfaces.fsl PlotTimeSeries [ARGS] [ENVIRON] [IGNORE_EXCEPTION] [IN_FILE] [LABELS] [LEGEND_FILE] [OUT_FILE] [OUTPUT_TYPE] [PLOT_FINISH] [PLOT_RANGE] [PLOT_SIZE] [PLOT_START] [SCI_NOTATION] [TERMINAL_OUTPUT] [TITLE] [X_PRECISION] [X_UNITS] [Y_MAX] [Y_MIN] [Y_RANGE] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[OUT_FILE]",
+            "optional": true,
+            "type": "File",
+            "name": "Out file",
+            "id": "out_file"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "PlotTimeSeries, as implemented in Nipype (module: nipype.interfaces.fsl, interface: PlotTimeSeries)."
+}

@@ -1,0 +1,232 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--abswarp",
+            "name": "Abswarp",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ABSWARP]",
+            "type": "Number",
+            "id": "abswarp",
+            "description": "A boolean. If set it indicates that the warps in --warp1 and --warp2 should be interpreted as absolute. i.e. the values in --warp1/2 are the coordinates in the next space, rather than displacements. this flag is ignored if --warp1/2 was created by fnirt, which always creates relative displacements."
+        },
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--cons_jacobian",
+            "name": "Cons jacobian",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[CONS_JACOBIAN]",
+            "type": "Number",
+            "id": "cons_jacobian",
+            "description": "A boolean. Constrain the jacobian of the warpfield to lie within specified min/max limits."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--jacobian_max",
+            "name": "Jacobian max",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[JACOBIAN_MAX]",
+            "type": "Number",
+            "id": "jacobian_max",
+            "description": "A float. Maximum acceptable jacobian value for constraint (default 100.0)."
+        },
+        {
+            "command-line-flag": "--jacobian_min",
+            "name": "Jacobian min",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[JACOBIAN_MIN]",
+            "type": "Number",
+            "id": "jacobian_min",
+            "description": "A float. Minimum acceptable jacobian value for constraint (default 0.01)."
+        },
+        {
+            "command-line-flag": "--midmat",
+            "name": "Midmat",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MIDMAT]",
+            "type": "File",
+            "id": "midmat",
+            "description": "An existing file name. Name of file containing mid-warp-affine transform."
+        },
+        {
+            "command-line-flag": "--out_abswarp",
+            "name": "Out abswarp",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_ABSWARP]",
+            "type": "Number",
+            "id": "out_abswarp",
+            "description": "A boolean. If set it indicates that the warps in --out should be absolute, i.e. the values in --out are displacements from the coordinates in --ref."
+        },
+        {
+            "command-line-flag": "--out_file",
+            "name": "Out file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_FILE]",
+            "type": "String",
+            "id": "out_file",
+            "description": "A file name. Name of output file, containing warps that are the combination of all those given as arguments. the format of this will be a field-file (rather than spline coefficients) with any affine components included."
+        },
+        {
+            "command-line-flag": "--out_relwarp",
+            "name": "Out relwarp",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_RELWARP]",
+            "type": "Number",
+            "id": "out_relwarp",
+            "description": "A boolean. If set it indicates that the warps in --out should be relative, i.e. the values in --out are displacements from the coordinates in --ref."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--postmat",
+            "name": "Postmat",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[POSTMAT]",
+            "type": "File",
+            "id": "postmat",
+            "description": "An existing file name. Name of file containing an affine transform (applied last). it could e.g. be an affine transform that maps the mni152-space into a better approximation to the talairach-space (if indeed there is one)."
+        },
+        {
+            "command-line-flag": "--premat",
+            "name": "Premat",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[PREMAT]",
+            "type": "File",
+            "id": "premat",
+            "description": "An existing file name. Filename for pre-transform (affine matrix)."
+        },
+        {
+            "command-line-flag": "--reference",
+            "name": "Reference",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[REFERENCE]",
+            "type": "File",
+            "id": "reference",
+            "description": "An existing file name. Name of a file in target space of the full transform."
+        },
+        {
+            "command-line-flag": "--relwarp",
+            "name": "Relwarp",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[RELWARP]",
+            "type": "Number",
+            "id": "relwarp",
+            "description": "A boolean. If set it indicates that the warps in --warp1/2 should be interpreted as relative. i.e. the values in --warp1/2 are displacements from the coordinates in the next space."
+        },
+        {
+            "command-line-flag": "--shift_direction",
+            "name": "Shift direction",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SHIFT_DIRECTION]",
+            "type": "String",
+            "id": "shift_direction",
+            "description": "'y-' or 'y' or 'x' or 'x-' or 'z' or 'z-'. Indicates the direction that the distortions from --shiftmap goes. it depends on the direction and polarity of the phase-encoding in the epi sequence."
+        },
+        {
+            "command-line-flag": "--shift_in_file",
+            "name": "Shift in file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SHIFT_IN_FILE]",
+            "type": "File",
+            "id": "shift_in_file",
+            "description": "An existing file name. Name of file containing a \"shiftmap\", a non-linear transform with displacements only in one direction (applied first, before premat). this would typically be a fieldmap that has been pre-processed using fugue that maps a subjects functional (epi) data onto an undistorted space (i.e. a space that corresponds to his/her true anatomy)."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--warp1",
+            "name": "Warp1",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[WARP1]",
+            "type": "File",
+            "id": "warp1",
+            "description": "An existing file name. Name of file containing initial warp-fields/coefficients (follows premat). this could e.g. be a fnirt-transform from a subjects structural scan to an average of a group of subjects."
+        },
+        {
+            "command-line-flag": "--warp2",
+            "name": "Warp2",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[WARP2]",
+            "type": "File",
+            "id": "warp2",
+            "description": "An existing file name. Name of file containing secondary warp-fields/coefficients (after warp1/midmat but before postmat). this could e.g. be a fnirt-transform from the average of a group of subjects to some standard space (e.g. mni152)."
+        }
+    ],
+    "name": "ConvertWarp",
+    "command-line": "nipype_cmd nipype.interfaces.fsl ConvertWarp [ABSWARP] [ARGS] [CONS_JACOBIAN] [ENVIRON] [IGNORE_EXCEPTION] [JACOBIAN_MAX] [JACOBIAN_MIN] [MIDMAT] [OUT_ABSWARP] [OUT_FILE] [OUT_RELWARP] [OUTPUT_TYPE] [POSTMAT] [PREMAT] [REFERENCE] [RELWARP] [SHIFT_DIRECTION] [SHIFT_IN_FILE] [TERMINAL_OUTPUT] [WARP1] [WARP2] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[OUT_FILE]",
+            "optional": true,
+            "type": "File",
+            "name": "Out file",
+            "id": "out_file"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "ConvertWarp, as implemented in Nipype (module: nipype.interfaces.fsl, interface: ConvertWarp)."
+}

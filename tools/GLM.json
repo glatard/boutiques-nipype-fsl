@@ -1,0 +1,359 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--contrasts",
+            "name": "Contrasts",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[CONTRASTS]",
+            "type": "File",
+            "id": "contrasts",
+            "description": "An existing file name. Matrix of t-statics contrasts."
+        },
+        {
+            "command-line-flag": "--dat_norm",
+            "name": "Dat norm",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[DAT_NORM]",
+            "type": "Number",
+            "id": "dat_norm",
+            "description": "A boolean. Switch on normalization of the data time series to unit std deviation."
+        },
+        {
+            "command-line-flag": "--demean",
+            "name": "Demean",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[DEMEAN]",
+            "type": "Number",
+            "id": "demean",
+            "description": "A boolean. Switch on demeaining of  design and data."
+        },
+        {
+            "command-line-flag": "--des_norm",
+            "name": "Des norm",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[DES_NORM]",
+            "type": "Number",
+            "id": "des_norm",
+            "description": "A boolean. Switch on normalization of the design matrix columns to unit std deviation."
+        },
+        {
+            "command-line-flag": "--design",
+            "name": "Design",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[DESIGN]",
+            "type": "File",
+            "id": "design",
+            "description": "An existing file name. File name of the glm design matrix (text time courses for temporal regression or an image file for spatial regression)."
+        },
+        {
+            "command-line-flag": "--dof",
+            "name": "Dof",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[DOF]",
+            "type": "Number",
+            "id": "dof",
+            "description": "An integer (int or long). Set degrees of freedom explicitly."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--in_file",
+            "name": "In file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[IN_FILE]",
+            "type": "File",
+            "id": "in_file",
+            "description": "An existing file name. Input file name (text matrix or 3d/4d image file)."
+        },
+        {
+            "command-line-flag": "--mask",
+            "name": "Mask",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MASK]",
+            "type": "File",
+            "id": "mask",
+            "description": "An existing file name. Mask image file name if input is image."
+        },
+        {
+            "command-line-flag": "--out_cope",
+            "name": "Out cope",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_COPE]",
+            "type": "String",
+            "id": "out_cope",
+            "description": "A file name. Output file name for cope (either as txt or image."
+        },
+        {
+            "command-line-flag": "--out_data_name",
+            "name": "Out data name",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_DATA_NAME]",
+            "type": "String",
+            "id": "out_data_name",
+            "description": "A file name. Output file name for pre-processed data."
+        },
+        {
+            "command-line-flag": "--out_f_name",
+            "name": "Out f name",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_F_NAME]",
+            "type": "String",
+            "id": "out_f_name",
+            "description": "A file name. Output file name for f-value of full model fit."
+        },
+        {
+            "command-line-flag": "--out_file",
+            "name": "Out file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_FILE]",
+            "type": "String",
+            "id": "out_file",
+            "description": "A file name. Filename for glm parameter estimates (glm betas)."
+        },
+        {
+            "command-line-flag": "--out_p_name",
+            "name": "Out p name",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_P_NAME]",
+            "type": "String",
+            "id": "out_p_name",
+            "description": "A file name. Output file name for p-values of z-stats (either as text file or image)."
+        },
+        {
+            "command-line-flag": "--out_pf_name",
+            "name": "Out pf name",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_PF_NAME]",
+            "type": "String",
+            "id": "out_pf_name",
+            "description": "A file name. Output file name for p-value for full model fit."
+        },
+        {
+            "command-line-flag": "--out_res_name",
+            "name": "Out res name",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_RES_NAME]",
+            "type": "String",
+            "id": "out_res_name",
+            "description": "A file name. Output file name for residuals."
+        },
+        {
+            "command-line-flag": "--out_sigsq_name",
+            "name": "Out sigsq name",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_SIGSQ_NAME]",
+            "type": "String",
+            "id": "out_sigsq_name",
+            "description": "A file name. Output file name for residual noise variance sigma-square."
+        },
+        {
+            "command-line-flag": "--out_t_name",
+            "name": "Out t name",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_T_NAME]",
+            "type": "String",
+            "id": "out_t_name",
+            "description": "A file name. Output file name for t-stats (either as txt or image."
+        },
+        {
+            "command-line-flag": "--out_varcb_name",
+            "name": "Out varcb name",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_VARCB_NAME]",
+            "type": "String",
+            "id": "out_varcb_name",
+            "description": "A file name. Output file name for variance of copes."
+        },
+        {
+            "command-line-flag": "--out_vnscales_name",
+            "name": "Out vnscales name",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_VNSCALES_NAME]",
+            "type": "String",
+            "id": "out_vnscales_name",
+            "description": "A file name. Output file name for scaling factors for variance normalisation."
+        },
+        {
+            "command-line-flag": "--out_z_name",
+            "name": "Out z name",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_Z_NAME]",
+            "type": "String",
+            "id": "out_z_name",
+            "description": "A file name. Output file name for z-stats (either as txt or image."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--var_norm",
+            "name": "Var norm",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[VAR_NORM]",
+            "type": "Number",
+            "id": "var_norm",
+            "description": "A boolean. Perform melodic variance-normalisation on data."
+        }
+    ],
+    "name": "GLM",
+    "command-line": "nipype_cmd nipype.interfaces.fsl GLM [ARGS] [CONTRASTS] [DAT_NORM] [DEMEAN] [DES_NORM] [DESIGN] [DOF] [ENVIRON] [IGNORE_EXCEPTION] [IN_FILE] [MASK] [OUT_COPE] [OUT_DATA_NAME] [OUT_F_NAME] [OUT_FILE] [OUT_P_NAME] [OUT_PF_NAME] [OUT_RES_NAME] [OUT_SIGSQ_NAME] [OUT_T_NAME] [OUT_VARCB_NAME] [OUT_VNSCALES_NAME] [OUT_Z_NAME] [OUTPUT_TYPE] [TERMINAL_OUTPUT] [VAR_NORM] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[OUT_COPE]",
+            "optional": true,
+            "type": "File",
+            "name": "Out cope",
+            "id": "out_cope"
+        },
+        {
+            "path-template": "[OUT_DATA_NAME]",
+            "optional": true,
+            "type": "File",
+            "name": "Out data",
+            "id": "out_data"
+        },
+        {
+            "path-template": "[OUT_F_NAME]",
+            "optional": true,
+            "type": "File",
+            "name": "Out f",
+            "id": "out_f"
+        },
+        {
+            "path-template": "[OUT_FILE]",
+            "optional": true,
+            "type": "File",
+            "name": "Out file",
+            "id": "out_file"
+        },
+        {
+            "path-template": "[OUT_P_NAME]",
+            "optional": true,
+            "type": "File",
+            "name": "Out p",
+            "id": "out_p"
+        },
+        {
+            "path-template": "[OUT_PF_NAME]",
+            "optional": true,
+            "type": "File",
+            "name": "Out pf",
+            "id": "out_pf"
+        },
+        {
+            "path-template": "[OUT_RES_NAME]",
+            "optional": true,
+            "type": "File",
+            "name": "Out res",
+            "id": "out_res"
+        },
+        {
+            "path-template": "[OUT_SIGSQ_NAME]",
+            "optional": true,
+            "type": "File",
+            "name": "Out sigsq",
+            "id": "out_sigsq"
+        },
+        {
+            "path-template": "[OUT_T_NAME]",
+            "optional": true,
+            "type": "File",
+            "name": "Out t",
+            "id": "out_t"
+        },
+        {
+            "path-template": "[OUT_VARCB_NAME]",
+            "optional": true,
+            "type": "File",
+            "name": "Out varcb",
+            "id": "out_varcb"
+        },
+        {
+            "path-template": "[OUT_VNSCALES_NAME]",
+            "optional": true,
+            "type": "File",
+            "name": "Out vnscales",
+            "id": "out_vnscales"
+        },
+        {
+            "path-template": "[OUT_Z_NAME]",
+            "optional": true,
+            "type": "File",
+            "name": "Out z",
+            "id": "out_z"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "GLM, as implemented in Nipype (module: nipype.interfaces.fsl, interface: GLM)."
+}

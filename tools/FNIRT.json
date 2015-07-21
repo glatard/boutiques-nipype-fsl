@@ -1,0 +1,524 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--affine_file",
+            "name": "Affine file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[AFFINE_FILE]",
+            "type": "File",
+            "id": "affine_file",
+            "description": "An existing file name. Name of file containing affine transform."
+        },
+        {
+            "command-line-flag": "--apply_inmask",
+            "name": "Apply inmask",
+            "optional": true,
+            "list": true,
+            "command-line-key": "[APPLY_INMASK]",
+            "type": "String",
+            "id": "apply_inmask",
+            "description": "A list of items which are 0 or 1. List of iterations to use input mask on (1 to use, 0 to skip)."
+        },
+        {
+            "command-line-flag": "--apply_intensity_mapping",
+            "name": "Apply intensity mapping",
+            "optional": true,
+            "list": true,
+            "command-line-key": "[APPLY_INTENSITY_MAPPING]",
+            "type": "String",
+            "id": "apply_intensity_mapping",
+            "description": "A list of items which are 0 or 1. List of subsampling levels to apply intensity mapping for (0 to skip, 1 to apply)."
+        },
+        {
+            "command-line-flag": "--apply_refmask",
+            "name": "Apply refmask",
+            "optional": true,
+            "list": true,
+            "command-line-key": "[APPLY_REFMASK]",
+            "type": "String",
+            "id": "apply_refmask",
+            "description": "A list of items which are 0 or 1. List of iterations to use reference mask on (1 to use, 0 to skip)."
+        },
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--bias_regularization_lambda",
+            "name": "Bias regularization lambda",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[BIAS_REGULARIZATION_LAMBDA]",
+            "type": "Number",
+            "id": "bias_regularization_lambda",
+            "description": "A float. Weight of regularisation for bias-field, default 10000."
+        },
+        {
+            "command-line-flag": "--biasfield_resolution",
+            "name": "Biasfield resolution",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[BIASFIELD_RESOLUTION]",
+            "type": "Number",
+            "id": "biasfield_resolution",
+            "description": "A tuple of the form: (an integer (int or long), an integer (int or long), an integer (int or long)). Resolution (in mm) of bias-field modelling local intensities, default 50, 50, 50."
+        },
+        {
+            "command-line-flag": "--config_file",
+            "name": "Config file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[CONFIG_FILE]",
+            "type": "File",
+            "id": "config_file",
+            "description": "'t1_2_mni152_2mm' or 'fa_2_fmrib58_1mm' or an existing file name. Name of config file specifying command line arguments."
+        },
+        {
+            "command-line-flag": "--derive_from_ref",
+            "name": "Derive from ref",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[DERIVE_FROM_REF]",
+            "type": "Number",
+            "id": "derive_from_ref",
+            "description": "A boolean. If true, ref image is used to calculate derivatives. default false."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--field_file",
+            "name": "Field file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[FIELD_FILE]",
+            "type": "Number",
+            "id": "field_file",
+            "description": "A boolean or a file name. Name of output file with field or true."
+        },
+        {
+            "command-line-flag": "--fieldcoeff_file",
+            "name": "Fieldcoeff file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[FIELDCOEFF_FILE]",
+            "type": "Number",
+            "id": "fieldcoeff_file",
+            "description": "A boolean or a file name. Name of output file with field coefficients or true."
+        },
+        {
+            "command-line-flag": "--hessian_precision",
+            "name": "Hessian precision",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[HESSIAN_PRECISION]",
+            "type": "String",
+            "id": "hessian_precision",
+            "description": "'double' or 'float'. Precision for representing hessian, double or float. default double."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--in_file",
+            "name": "In file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[IN_FILE]",
+            "type": "File",
+            "id": "in_file",
+            "description": "An existing file name. Name of input image."
+        },
+        {
+            "command-line-flag": "--in_fwhm",
+            "name": "In fwhm",
+            "optional": true,
+            "list": true,
+            "command-line-key": "[IN_FWHM]",
+            "type": "Number",
+            "id": "in_fwhm",
+            "description": "A list of items which are an integer (int or long). Fwhm (in mm) of gaussian smoothing kernel for input volume, default [6, 4, 2, 2]."
+        },
+        {
+            "command-line-flag": "--in_intensitymap_file",
+            "name": "In intensitymap file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IN_INTENSITYMAP_FILE]",
+            "type": "File",
+            "id": "in_intensitymap_file",
+            "description": "An existing file name. Name of file/files containing initial intensity mapingusually generated by previos fnirt run."
+        },
+        {
+            "command-line-flag": "--inmask_file",
+            "name": "Inmask file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[INMASK_FILE]",
+            "type": "File",
+            "id": "inmask_file",
+            "description": "An existing file name. Name of file with mask in input image space."
+        },
+        {
+            "command-line-flag": "--inmask_val",
+            "name": "Inmask val",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[INMASK_VAL]",
+            "type": "Number",
+            "id": "inmask_val",
+            "description": "A float. Value to mask out in --in image. default =0.0."
+        },
+        {
+            "command-line-flag": "--intensity_mapping_model",
+            "name": "Intensity mapping model",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[INTENSITY_MAPPING_MODEL]",
+            "type": "String",
+            "id": "intensity_mapping_model",
+            "description": "'none' or 'global_linear' or 'global_non_linearlocal_linear' or 'global_non_linear_with_bias' or 'local_non_linear'. Model for intensity-mapping."
+        },
+        {
+            "command-line-flag": "--intensity_mapping_order",
+            "name": "Intensity mapping order",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[INTENSITY_MAPPING_ORDER]",
+            "type": "Number",
+            "id": "intensity_mapping_order",
+            "description": "An integer (int or long). Order of poynomial for mapping intensities, default 5."
+        },
+        {
+            "command-line-flag": "--inwarp_file",
+            "name": "Inwarp file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[INWARP_FILE]",
+            "type": "File",
+            "id": "inwarp_file",
+            "description": "An existing file name. Name of file containing initial non-linear warps."
+        },
+        {
+            "command-line-flag": "--jacobian_file",
+            "name": "Jacobian file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[JACOBIAN_FILE]",
+            "type": "Number",
+            "id": "jacobian_file",
+            "description": "A boolean or a file name. Name of file for writing out the jacobianof the field (for diagnostic or vbm purposes)."
+        },
+        {
+            "command-line-flag": "--jacobian_range",
+            "name": "Jacobian range",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[JACOBIAN_RANGE]",
+            "type": "Number",
+            "id": "jacobian_range",
+            "description": "A tuple of the form: (a float, a float). Allowed range of jacobian determinants, default 0.01, 100.0."
+        },
+        {
+            "command-line-flag": "--log_file",
+            "name": "Log file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[LOG_FILE]",
+            "type": "String",
+            "id": "log_file",
+            "description": "A file name. Name of log-file."
+        },
+        {
+            "command-line-flag": "--max_nonlin_iter",
+            "name": "Max nonlin iter",
+            "optional": true,
+            "list": true,
+            "command-line-key": "[MAX_NONLIN_ITER]",
+            "type": "Number",
+            "id": "max_nonlin_iter",
+            "description": "A list of items which are an integer (int or long). Max # of non-linear iterations list, default [5, 5, 5, 5]."
+        },
+        {
+            "command-line-flag": "--modulatedref_file",
+            "name": "Modulatedref file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MODULATEDREF_FILE]",
+            "type": "Number",
+            "id": "modulatedref_file",
+            "description": "A boolean or a file name. Name of file for writing out intensity modulated--ref (for diagnostic purposes)."
+        },
+        {
+            "command-line-flag": "--out_intensitymap_file",
+            "name": "Out intensitymap file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_INTENSITYMAP_FILE]",
+            "type": "Number",
+            "id": "out_intensitymap_file",
+            "description": "A boolean or a file name. Name of files for writing information pertaining to intensity mapping."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--ref_file",
+            "name": "Ref file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[REF_FILE]",
+            "type": "File",
+            "id": "ref_file",
+            "description": "An existing file name. Name of reference image."
+        },
+        {
+            "command-line-flag": "--ref_fwhm",
+            "name": "Ref fwhm",
+            "optional": true,
+            "list": true,
+            "command-line-key": "[REF_FWHM]",
+            "type": "Number",
+            "id": "ref_fwhm",
+            "description": "A list of items which are an integer (int or long). Fwhm (in mm) of gaussian smoothing kernel for ref volume, default [4, 2, 0, 0]."
+        },
+        {
+            "command-line-flag": "--refmask_file",
+            "name": "Refmask file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[REFMASK_FILE]",
+            "type": "File",
+            "id": "refmask_file",
+            "description": "An existing file name. Name of file with mask in reference space."
+        },
+        {
+            "command-line-flag": "--refmask_val",
+            "name": "Refmask val",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[REFMASK_VAL]",
+            "type": "Number",
+            "id": "refmask_val",
+            "description": "A float. Value to mask out in --ref image. default =0.0."
+        },
+        {
+            "command-line-flag": "--regularization_lambda",
+            "name": "Regularization lambda",
+            "optional": true,
+            "list": true,
+            "command-line-key": "[REGULARIZATION_LAMBDA]",
+            "type": "Number",
+            "id": "regularization_lambda",
+            "description": "A list of items which are a float. Weight of regularisation, default depending on --ssqlambda and --regmod switches. see user documetation."
+        },
+        {
+            "command-line-flag": "--regularization_model",
+            "name": "Regularization model",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[REGULARIZATION_MODEL]",
+            "type": "String",
+            "id": "regularization_model",
+            "description": "'membrane_energy' or 'bending_energy'. Model for regularisation of warp-field [membrane_energy bending_energy], default bending_energy."
+        },
+        {
+            "command-line-flag": "--skip_implicit_in_masking",
+            "name": "Skip implicit in masking",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SKIP_IMPLICIT_IN_MASKING]",
+            "type": "Number",
+            "id": "skip_implicit_in_masking",
+            "description": "A boolean. Skip implicit masking  based on valuein --in image. default = 0."
+        },
+        {
+            "command-line-flag": "--skip_implicit_ref_masking",
+            "name": "Skip implicit ref masking",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SKIP_IMPLICIT_REF_MASKING]",
+            "type": "Number",
+            "id": "skip_implicit_ref_masking",
+            "description": "A boolean. Skip implicit masking  based on valuein --ref image. default = 0."
+        },
+        {
+            "command-line-flag": "--skip_inmask",
+            "name": "Skip inmask",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SKIP_INMASK]",
+            "type": "Number",
+            "id": "skip_inmask",
+            "description": "A boolean. Skip specified inmask if set, default false."
+        },
+        {
+            "command-line-flag": "--skip_intensity_mapping",
+            "name": "Skip intensity mapping",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SKIP_INTENSITY_MAPPING]",
+            "type": "Number",
+            "id": "skip_intensity_mapping",
+            "description": "A boolean. Skip estimate intensity-mapping default false."
+        },
+        {
+            "command-line-flag": "--skip_lambda_ssq",
+            "name": "Skip lambda ssq",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SKIP_LAMBDA_SSQ]",
+            "type": "Number",
+            "id": "skip_lambda_ssq",
+            "description": "A boolean. If true, lambda is not weighted by current ssq, default false."
+        },
+        {
+            "command-line-flag": "--skip_refmask",
+            "name": "Skip refmask",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SKIP_REFMASK]",
+            "type": "Number",
+            "id": "skip_refmask",
+            "description": "A boolean. Skip specified refmask if set, default false."
+        },
+        {
+            "command-line-flag": "--spline_order",
+            "name": "Spline order",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SPLINE_ORDER]",
+            "type": "Number",
+            "id": "spline_order",
+            "description": "An integer (int or long). Order of spline, 2->qadratic spline, 3->cubic spline. default=3."
+        },
+        {
+            "command-line-flag": "--subsampling_scheme",
+            "name": "Subsampling scheme",
+            "optional": true,
+            "list": true,
+            "command-line-key": "[SUBSAMPLING_SCHEME]",
+            "type": "Number",
+            "id": "subsampling_scheme",
+            "description": "A list of items which are an integer (int or long). Sub-sampling scheme, list, default [4, 2, 1, 1]."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--warp_resolution",
+            "name": "Warp resolution",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[WARP_RESOLUTION]",
+            "type": "Number",
+            "id": "warp_resolution",
+            "description": "A tuple of the form: (an integer (int or long), an integer (int or long), an integer (int or long)). (approximate) resolution (in mm) of warp basis in x-, y- and z-direction, default 10, 10, 10."
+        },
+        {
+            "command-line-flag": "--warped_file",
+            "name": "Warped file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[WARPED_FILE]",
+            "type": "String",
+            "id": "warped_file",
+            "description": "A file name. Name of output image."
+        }
+    ],
+    "name": "FNIRT",
+    "command-line": "nipype_cmd nipype.interfaces.fsl FNIRT [AFFINE_FILE] [APPLY_INMASK] [APPLY_INTENSITY_MAPPING] [APPLY_REFMASK] [ARGS] [BIAS_REGULARIZATION_LAMBDA] [BIASFIELD_RESOLUTION] [CONFIG_FILE] [DERIVE_FROM_REF] [ENVIRON] [FIELD_FILE] [FIELDCOEFF_FILE] [HESSIAN_PRECISION] [IGNORE_EXCEPTION] [IN_FILE] [IN_FWHM] [IN_INTENSITYMAP_FILE] [INMASK_FILE] [INMASK_VAL] [INTENSITY_MAPPING_MODEL] [INTENSITY_MAPPING_ORDER] [INWARP_FILE] [JACOBIAN_FILE] [JACOBIAN_RANGE] [LOG_FILE] [MAX_NONLIN_ITER] [MODULATEDREF_FILE] [OUT_INTENSITYMAP_FILE] [OUTPUT_TYPE] [REF_FILE] [REF_FWHM] [REFMASK_FILE] [REFMASK_VAL] [REGULARIZATION_LAMBDA] [REGULARIZATION_MODEL] [SKIP_IMPLICIT_IN_MASKING] [SKIP_IMPLICIT_REF_MASKING] [SKIP_INMASK] [SKIP_INTENSITY_MAPPING] [SKIP_LAMBDA_SSQ] [SKIP_REFMASK] [SPLINE_ORDER] [SUBSAMPLING_SCHEME] [TERMINAL_OUTPUT] [WARP_RESOLUTION] [WARPED_FILE] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[IN_FILE]_field.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Field file",
+            "id": "field_file"
+        },
+        {
+            "path-template": "[IN_FILE]_fieldwarp.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Fieldcoeff file",
+            "id": "fieldcoeff_file"
+        },
+        {
+            "path-template": "[IN_FILE]_field_jacobian.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Jacobian file",
+            "id": "jacobian_file"
+        },
+        {
+            "path-template": "[LOG_FILE]",
+            "optional": true,
+            "type": "File",
+            "name": "Log file",
+            "id": "log_file"
+        },
+        {
+            "path-template": "[IN_FILE]_modulated.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Modulatedref file",
+            "id": "modulatedref_file"
+        },
+        {
+            "path-template": "[IN_FILE]_intmap.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Out intensitymap file",
+            "id": "out_intensitymap_file"
+        },
+        {
+            "path-template": "[WARPED_FILE]",
+            "optional": true,
+            "type": "File",
+            "name": "Warped file",
+            "id": "warped_file"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "FNIRT, as implemented in Nipype (module: nipype.interfaces.fsl, interface: FNIRT)."
+}

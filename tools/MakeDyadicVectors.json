@@ -1,0 +1,130 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--mask",
+            "name": "Mask",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MASK]",
+            "type": "File",
+            "id": "mask",
+            "description": "An existing file name. No description provided."
+        },
+        {
+            "command-line-flag": "--output",
+            "name": "Output",
+            "default-value": "dyads",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT]",
+            "type": "String",
+            "id": "output",
+            "description": "A file name. No description provided."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--perc",
+            "name": "Perc",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[PERC]",
+            "type": "Number",
+            "id": "perc",
+            "description": "A float. The {perc}% angle of the output cone of uncertainty (output will be in degrees)."
+        },
+        {
+            "command-line-flag": "--phi_vol",
+            "name": "Phi vol",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[PHI_VOL]",
+            "type": "File",
+            "id": "phi_vol",
+            "description": "An existing file name. No description provided."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--theta_vol",
+            "name": "Theta vol",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[THETA_VOL]",
+            "type": "File",
+            "id": "theta_vol",
+            "description": "An existing file name. No description provided."
+        }
+    ],
+    "name": "MakeDyadicVectors",
+    "command-line": "nipype_cmd nipype.interfaces.fsl MakeDyadicVectors [ARGS] [ENVIRON] [IGNORE_EXCEPTION] [MASK] [OUTPUT] [OUTPUT_TYPE] [PERC] [PHI_VOL] [TERMINAL_OUTPUT] [THETA_VOL] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[OUTPUT]_dispersion.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Dispersion",
+            "id": "dispersion"
+        },
+        {
+            "path-template": "[OUTPUT].nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Dyads",
+            "id": "dyads"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "MakeDyadicVectors, as implemented in Nipype (module: nipype.interfaces.fsl, interface: MakeDyadicVectors)."
+}

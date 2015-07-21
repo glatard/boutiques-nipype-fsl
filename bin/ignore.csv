@@ -1,0 +1,12 @@
+# Inputs to ignore for the output path template generation.
+# Usually, these inputs are mutually exclusive or string restrictions.
+# See -t option of nipype2boutiques.
+
+BET,no_output
+FAST,img_type no_pve no_bias
+FUGUE,icorr icorr_only
+ProbTrackX,rand_fib verbose
+ProbTrackX2,rand_fib verbose
+SliceTimer,slice_direction
+SUSAN,dimension use_median
+TOPUP,estmov minmet regrid scale ssqlambda

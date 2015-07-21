@@ -1,0 +1,172 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--absolute",
+            "name": "Absolute",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ABSOLUTE]",
+            "type": "Number",
+            "id": "absolute",
+            "description": "A boolean. If set it indicates that the warps in --warp should be interpreted as absolute, provided that it is not created by fnirt (which always uses relative warps). if set it also indicates that the output --out should be absolute."
+        },
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--inverse_warp",
+            "name": "Inverse warp",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[INVERSE_WARP]",
+            "type": "String",
+            "id": "inverse_warp",
+            "description": "A file name. Name of output file, containing warps that are the \"reverse\" of those in --warp. this will be a field-file (rather than a file of spline coefficients), and it will have any affine component included as part of the displacements."
+        },
+        {
+            "command-line-flag": "--jacobian_max",
+            "name": "Jacobian max",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[JACOBIAN_MAX]",
+            "type": "Number",
+            "id": "jacobian_max",
+            "description": "A float. Maximum acceptable jacobian value for constraint (default 100.0)."
+        },
+        {
+            "command-line-flag": "--jacobian_min",
+            "name": "Jacobian min",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[JACOBIAN_MIN]",
+            "type": "Number",
+            "id": "jacobian_min",
+            "description": "A float. Minimum acceptable jacobian value for constraint (default 0.01)."
+        },
+        {
+            "command-line-flag": "--niter",
+            "name": "Niter",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[NITER]",
+            "type": "Number",
+            "id": "niter",
+            "description": "An integer (int or long). Determines how many iterations of the gradient-descent search that should be run."
+        },
+        {
+            "command-line-flag": "--noconstraint",
+            "name": "Noconstraint",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[NOCONSTRAINT]",
+            "type": "Number",
+            "id": "noconstraint",
+            "description": "A boolean. Do not apply jacobian constraint."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--reference",
+            "name": "Reference",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[REFERENCE]",
+            "type": "File",
+            "id": "reference",
+            "description": "An existing file name. Name of a file in target space. note that the target space is now different from the target space that was used to create the --warp file. it would typically be the file that was specified with the --in argument when running fnirt."
+        },
+        {
+            "command-line-flag": "--regularise",
+            "name": "Regularise",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[REGULARISE]",
+            "type": "Number",
+            "id": "regularise",
+            "description": "A float. Regularization strength (deafult=1.0)."
+        },
+        {
+            "command-line-flag": "--relative",
+            "name": "Relative",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[RELATIVE]",
+            "type": "Number",
+            "id": "relative",
+            "description": "A boolean. If set it indicates that the warps in --warp should be interpreted as relative. i.e. the values in --warp are displacements from the coordinates in the --ref space. if set it also indicates that the output --out should be relative."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--warp",
+            "name": "Warp",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[WARP]",
+            "type": "File",
+            "id": "warp",
+            "description": "An existing file name. Name of file containing warp-coefficients/fields. this would typically be the output from the --cout switch of fnirt (but can also use fields, like the output from --fout)."
+        }
+    ],
+    "name": "InvWarp",
+    "command-line": "nipype_cmd nipype.interfaces.fsl InvWarp [ABSOLUTE] [ARGS] [ENVIRON] [IGNORE_EXCEPTION] [INVERSE_WARP] [JACOBIAN_MAX] [JACOBIAN_MIN] [NITER] [NOCONSTRAINT] [OUTPUT_TYPE] [REFERENCE] [REGULARISE] [RELATIVE] [TERMINAL_OUTPUT] [WARP] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[INVERSE_WARP]",
+            "optional": true,
+            "type": "File",
+            "name": "Inverse warp",
+            "id": "inverse_warp"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "InvWarp, as implemented in Nipype (module: nipype.interfaces.fsl, interface: InvWarp)."
+}

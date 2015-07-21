@@ -1,0 +1,331 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--config",
+            "name": "Config",
+            "default-value": "b02b0.cnf",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[CONFIG]",
+            "type": "String",
+            "id": "config",
+            "description": "A string. Name of config file specifying command line arguments."
+        },
+        {
+            "command-line-flag": "--encoding_direction",
+            "name": "Encoding direction",
+            "optional": false,
+            "list": true,
+            "command-line-key": "[ENCODING_DIRECTION]",
+            "type": "String",
+            "id": "encoding_direction",
+            "description": "A list of items which are 'y' or 'x' or 'z' or 'x-' or 'y-' or 'z-'. Encoding direction for automatic generation of encoding_file."
+        },
+        {
+            "command-line-flag": "--encoding_file",
+            "name": "Encoding file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[ENCODING_FILE]",
+            "type": "File",
+            "id": "encoding_file",
+            "description": "An existing file name. Name of text file with pe directions/times."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--estmov",
+            "name": "Estmov",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ESTMOV]",
+            "type": "String",
+            "id": "estmov",
+            "description": "1 or 0. Estimate movements if set."
+        },
+        {
+            "command-line-flag": "--fwhm",
+            "name": "Fwhm",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[FWHM]",
+            "type": "Number",
+            "id": "fwhm",
+            "description": "A float. Fwhm (in mm) of gaussian smoothing kernel."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--in_file",
+            "name": "In file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[IN_FILE]",
+            "type": "File",
+            "id": "in_file",
+            "description": "An existing file name. Name of 4d file with images."
+        },
+        {
+            "command-line-flag": "--interp",
+            "name": "Interp",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[INTERP]",
+            "type": "String",
+            "id": "interp",
+            "description": "'spline' or 'linear'. Image interpolation model, linear or spline."
+        },
+        {
+            "command-line-flag": "--max_iter",
+            "name": "Max iter",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MAX_ITER]",
+            "type": "Number",
+            "id": "max_iter",
+            "description": "An integer (int or long). Max # of non-linear iterations."
+        },
+        {
+            "command-line-flag": "--minmet",
+            "name": "Minmet",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MINMET]",
+            "type": "String",
+            "id": "minmet",
+            "description": "0 or 1. Minimisation method 0=levenberg-marquardt, 1=scaled conjugate gradient."
+        },
+        {
+            "command-line-flag": "--numprec",
+            "name": "Numprec",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[NUMPREC]",
+            "type": "String",
+            "id": "numprec",
+            "description": "'double' or 'float'. Precision for representing hessian, double or float."
+        },
+        {
+            "command-line-flag": "--out_base",
+            "name": "Out base",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_BASE]",
+            "type": "String",
+            "id": "out_base",
+            "description": "A file name. Base-name of output files (spline coefficients (hz) and movement parameters)."
+        },
+        {
+            "command-line-flag": "--out_corrected",
+            "name": "Out corrected",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_CORRECTED]",
+            "type": "String",
+            "id": "out_corrected",
+            "description": "A file name. Name of 4d image file with unwarped images."
+        },
+        {
+            "command-line-flag": "--out_field",
+            "name": "Out field",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_FIELD]",
+            "type": "String",
+            "id": "out_field",
+            "description": "A file name. Name of image file with field (hz)."
+        },
+        {
+            "command-line-flag": "--out_logfile",
+            "name": "Out logfile",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_LOGFILE]",
+            "type": "String",
+            "id": "out_logfile",
+            "description": "A file name. Name of log-file."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--readout_times",
+            "name": "Readout times",
+            "optional": false,
+            "list": true,
+            "command-line-key": "[READOUT_TIMES]",
+            "type": "Number",
+            "id": "readout_times",
+            "description": "A list of items which are a float. Readout times (dwell times by # phase-encode steps minus 1)."
+        },
+        {
+            "command-line-flag": "--reg_lambda",
+            "name": "Reg lambda",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[REG_LAMBDA]",
+            "type": "Number",
+            "id": "reg_lambda",
+            "description": "A float. Lambda weighting value of the regularisation term."
+        },
+        {
+            "command-line-flag": "--regmod",
+            "name": "Regmod",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[REGMOD]",
+            "type": "String",
+            "id": "regmod",
+            "description": "'bending_energy' or 'membrane_energy'. Regularisation term implementation. defaults to bending_energy. note that the two functions have vastly different scales. the membrane energy is based on the first derivatives and the bending energy on the second derivatives. the second derivatives will typically be much smaller than the first derivatives, so input lambda will have to be larger for bending_energy to yield approximately the same level of regularisation."
+        },
+        {
+            "command-line-flag": "--regrid",
+            "name": "Regrid",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[REGRID]",
+            "type": "String",
+            "id": "regrid",
+            "description": "1 or 0. If set (=1), the calculations are done in a different grid."
+        },
+        {
+            "command-line-flag": "--scale",
+            "name": "Scale",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SCALE]",
+            "type": "String",
+            "id": "scale",
+            "description": "0 or 1. If set (=1), the images are individually scaled to a common mean."
+        },
+        {
+            "command-line-flag": "--splineorder",
+            "name": "Splineorder",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SPLINEORDER]",
+            "type": "Number",
+            "id": "splineorder",
+            "description": "An integer (int or long). Order of spline, 2->qadratic spline, 3->cubic spline."
+        },
+        {
+            "command-line-flag": "--ssqlambda",
+            "name": "Ssqlambda",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SSQLAMBDA]",
+            "type": "String",
+            "id": "ssqlambda",
+            "description": "1 or 0. Weight lambda by the current value of the ssd. if used (=1), the effective weight of regularisation term becomes higher for the initial iterations, therefore initial steps are a little smoother than they would without weighting. this reduces the risk of finding a local minimum."
+        },
+        {
+            "command-line-flag": "--subsamp",
+            "name": "Subsamp",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SUBSAMP]",
+            "type": "Number",
+            "id": "subsamp",
+            "description": "An integer (int or long). Sub-sampling scheme."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--warp_res",
+            "name": "Warp res",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[WARP_RES]",
+            "type": "Number",
+            "id": "warp_res",
+            "description": "A float. (approximate) resolution (in mm) of warp basis for the different sub-sampling levels."
+        }
+    ],
+    "name": "TOPUP",
+    "command-line": "nipype_cmd nipype.interfaces.fsl TOPUP [ARGS] [CONFIG] [ENCODING_DIRECTION] [ENCODING_FILE] [ENVIRON] [ESTMOV] [FWHM] [IGNORE_EXCEPTION] [IN_FILE] [INTERP] [MAX_ITER] [MINMET] [NUMPREC] [OUT_BASE] [OUT_CORRECTED] [OUT_FIELD] [OUT_LOGFILE] [OUTPUT_TYPE] [READOUT_TIMES] [REG_LAMBDA] [REGMOD] [REGRID] [SCALE] [SPLINEORDER] [SSQLAMBDA] [SUBSAMP] [TERMINAL_OUTPUT] [WARP_RES] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[OUT_CORRECTED]",
+            "optional": true,
+            "type": "File",
+            "name": "Out corrected",
+            "id": "out_corrected"
+        },
+        {
+            "path-template": "[OUT_FIELD]",
+            "optional": true,
+            "type": "File",
+            "name": "Out field",
+            "id": "out_field"
+        },
+        {
+            "path-template": "[OUT_BASE]_fieldcoef.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Out fieldcoef",
+            "id": "out_fieldcoef"
+        },
+        {
+            "path-template": "[OUT_LOGFILE]",
+            "optional": true,
+            "type": "File",
+            "name": "Out logfile",
+            "id": "out_logfile"
+        },
+        {
+            "path-template": "[OUT_BASE]_movpar.txt",
+            "optional": true,
+            "type": "File",
+            "name": "Out movpar",
+            "id": "out_movpar"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "TOPUP, as implemented in Nipype (module: nipype.interfaces.fsl, interface: TOPUP)."
+}

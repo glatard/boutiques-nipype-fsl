@@ -1,0 +1,227 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--cleanup",
+            "name": "Cleanup",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[CLEANUP]",
+            "type": "Number",
+            "id": "cleanup",
+            "description": "A boolean. Cleanup."
+        },
+        {
+            "command-line-flag": "--dph_file",
+            "name": "Dph file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[DPH_FILE]",
+            "type": "File",
+            "id": "dph_file",
+            "description": "An existing file name. Phase file assumed to be scaled from 0 to 4095."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--epi_file",
+            "name": "Epi file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[EPI_FILE]",
+            "type": "File",
+            "id": "epi_file",
+            "description": "An existing file name. Epi volume to unwarp."
+        },
+        {
+            "command-line-flag": "--epidw",
+            "name": "Epidw",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[EPIDW]",
+            "type": "String",
+            "id": "epidw",
+            "description": "A string. Dewarped epi volume."
+        },
+        {
+            "command-line-flag": "--esp",
+            "name": "Esp",
+            "default-value": 0.58,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ESP]",
+            "type": "Number",
+            "id": "esp",
+            "description": "A float. Epi echo spacing."
+        },
+        {
+            "command-line-flag": "--exf_file",
+            "name": "Exf file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[EXF_FILE]",
+            "type": "File",
+            "id": "exf_file",
+            "description": "An existing file name. Example func volume (or use epi)."
+        },
+        {
+            "command-line-flag": "--exfdw",
+            "name": "Exfdw",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[EXFDW]",
+            "type": "String",
+            "id": "exfdw",
+            "description": "A string. Dewarped example func volume."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--mag_file",
+            "name": "Mag file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[MAG_FILE]",
+            "type": "File",
+            "id": "mag_file",
+            "description": "An existing file name. Magnitude file."
+        },
+        {
+            "command-line-flag": "--nocleanup",
+            "name": "Nocleanup",
+            "default-value": true,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[NOCLEANUP]",
+            "type": "Number",
+            "id": "nocleanup",
+            "description": "A boolean. No cleanup."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--sigma",
+            "name": "Sigma",
+            "default-value": 2,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SIGMA]",
+            "type": "Number",
+            "id": "sigma",
+            "description": "An integer (int or long). 2d spatial gaussing smoothing                        stdev (default = 2mm)."
+        },
+        {
+            "command-line-flag": "--tediff",
+            "name": "Tediff",
+            "default-value": 2.46,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TEDIFF]",
+            "type": "Number",
+            "id": "tediff",
+            "description": "A float. Difference in b0 field map tes."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--tmpdir",
+            "name": "Tmpdir",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TMPDIR]",
+            "type": "String",
+            "id": "tmpdir",
+            "description": "A string. Tmpdir."
+        },
+        {
+            "command-line-flag": "--vsm",
+            "name": "Vsm",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[VSM]",
+            "type": "String",
+            "id": "vsm",
+            "description": "A string. Voxel shift map."
+        }
+    ],
+    "name": "EPIDeWarp",
+    "command-line": "nipype_cmd nipype.interfaces.fsl EPIDeWarp [ARGS] [CLEANUP] [DPH_FILE] [ENVIRON] [EPI_FILE] [EPIDW] [ESP] [EXF_FILE] [EXFDW] [IGNORE_EXCEPTION] [MAG_FILE] [NOCLEANUP] [OUTPUT_TYPE] [SIGMA] [TEDIFF] [TERMINAL_OUTPUT] [TMPDIR] [VSM] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "maskexf.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Exf mask",
+            "id": "exf_mask"
+        },
+        {
+            "path-template": "[EXFDW]",
+            "optional": true,
+            "type": "File",
+            "name": "Exfdw",
+            "id": "exfdw"
+        },
+        {
+            "path-template": "[EPIDW]",
+            "optional": true,
+            "type": "File",
+            "name": "Unwarped file",
+            "id": "unwarped_file"
+        },
+        {
+            "path-template": "[VSM].nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Vsm file",
+            "id": "vsm_file"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "EPIDeWarp, as implemented in Nipype (module: nipype.interfaces.fsl, interface: EPIDeWarp)."
+}

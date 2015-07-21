@@ -1,0 +1,286 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--echospacing",
+            "name": "Echospacing",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ECHOSPACING]",
+            "type": "Number",
+            "id": "echospacing",
+            "description": "A float. Effective epi echo spacing                                 (sometimes called dwell time) - in seconds."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--epi",
+            "name": "Epi",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[EPI]",
+            "type": "File",
+            "id": "epi",
+            "description": "An existing file name. Epi image."
+        },
+        {
+            "command-line-flag": "--fmap",
+            "name": "Fmap",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[FMAP]",
+            "type": "File",
+            "id": "fmap",
+            "description": "An existing file name. Fieldmap image (in rad/s)."
+        },
+        {
+            "command-line-flag": "--fmapmag",
+            "name": "Fmapmag",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[FMAPMAG]",
+            "type": "File",
+            "id": "fmapmag",
+            "description": "An existing file name. Fieldmap magnitude image - wholehead."
+        },
+        {
+            "command-line-flag": "--fmapmagbrain",
+            "name": "Fmapmagbrain",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[FMAPMAGBRAIN]",
+            "type": "File",
+            "id": "fmapmagbrain",
+            "description": "An existing file name. Fieldmap magnitude image - brain extracted."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--no_clean",
+            "name": "No clean",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[NO_CLEAN]",
+            "type": "Number",
+            "id": "no_clean",
+            "description": "A boolean. Do not clean up intermediate files."
+        },
+        {
+            "command-line-flag": "--no_fmapreg",
+            "name": "No fmapreg",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[NO_FMAPREG]",
+            "type": "Number",
+            "id": "no_fmapreg",
+            "description": "A boolean. Do not perform registration of fmap to t1                         (use if fmap already registered)."
+        },
+        {
+            "command-line-flag": "--out_base",
+            "name": "Out base",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_BASE]",
+            "type": "String",
+            "id": "out_base",
+            "description": "A string. Output base name."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--pedir",
+            "name": "Pedir",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[PEDIR]",
+            "type": "String",
+            "id": "pedir",
+            "description": "'x' or 'y' or 'z' or '-x' or '-y' or '-z'. Phase encoding direction, dir = x/y/z/-x/-y/-z."
+        },
+        {
+            "command-line-flag": "--t1_brain",
+            "name": "T1 brain",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[T1_BRAIN]",
+            "type": "File",
+            "id": "t1_brain",
+            "description": "An existing file name. Brain extracted t1 image."
+        },
+        {
+            "command-line-flag": "--t1_head",
+            "name": "T1 head",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[T1_HEAD]",
+            "type": "File",
+            "id": "t1_head",
+            "description": "An existing file name. Wholehead t1 image."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--weight_image",
+            "name": "Weight image",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[WEIGHT_IMAGE]",
+            "type": "File",
+            "id": "weight_image",
+            "description": "An existing file name. Weighting image (in t1 space)."
+        },
+        {
+            "command-line-flag": "--wmseg",
+            "name": "Wmseg",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[WMSEG]",
+            "type": "File",
+            "id": "wmseg",
+            "description": "An existing file name. White matter segmentation of t1 image, has to be named                  like the t1brain and end on _wmseg."
+        }
+    ],
+    "name": "EpiReg",
+    "command-line": "nipype_cmd nipype.interfaces.fsl EpiReg [ARGS] [ECHOSPACING] [ENVIRON] [EPI] [FMAP] [FMAPMAG] [FMAPMAGBRAIN] [IGNORE_EXCEPTION] [NO_CLEAN] [NO_FMAPREG] [OUT_BASE] [OUTPUT_TYPE] [PEDIR] [T1_BRAIN] [T1_HEAD] [TERMINAL_OUTPUT] [WEIGHT_IMAGE] [WMSEG] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[OUT_BASE]_inv.mat",
+            "optional": true,
+            "type": "File",
+            "name": "Epi2str inv",
+            "id": "epi2str_inv"
+        },
+        {
+            "path-template": "[OUT_BASE].mat",
+            "optional": true,
+            "type": "File",
+            "name": "Epi2str mat",
+            "id": "epi2str_mat"
+        },
+        {
+            "path-template": "[OUT_BASE]_fieldmaprads2epi.mat",
+            "optional": true,
+            "type": "File",
+            "name": "Fmap2epi mat",
+            "id": "fmap2epi_mat"
+        },
+        {
+            "path-template": "[OUT_BASE]_fieldmap2str.mat",
+            "optional": true,
+            "type": "File",
+            "name": "Fmap2str mat",
+            "id": "fmap2str_mat"
+        },
+        {
+            "path-template": "[OUT_BASE]_fieldmaprads2epi.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Fmap epi",
+            "id": "fmap_epi"
+        },
+        {
+            "path-template": "[OUT_BASE]_fieldmaprads2str.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Fmap str",
+            "id": "fmap_str"
+        },
+        {
+            "path-template": "[OUT_BASE]_fieldmap2str.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Fmapmag str",
+            "id": "fmapmag_str"
+        },
+        {
+            "path-template": "[OUT_BASE]_warp.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Fullwarp",
+            "id": "fullwarp"
+        },
+        {
+            "path-template": "[OUT_BASE]_1vol.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Out 1vol",
+            "id": "out_1vol"
+        },
+        {
+            "path-template": "[OUT_BASE].nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Out file",
+            "id": "out_file"
+        },
+        {
+            "path-template": "[OUT_BASE]_fieldmaprads2epi_shift.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Shiftmap",
+            "id": "shiftmap"
+        },
+        {
+            "path-template": "[OUT_BASE]_fast_wmedge.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Wmedge",
+            "id": "wmedge"
+        },
+        {
+            "path-template": "[OUT_BASE]_fast_wmseg.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Wmseg",
+            "id": "wmseg"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "EpiReg, as implemented in Nipype (module: nipype.interfaces.fsl, interface: EpiReg)."
+}

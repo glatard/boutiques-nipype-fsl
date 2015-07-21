@@ -1,0 +1,266 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--autocorr_estimate_only",
+            "name": "Autocorr estimate only",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[AUTOCORR_ESTIMATE_ONLY]",
+            "type": "Number",
+            "id": "autocorr_estimate_only",
+            "description": "A boolean. Perform autocorrelation estimation only."
+        },
+        {
+            "command-line-flag": "--autocorr_noestimate",
+            "name": "Autocorr noestimate",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[AUTOCORR_NOESTIMATE]",
+            "type": "Number",
+            "id": "autocorr_noestimate",
+            "description": "A boolean. Do not estimate autocorrs."
+        },
+        {
+            "command-line-flag": "--brightness_threshold",
+            "name": "Brightness threshold",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[BRIGHTNESS_THRESHOLD]",
+            "type": "Number",
+            "id": "brightness_threshold",
+            "description": "An integer >= 0. Susan brightness threshold, otherwise it is estimated."
+        },
+        {
+            "command-line-flag": "--design_file",
+            "name": "Design file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[DESIGN_FILE]",
+            "type": "File",
+            "id": "design_file",
+            "description": "An existing file name. Design matrix file."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--fit_armodel",
+            "name": "Fit armodel",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[FIT_ARMODEL]",
+            "type": "Number",
+            "id": "fit_armodel",
+            "description": "A boolean. Fits autoregressive model - default is to use tukey with m=sqrt(numvols)."
+        },
+        {
+            "command-line-flag": "--full_data",
+            "name": "Full data",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[FULL_DATA]",
+            "type": "Number",
+            "id": "full_data",
+            "description": "A boolean. Output full data."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--in_file",
+            "name": "In file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[IN_FILE]",
+            "type": "File",
+            "id": "in_file",
+            "description": "An existing file name. Input data file."
+        },
+        {
+            "command-line-flag": "--mask_size",
+            "name": "Mask size",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MASK_SIZE]",
+            "type": "Number",
+            "id": "mask_size",
+            "description": "An integer (int or long). Susan mask size."
+        },
+        {
+            "command-line-flag": "--multitaper_product",
+            "name": "Multitaper product",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MULTITAPER_PRODUCT]",
+            "type": "Number",
+            "id": "multitaper_product",
+            "description": "An integer (int or long). Multitapering with slepian tapers and num is the time-bandwidth product."
+        },
+        {
+            "command-line-flag": "--output_pwdata",
+            "name": "Output pwdata",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_PWDATA]",
+            "type": "Number",
+            "id": "output_pwdata",
+            "description": "A boolean. Output prewhitened data and average design matrix."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--results_dir",
+            "name": "Results dir",
+            "default-value": "results",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[RESULTS_DIR]",
+            "type": "String",
+            "id": "results_dir",
+            "description": "A directory name. Directory to store results in."
+        },
+        {
+            "command-line-flag": "--smooth_autocorr",
+            "name": "Smooth autocorr",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SMOOTH_AUTOCORR]",
+            "type": "Number",
+            "id": "smooth_autocorr",
+            "description": "A boolean. Smooth auto corr estimates."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--threshold",
+            "name": "Threshold",
+            "default-value": 0.0,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[THRESHOLD]",
+            "type": "Number",
+            "id": "threshold",
+            "description": "A floating point number >= 0.0. Threshold."
+        },
+        {
+            "command-line-flag": "--tukey_window",
+            "name": "Tukey window",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TUKEY_WINDOW]",
+            "type": "Number",
+            "id": "tukey_window",
+            "description": "An integer (int or long). Tukey window size to estimate autocorr."
+        },
+        {
+            "command-line-flag": "--use_pava",
+            "name": "Use pava",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[USE_PAVA]",
+            "type": "Number",
+            "id": "use_pava",
+            "description": "A boolean. Estimates autocorr using pava."
+        }
+    ],
+    "name": "FILMGLS",
+    "command-line": "nipype_cmd nipype.interfaces.fsl FILMGLS [ARGS] [AUTOCORR_ESTIMATE_ONLY] [AUTOCORR_NOESTIMATE] [BRIGHTNESS_THRESHOLD] [DESIGN_FILE] [ENVIRON] [FIT_ARMODEL] [FULL_DATA] [IGNORE_EXCEPTION] [IN_FILE] [MASK_SIZE] [MULTITAPER_PRODUCT] [OUTPUT_PWDATA] [OUTPUT_TYPE] [RESULTS_DIR] [SMOOTH_AUTOCORR] [TERMINAL_OUTPUT] [THRESHOLD] [TUKEY_WINDOW] [USE_PAVA] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "corrections.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Corrections",
+            "id": "corrections"
+        },
+        {
+            "path-template": "dof",
+            "optional": true,
+            "type": "File",
+            "name": "Dof file",
+            "id": "dof_file"
+        },
+        {
+            "path-template": "logfile",
+            "optional": true,
+            "type": "File",
+            "name": "Logfile",
+            "id": "logfile"
+        },
+        {
+            "path-template": "res4d.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Residual4d",
+            "id": "residual4d"
+        },
+        {
+            "path-template": "[RESULTS_DIR]",
+            "optional": true,
+            "type": "File",
+            "name": "Results dir",
+            "id": "results_dir"
+        },
+        {
+            "path-template": "sigmasquareds.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Sigmasquareds",
+            "id": "sigmasquareds"
+        },
+        {
+            "path-template": "threshac1.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Thresholdac",
+            "id": "thresholdac"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "FILMGLS, as implemented in Nipype (module: nipype.interfaces.fsl, interface: FILMGLS)."
+}

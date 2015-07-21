@@ -1,0 +1,269 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--complex_cartesian",
+            "name": "Complex cartesian",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[COMPLEX_CARTESIAN]",
+            "type": "Number",
+            "id": "complex_cartesian",
+            "description": "A boolean. No description provided."
+        },
+        {
+            "command-line-flag": "--complex_in_file",
+            "name": "Complex in file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[COMPLEX_IN_FILE]",
+            "type": "File",
+            "id": "complex_in_file",
+            "description": "An existing file name. No description provided."
+        },
+        {
+            "command-line-flag": "--complex_in_file2",
+            "name": "Complex in file2",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[COMPLEX_IN_FILE2]",
+            "type": "File",
+            "id": "complex_in_file2",
+            "description": "An existing file name. No description provided."
+        },
+        {
+            "command-line-flag": "--complex_merge",
+            "name": "Complex merge",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[COMPLEX_MERGE]",
+            "type": "Number",
+            "id": "complex_merge",
+            "description": "A boolean. No description provided."
+        },
+        {
+            "command-line-flag": "--complex_out_file",
+            "name": "Complex out file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[COMPLEX_OUT_FILE]",
+            "type": "String",
+            "id": "complex_out_file",
+            "description": "A file name. No description provided."
+        },
+        {
+            "command-line-flag": "--complex_polar",
+            "name": "Complex polar",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[COMPLEX_POLAR]",
+            "type": "Number",
+            "id": "complex_polar",
+            "description": "A boolean. No description provided."
+        },
+        {
+            "command-line-flag": "--complex_split",
+            "name": "Complex split",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[COMPLEX_SPLIT]",
+            "type": "Number",
+            "id": "complex_split",
+            "description": "A boolean. No description provided."
+        },
+        {
+            "command-line-flag": "--end_vol",
+            "name": "End vol",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[END_VOL]",
+            "type": "Number",
+            "id": "end_vol",
+            "description": "An integer (int or long). No description provided."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--imaginary_in_file",
+            "name": "Imaginary in file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IMAGINARY_IN_FILE]",
+            "type": "File",
+            "id": "imaginary_in_file",
+            "description": "An existing file name. No description provided."
+        },
+        {
+            "command-line-flag": "--imaginary_out_file",
+            "name": "Imaginary out file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IMAGINARY_OUT_FILE]",
+            "type": "String",
+            "id": "imaginary_out_file",
+            "description": "A file name. No description provided."
+        },
+        {
+            "command-line-flag": "--magnitude_in_file",
+            "name": "Magnitude in file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MAGNITUDE_IN_FILE]",
+            "type": "File",
+            "id": "magnitude_in_file",
+            "description": "An existing file name. No description provided."
+        },
+        {
+            "command-line-flag": "--magnitude_out_file",
+            "name": "Magnitude out file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MAGNITUDE_OUT_FILE]",
+            "type": "String",
+            "id": "magnitude_out_file",
+            "description": "A file name. No description provided."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--phase_in_file",
+            "name": "Phase in file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[PHASE_IN_FILE]",
+            "type": "File",
+            "id": "phase_in_file",
+            "description": "An existing file name. No description provided."
+        },
+        {
+            "command-line-flag": "--phase_out_file",
+            "name": "Phase out file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[PHASE_OUT_FILE]",
+            "type": "String",
+            "id": "phase_out_file",
+            "description": "A file name. No description provided."
+        },
+        {
+            "command-line-flag": "--real_cartesian",
+            "name": "Real cartesian",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[REAL_CARTESIAN]",
+            "type": "Number",
+            "id": "real_cartesian",
+            "description": "A boolean. No description provided."
+        },
+        {
+            "command-line-flag": "--real_in_file",
+            "name": "Real in file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[REAL_IN_FILE]",
+            "type": "File",
+            "id": "real_in_file",
+            "description": "An existing file name. No description provided."
+        },
+        {
+            "command-line-flag": "--real_out_file",
+            "name": "Real out file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[REAL_OUT_FILE]",
+            "type": "String",
+            "id": "real_out_file",
+            "description": "A file name. No description provided."
+        },
+        {
+            "command-line-flag": "--real_polar",
+            "name": "Real polar",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[REAL_POLAR]",
+            "type": "Number",
+            "id": "real_polar",
+            "description": "A boolean. No description provided."
+        },
+        {
+            "command-line-flag": "--start_vol",
+            "name": "Start vol",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[START_VOL]",
+            "type": "Number",
+            "id": "start_vol",
+            "description": "An integer (int or long). No description provided."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        }
+    ],
+    "name": "Complex",
+    "command-line": "nipype_cmd nipype.interfaces.fsl Complex [ARGS] [COMPLEX_CARTESIAN] [COMPLEX_IN_FILE] [COMPLEX_IN_FILE2] [COMPLEX_MERGE] [COMPLEX_OUT_FILE] [COMPLEX_POLAR] [COMPLEX_SPLIT] [END_VOL] [ENVIRON] [IGNORE_EXCEPTION] [IMAGINARY_IN_FILE] [IMAGINARY_OUT_FILE] [MAGNITUDE_IN_FILE] [MAGNITUDE_OUT_FILE] [OUTPUT_TYPE] [PHASE_IN_FILE] [PHASE_OUT_FILE] [REAL_CARTESIAN] [REAL_IN_FILE] [REAL_OUT_FILE] [REAL_POLAR] [START_VOL] [TERMINAL_OUTPUT] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[COMPLEX_IN_FILE]_mag.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Magnitude out file",
+            "id": "magnitude_out_file"
+        },
+        {
+            "path-template": "[COMPLEX_IN_FILE]_phase.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Phase out file",
+            "id": "phase_out_file"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "Complex, as implemented in Nipype (module: nipype.interfaces.fsl, interface: Complex)."
+}

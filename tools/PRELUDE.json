@@ -1,0 +1,232 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--complex_phase_file",
+            "name": "Complex phase file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[COMPLEX_PHASE_FILE]",
+            "type": "File",
+            "id": "complex_phase_file",
+            "description": "An existing file name. Complex phase input volume."
+        },
+        {
+            "command-line-flag": "--end",
+            "name": "End",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[END]",
+            "type": "Number",
+            "id": "end",
+            "description": "An integer (int or long). Final image number to process (default inf)."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--label_file",
+            "name": "Label file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[LABEL_FILE]",
+            "type": "String",
+            "id": "label_file",
+            "description": "A file name. Saving the area labels output."
+        },
+        {
+            "command-line-flag": "--labelprocess2d",
+            "name": "Labelprocess2d",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[LABELPROCESS2D]",
+            "type": "Number",
+            "id": "labelprocess2d",
+            "description": "A boolean. Does label processing in 2d (slice at a time)."
+        },
+        {
+            "command-line-flag": "--magnitude_file",
+            "name": "Magnitude file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[MAGNITUDE_FILE]",
+            "type": "File",
+            "id": "magnitude_file",
+            "description": "An existing file name. File containing magnitude image."
+        },
+        {
+            "command-line-flag": "--mask_file",
+            "name": "Mask file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MASK_FILE]",
+            "type": "File",
+            "id": "mask_file",
+            "description": "An existing file name. Filename of mask input volume."
+        },
+        {
+            "command-line-flag": "--num_partitions",
+            "name": "Num partitions",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[NUM_PARTITIONS]",
+            "type": "Number",
+            "id": "num_partitions",
+            "description": "An integer (int or long). Number of phase partitions to use."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--phase_file",
+            "name": "Phase file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[PHASE_FILE]",
+            "type": "File",
+            "id": "phase_file",
+            "description": "An existing file name. Raw phase file."
+        },
+        {
+            "command-line-flag": "--process2d",
+            "name": "Process2d",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[PROCESS2D]",
+            "type": "Number",
+            "id": "process2d",
+            "description": "A boolean. Does all processing in 2d (slice at a time)."
+        },
+        {
+            "command-line-flag": "--process3d",
+            "name": "Process3d",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[PROCESS3D]",
+            "type": "Number",
+            "id": "process3d",
+            "description": "A boolean. Forces all processing to be full 3d."
+        },
+        {
+            "command-line-flag": "--rawphase_file",
+            "name": "Rawphase file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[RAWPHASE_FILE]",
+            "type": "String",
+            "id": "rawphase_file",
+            "description": "A file name. Saving the raw phase output."
+        },
+        {
+            "command-line-flag": "--removeramps",
+            "name": "Removeramps",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[REMOVERAMPS]",
+            "type": "Number",
+            "id": "removeramps",
+            "description": "A boolean. Remove phase ramps during unwrapping."
+        },
+        {
+            "command-line-flag": "--savemask_file",
+            "name": "Savemask file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SAVEMASK_FILE]",
+            "type": "String",
+            "id": "savemask_file",
+            "description": "A file name. Saving the mask volume."
+        },
+        {
+            "command-line-flag": "--start",
+            "name": "Start",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[START]",
+            "type": "Number",
+            "id": "start",
+            "description": "An integer (int or long). First image number to process (default 0)."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--threshold",
+            "name": "Threshold",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[THRESHOLD]",
+            "type": "Number",
+            "id": "threshold",
+            "description": "A float. Intensity threshold for masking."
+        },
+        {
+            "command-line-flag": "--unwrapped_phase_file",
+            "name": "Unwrapped phase file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[UNWRAPPED_PHASE_FILE]",
+            "type": "String",
+            "id": "unwrapped_phase_file",
+            "description": "A file name. File containing unwrapepd phase."
+        }
+    ],
+    "name": "PRELUDE",
+    "command-line": "nipype_cmd nipype.interfaces.fsl PRELUDE [ARGS] [COMPLEX_PHASE_FILE] [END] [ENVIRON] [IGNORE_EXCEPTION] [LABEL_FILE] [LABELPROCESS2D] [MAGNITUDE_FILE] [MASK_FILE] [NUM_PARTITIONS] [OUTPUT_TYPE] [PHASE_FILE] [PROCESS2D] [PROCESS3D] [RAWPHASE_FILE] [REMOVERAMPS] [SAVEMASK_FILE] [START] [TERMINAL_OUTPUT] [THRESHOLD] [UNWRAPPED_PHASE_FILE] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[UNWRAPPED_PHASE_FILE]",
+            "optional": true,
+            "type": "File",
+            "name": "Unwrapped phase file",
+            "id": "unwrapped_phase_file"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "PRELUDE, as implemented in Nipype (module: nipype.interfaces.fsl, interface: PRELUDE)."
+}

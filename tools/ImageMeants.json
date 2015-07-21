@@ -1,0 +1,173 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--eig",
+            "name": "Eig",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[EIG]",
+            "type": "Number",
+            "id": "eig",
+            "description": "A boolean. Calculate eigenvariate(s) instead of mean (output will have 0 mean)."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--in_file",
+            "name": "In file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[IN_FILE]",
+            "type": "File",
+            "id": "in_file",
+            "description": "An existing file name. Input file for computing the average timeseries."
+        },
+        {
+            "command-line-flag": "--mask",
+            "name": "Mask",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MASK]",
+            "type": "File",
+            "id": "mask",
+            "description": "An existing file name. Input 3d mask."
+        },
+        {
+            "command-line-flag": "--nobin",
+            "name": "Nobin",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[NOBIN]",
+            "type": "Number",
+            "id": "nobin",
+            "description": "A boolean. Do not binarise the mask for calculation of eigenvariates."
+        },
+        {
+            "command-line-flag": "--order",
+            "name": "Order",
+            "default-value": 1,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ORDER]",
+            "type": "Number",
+            "id": "order",
+            "description": "An integer (int or long). Select number of eigenvariates."
+        },
+        {
+            "command-line-flag": "--out_file",
+            "name": "Out file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_FILE]",
+            "type": "String",
+            "id": "out_file",
+            "description": "A file name. Name of output text matrix."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--show_all",
+            "name": "Show all",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SHOW_ALL]",
+            "type": "Number",
+            "id": "show_all",
+            "description": "A boolean. Show all voxel time series (within mask) instead of averaging."
+        },
+        {
+            "command-line-flag": "--spatial_coord",
+            "name": "Spatial coord",
+            "optional": true,
+            "list": true,
+            "command-line-key": "[SPATIAL_COORD]",
+            "type": "Number",
+            "id": "spatial_coord",
+            "description": "A list of items which are an integer (int or long). <x y z>\trequested spatial coordinate (instead of mask)."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--transpose",
+            "name": "Transpose",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TRANSPOSE]",
+            "type": "Number",
+            "id": "transpose",
+            "description": "A boolean. Output results in transpose format (one row per voxel/mean)."
+        },
+        {
+            "command-line-flag": "--use_mm",
+            "name": "Use mm",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[USE_MM]",
+            "type": "Number",
+            "id": "use_mm",
+            "description": "A boolean. Use mm instead of voxel coordinates (for -c option)."
+        }
+    ],
+    "name": "ImageMeants",
+    "command-line": "nipype_cmd nipype.interfaces.fsl ImageMeants [ARGS] [EIG] [ENVIRON] [IGNORE_EXCEPTION] [IN_FILE] [MASK] [NOBIN] [ORDER] [OUT_FILE] [OUTPUT_TYPE] [SHOW_ALL] [SPATIAL_COORD] [TERMINAL_OUTPUT] [TRANSPOSE] [USE_MM] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[OUT_FILE]",
+            "optional": true,
+            "type": "File",
+            "name": "Out file",
+            "id": "out_file"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "ImageMeants, as implemented in Nipype (module: nipype.interfaces.fsl, interface: ImageMeants)."
+}

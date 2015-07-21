@@ -1,0 +1,142 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--coord_mm",
+            "name": "Coord mm",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[COORD_MM]",
+            "type": "Number",
+            "id": "coord_mm",
+            "description": "A boolean. All coordinates in mm."
+        },
+        {
+            "command-line-flag": "--coord_vox",
+            "name": "Coord vox",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[COORD_VOX]",
+            "type": "Number",
+            "id": "coord_vox",
+            "description": "A boolean. All coordinates in voxels - default."
+        },
+        {
+            "command-line-flag": "--dest_file",
+            "name": "Dest file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[DEST_FILE]",
+            "type": "File",
+            "id": "dest_file",
+            "description": "An existing file name. Filename of destination image."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--in_coords",
+            "name": "In coords",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[IN_COORDS]",
+            "type": "File",
+            "id": "in_coords",
+            "description": "An existing file name. Filename of file containing coordinates."
+        },
+        {
+            "command-line-flag": "--out_file",
+            "name": "Out file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_FILE]",
+            "type": "String",
+            "id": "out_file",
+            "description": "A file name. Output file name."
+        },
+        {
+            "command-line-flag": "--src_file",
+            "name": "Src file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[SRC_FILE]",
+            "type": "File",
+            "id": "src_file",
+            "description": "An existing file name. Filename of source image."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--warp_file",
+            "name": "Warp file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[WARP_FILE]",
+            "type": "File",
+            "id": "warp_file",
+            "description": "An existing file name. Filename of warpfield (e.g. intermediate2dest_warp.nii.gz)."
+        },
+        {
+            "command-line-flag": "--xfm_file",
+            "name": "Xfm file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[XFM_FILE]",
+            "type": "File",
+            "id": "xfm_file",
+            "description": "An existing file name. Filename of affine transform (e.g. source2dest.mat)."
+        }
+    ],
+    "name": "WarpPoints",
+    "command-line": "nipype_cmd nipype.interfaces.fsl WarpPoints [ARGS] [COORD_MM] [COORD_VOX] [DEST_FILE] [ENVIRON] [IGNORE_EXCEPTION] [IN_COORDS] [OUT_FILE] [SRC_FILE] [TERMINAL_OUTPUT] [WARP_FILE] [XFM_FILE] ",
+    "tool-version": null,
+    "outputs": [
+        {
+            "path-template": "[OUT_FILE]",
+            "optional": true,
+            "type": "File",
+            "name": "Out file",
+            "id": "out_file"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "WarpPoints, as implemented in Nipype (module: nipype.interfaces.fsl, interface: WarpPoints)."
+}

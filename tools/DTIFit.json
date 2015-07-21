@@ -1,0 +1,303 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--base_name",
+            "name": "Base name",
+            "default-value": "dtifit_",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[BASE_NAME]",
+            "type": "String",
+            "id": "base_name",
+            "description": "A string. Base_name that all output files will start with."
+        },
+        {
+            "command-line-flag": "--bvals",
+            "name": "Bvals",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[BVALS]",
+            "type": "File",
+            "id": "bvals",
+            "description": "An existing file name. B values file."
+        },
+        {
+            "command-line-flag": "--bvecs",
+            "name": "Bvecs",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[BVECS]",
+            "type": "File",
+            "id": "bvecs",
+            "description": "An existing file name. B vectors file."
+        },
+        {
+            "command-line-flag": "--cni",
+            "name": "Cni",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[CNI]",
+            "type": "File",
+            "id": "cni",
+            "description": "An existing file name. Input counfound regressors."
+        },
+        {
+            "command-line-flag": "--dwi",
+            "name": "Dwi",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[DWI]",
+            "type": "File",
+            "id": "dwi",
+            "description": "An existing file name. Diffusion weighted image data file."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--gradnonlin",
+            "name": "Gradnonlin",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[GRADNONLIN]",
+            "type": "File",
+            "id": "gradnonlin",
+            "description": "An existing file name. Gradient non linearities."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--little_bit",
+            "name": "Little bit",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[LITTLE_BIT]",
+            "type": "Number",
+            "id": "little_bit",
+            "description": "A boolean. Only process small area of brain."
+        },
+        {
+            "command-line-flag": "--mask",
+            "name": "Mask",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[MASK]",
+            "type": "File",
+            "id": "mask",
+            "description": "An existing file name. Bet binary mask file."
+        },
+        {
+            "command-line-flag": "--max_x",
+            "name": "Max x",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MAX_X]",
+            "type": "Number",
+            "id": "max_x",
+            "description": "An integer (int or long). Max x."
+        },
+        {
+            "command-line-flag": "--max_y",
+            "name": "Max y",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MAX_Y]",
+            "type": "Number",
+            "id": "max_y",
+            "description": "An integer (int or long). Max y."
+        },
+        {
+            "command-line-flag": "--max_z",
+            "name": "Max z",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MAX_Z]",
+            "type": "Number",
+            "id": "max_z",
+            "description": "An integer (int or long). Max z."
+        },
+        {
+            "command-line-flag": "--min_x",
+            "name": "Min x",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MIN_X]",
+            "type": "Number",
+            "id": "min_x",
+            "description": "An integer (int or long). Min x."
+        },
+        {
+            "command-line-flag": "--min_y",
+            "name": "Min y",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MIN_Y]",
+            "type": "Number",
+            "id": "min_y",
+            "description": "An integer (int or long). Min y."
+        },
+        {
+            "command-line-flag": "--min_z",
+            "name": "Min z",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MIN_Z]",
+            "type": "Number",
+            "id": "min_z",
+            "description": "An integer (int or long). Min z."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--save_tensor",
+            "name": "Save tensor",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SAVE_TENSOR]",
+            "type": "Number",
+            "id": "save_tensor",
+            "description": "A boolean. Save the elements of the tensor."
+        },
+        {
+            "command-line-flag": "--sse",
+            "name": "Sse",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SSE]",
+            "type": "Number",
+            "id": "sse",
+            "description": "A boolean. Output sum of squared errors."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        }
+    ],
+    "name": "DTIFit",
+    "command-line": "nipype_cmd nipype.interfaces.fsl DTIFit [ARGS] [BASE_NAME] [BVALS] [BVECS] [CNI] [DWI] [ENVIRON] [GRADNONLIN] [IGNORE_EXCEPTION] [LITTLE_BIT] [MASK] [MAX_X] [MAX_Y] [MAX_Z] [MIN_X] [MIN_Y] [MIN_Z] [OUTPUT_TYPE] [SAVE_TENSOR] [SSE] [TERMINAL_OUTPUT] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[BASE_NAME]_FA.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Fa",
+            "id": "FA"
+        },
+        {
+            "path-template": "[BASE_NAME]_L1.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "L1",
+            "id": "L1"
+        },
+        {
+            "path-template": "[BASE_NAME]_L2.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "L2",
+            "id": "L2"
+        },
+        {
+            "path-template": "[BASE_NAME]_L3.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "L3",
+            "id": "L3"
+        },
+        {
+            "path-template": "[BASE_NAME]_MD.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Md",
+            "id": "MD"
+        },
+        {
+            "path-template": "[BASE_NAME]_MO.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Mo",
+            "id": "MO"
+        },
+        {
+            "path-template": "[BASE_NAME]_S0.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "S0",
+            "id": "S0"
+        },
+        {
+            "path-template": "[BASE_NAME]_V1.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "V1",
+            "id": "V1"
+        },
+        {
+            "path-template": "[BASE_NAME]_V2.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "V2",
+            "id": "V2"
+        },
+        {
+            "path-template": "[BASE_NAME]_V3.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "V3",
+            "id": "V3"
+        },
+        {
+            "path-template": "[BASE_NAME]_tensor.nii.gz",
+            "optional": true,
+            "type": "File",
+            "name": "Tensor",
+            "id": "tensor"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "DTIFit, as implemented in Nipype (module: nipype.interfaces.fsl, interface: DTIFit)."
+}

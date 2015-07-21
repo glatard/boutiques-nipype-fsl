@@ -1,0 +1,202 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--abswarp",
+            "name": "Abswarp",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ABSWARP]",
+            "type": "Number",
+            "id": "abswarp",
+            "description": "A boolean. Treat warp field as absolute: x' = w(x)."
+        },
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--datatype",
+            "name": "Datatype",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[DATATYPE]",
+            "type": "String",
+            "id": "datatype",
+            "description": "'char' or 'short' or 'int' or 'float' or 'double'. Force output data type [char short int float double]."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--field_file",
+            "name": "Field file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[FIELD_FILE]",
+            "type": "File",
+            "id": "field_file",
+            "description": "An existing file name. File containing warp field."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--in_file",
+            "name": "In file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[IN_FILE]",
+            "type": "File",
+            "id": "in_file",
+            "description": "An existing file name. Image to be warped."
+        },
+        {
+            "command-line-flag": "--interp",
+            "name": "Interp",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[INTERP]",
+            "type": "String",
+            "id": "interp",
+            "description": "'nn' or 'trilinear' or 'sinc' or 'spline'. Interpolation method."
+        },
+        {
+            "command-line-flag": "--mask_file",
+            "name": "Mask file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MASK_FILE]",
+            "type": "File",
+            "id": "mask_file",
+            "description": "An existing file name. Filename for mask image (in reference space)."
+        },
+        {
+            "command-line-flag": "--out_file",
+            "name": "Out file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_FILE]",
+            "type": "String",
+            "id": "out_file",
+            "description": "A file name. Output filename."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--postmat",
+            "name": "Postmat",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[POSTMAT]",
+            "type": "File",
+            "id": "postmat",
+            "description": "An existing file name. Filename for post-transform (affine matrix)."
+        },
+        {
+            "command-line-flag": "--premat",
+            "name": "Premat",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[PREMAT]",
+            "type": "File",
+            "id": "premat",
+            "description": "An existing file name. Filename for pre-transform (affine matrix)."
+        },
+        {
+            "command-line-flag": "--ref_file",
+            "name": "Ref file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[REF_FILE]",
+            "type": "File",
+            "id": "ref_file",
+            "description": "An existing file name. Reference image."
+        },
+        {
+            "command-line-flag": "--relwarp",
+            "name": "Relwarp",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[RELWARP]",
+            "type": "Number",
+            "id": "relwarp",
+            "description": "A boolean. Treat warp field as relative: x' = x + w(x)."
+        },
+        {
+            "command-line-flag": "--superlevel",
+            "name": "Superlevel",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SUPERLEVEL]",
+            "type": "Number",
+            "id": "superlevel",
+            "description": "'a' or an integer (int or long). Level of intermediary supersampling, a for 'automatic' or integer level. default = 2."
+        },
+        {
+            "command-line-flag": "--supersample",
+            "name": "Supersample",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SUPERSAMPLE]",
+            "type": "Number",
+            "id": "supersample",
+            "description": "A boolean. Intermediary supersampling of output, default is off."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        }
+    ],
+    "name": "ApplyWarp",
+    "command-line": "nipype_cmd nipype.interfaces.fsl ApplyWarp [ABSWARP] [ARGS] [DATATYPE] [ENVIRON] [FIELD_FILE] [IGNORE_EXCEPTION] [IN_FILE] [INTERP] [MASK_FILE] [OUT_FILE] [OUTPUT_TYPE] [POSTMAT] [PREMAT] [REF_FILE] [RELWARP] [SUPERLEVEL] [SUPERSAMPLE] [TERMINAL_OUTPUT] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[OUT_FILE]",
+            "optional": true,
+            "type": "File",
+            "name": "Out file",
+            "id": "out_file"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "ApplyWarp, as implemented in Nipype (module: nipype.interfaces.fsl, interface: ApplyWarp)."
+}

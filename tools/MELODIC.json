@@ -1,0 +1,519 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--ICs",
+            "name": "Ics",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ICS]",
+            "type": "File",
+            "id": "ICs",
+            "description": "An existing file name. Filename of the ic components file for mixture modelling."
+        },
+        {
+            "command-line-flag": "--approach",
+            "name": "Approach",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[APPROACH]",
+            "type": "String",
+            "id": "approach",
+            "description": "A string. Approach for decomposition, 2d: defl, symm (default),  3d: tica (default), concat."
+        },
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--bg_image",
+            "name": "Bg image",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[BG_IMAGE]",
+            "type": "File",
+            "id": "bg_image",
+            "description": "An existing file name. Specify background image for report (default: mean image)."
+        },
+        {
+            "command-line-flag": "--bg_threshold",
+            "name": "Bg threshold",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[BG_THRESHOLD]",
+            "type": "Number",
+            "id": "bg_threshold",
+            "description": "A float. Brain/non-brain threshold used to mask non-brain voxels, as a percentage (only if --nobet selected)."
+        },
+        {
+            "command-line-flag": "--cov_weight",
+            "name": "Cov weight",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[COV_WEIGHT]",
+            "type": "Number",
+            "id": "cov_weight",
+            "description": "A float. Voxel-wise weights for the covariance matrix (e.g. segmentation information)."
+        },
+        {
+            "command-line-flag": "--dim",
+            "name": "Dim",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[DIM]",
+            "type": "Number",
+            "id": "dim",
+            "description": "An integer (int or long). Dimensionality reduction into #num dimensions(default: automatic estimation)."
+        },
+        {
+            "command-line-flag": "--dim_est",
+            "name": "Dim est",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[DIM_EST]",
+            "type": "String",
+            "id": "dim_est",
+            "description": "A string. Use specific dim. estimation technique: lap, bic, mdl, aic, mean (default: lap)."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--epsilon",
+            "name": "Epsilon",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[EPSILON]",
+            "type": "Number",
+            "id": "epsilon",
+            "description": "A float. Minimum error change."
+        },
+        {
+            "command-line-flag": "--epsilonS",
+            "name": "Epsilons",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[EPSILONS]",
+            "type": "Number",
+            "id": "epsilonS",
+            "description": "A float. Minimum error change for rank-1 approximation in tica."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--in_files",
+            "name": "In files",
+            "optional": false,
+            "list": true,
+            "command-line-key": "[IN_FILES]",
+            "type": "File",
+            "id": "in_files",
+            "description": "A list of items which are an existing file name. Input file names (either single file name or a list)."
+        },
+        {
+            "command-line-flag": "--log_power",
+            "name": "Log power",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[LOG_POWER]",
+            "type": "Number",
+            "id": "log_power",
+            "description": "A boolean. Calculate log of power for frequency spectrum."
+        },
+        {
+            "command-line-flag": "--mask",
+            "name": "Mask",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MASK]",
+            "type": "File",
+            "id": "mask",
+            "description": "An existing file name. File name of mask for thresholding."
+        },
+        {
+            "command-line-flag": "--max_restart",
+            "name": "Max restart",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MAX_RESTART]",
+            "type": "Number",
+            "id": "max_restart",
+            "description": "An integer (int or long). Maximum number of restarts."
+        },
+        {
+            "command-line-flag": "--maxit",
+            "name": "Maxit",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MAXIT]",
+            "type": "Number",
+            "id": "maxit",
+            "description": "An integer (int or long). Maximum number of iterations before restart."
+        },
+        {
+            "command-line-flag": "--mix",
+            "name": "Mix",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MIX]",
+            "type": "File",
+            "id": "mix",
+            "description": "An existing file name. Mixing matrix for mixture modelling / filtering."
+        },
+        {
+            "command-line-flag": "--mm_thresh",
+            "name": "Mm thresh",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MM_THRESH]",
+            "type": "Number",
+            "id": "mm_thresh",
+            "description": "A float. Threshold for mixture model based inference."
+        },
+        {
+            "command-line-flag": "--no_bet",
+            "name": "No bet",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[NO_BET]",
+            "type": "Number",
+            "id": "no_bet",
+            "description": "A boolean. Switch off bet."
+        },
+        {
+            "command-line-flag": "--no_mask",
+            "name": "No mask",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[NO_MASK]",
+            "type": "Number",
+            "id": "no_mask",
+            "description": "A boolean. Switch off masking."
+        },
+        {
+            "command-line-flag": "--no_mm",
+            "name": "No mm",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[NO_MM]",
+            "type": "Number",
+            "id": "no_mm",
+            "description": "A boolean. Switch off mixture modelling on ic maps."
+        },
+        {
+            "command-line-flag": "--non_linearity",
+            "name": "Non linearity",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[NON_LINEARITY]",
+            "type": "String",
+            "id": "non_linearity",
+            "description": "A string. Nonlinearity: gauss, tanh, pow3, pow4."
+        },
+        {
+            "command-line-flag": "--num_ICs",
+            "name": "Num ics",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[NUM_ICS]",
+            "type": "Number",
+            "id": "num_ICs",
+            "description": "An integer (int or long). Number of ic's to extract (for deflation approach)."
+        },
+        {
+            "command-line-flag": "--out_all",
+            "name": "Out all",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_ALL]",
+            "type": "Number",
+            "id": "out_all",
+            "description": "A boolean. Output everything."
+        },
+        {
+            "command-line-flag": "--out_dir",
+            "name": "Out dir",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_DIR]",
+            "type": "String",
+            "id": "out_dir",
+            "description": "A directory name. Output directory name."
+        },
+        {
+            "command-line-flag": "--out_mean",
+            "name": "Out mean",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_MEAN]",
+            "type": "Number",
+            "id": "out_mean",
+            "description": "A boolean. Output mean volume."
+        },
+        {
+            "command-line-flag": "--out_orig",
+            "name": "Out orig",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_ORIG]",
+            "type": "Number",
+            "id": "out_orig",
+            "description": "A boolean. Output the original ics."
+        },
+        {
+            "command-line-flag": "--out_pca",
+            "name": "Out pca",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_PCA]",
+            "type": "Number",
+            "id": "out_pca",
+            "description": "A boolean. Output pca results."
+        },
+        {
+            "command-line-flag": "--out_stats",
+            "name": "Out stats",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_STATS]",
+            "type": "Number",
+            "id": "out_stats",
+            "description": "A boolean. Output thresholded maps and probability maps."
+        },
+        {
+            "command-line-flag": "--out_unmix",
+            "name": "Out unmix",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_UNMIX]",
+            "type": "Number",
+            "id": "out_unmix",
+            "description": "A boolean. Output unmixing matrix."
+        },
+        {
+            "command-line-flag": "--out_white",
+            "name": "Out white",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_WHITE]",
+            "type": "Number",
+            "id": "out_white",
+            "description": "A boolean. Output whitening/dewhitening matrices."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--pbsc",
+            "name": "Pbsc",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[PBSC]",
+            "type": "Number",
+            "id": "pbsc",
+            "description": "A boolean. Switch off conversion to percent bold signal change."
+        },
+        {
+            "command-line-flag": "--rem_cmp",
+            "name": "Rem cmp",
+            "optional": true,
+            "list": true,
+            "command-line-key": "[REM_CMP]",
+            "type": "Number",
+            "id": "rem_cmp",
+            "description": "A list of items which are an integer (int or long). Component numbers to remove."
+        },
+        {
+            "command-line-flag": "--remove_deriv",
+            "name": "Remove deriv",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[REMOVE_DERIV]",
+            "type": "Number",
+            "id": "remove_deriv",
+            "description": "A boolean. Removes every second entry in paradigm file (ev derivatives)."
+        },
+        {
+            "command-line-flag": "--report",
+            "name": "Report",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[REPORT]",
+            "type": "Number",
+            "id": "report",
+            "description": "A boolean. Generate melodic web report."
+        },
+        {
+            "command-line-flag": "--report_maps",
+            "name": "Report maps",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[REPORT_MAPS]",
+            "type": "String",
+            "id": "report_maps",
+            "description": "A string. Control string for spatial map images (see slicer)."
+        },
+        {
+            "command-line-flag": "--s_con",
+            "name": "S con",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[S_CON]",
+            "type": "File",
+            "id": "s_con",
+            "description": "An existing file name. T-contrast matrix across subject-domain."
+        },
+        {
+            "command-line-flag": "--s_des",
+            "name": "S des",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[S_DES]",
+            "type": "File",
+            "id": "s_des",
+            "description": "An existing file name. Design matrix across subject-domain."
+        },
+        {
+            "command-line-flag": "--sep_vn",
+            "name": "Sep vn",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SEP_VN]",
+            "type": "Number",
+            "id": "sep_vn",
+            "description": "A boolean. Switch off joined variance normalization."
+        },
+        {
+            "command-line-flag": "--sep_whiten",
+            "name": "Sep whiten",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SEP_WHITEN]",
+            "type": "Number",
+            "id": "sep_whiten",
+            "description": "A boolean. Switch on separate whitening."
+        },
+        {
+            "command-line-flag": "--smode",
+            "name": "Smode",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[SMODE]",
+            "type": "File",
+            "id": "smode",
+            "description": "An existing file name. Matrix of session modes for report generation."
+        },
+        {
+            "command-line-flag": "--t_con",
+            "name": "T con",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[T_CON]",
+            "type": "File",
+            "id": "t_con",
+            "description": "An existing file name. T-contrast matrix across time-domain."
+        },
+        {
+            "command-line-flag": "--t_des",
+            "name": "T des",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[T_DES]",
+            "type": "File",
+            "id": "t_des",
+            "description": "An existing file name. Design matrix across time-domain."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--tr_sec",
+            "name": "Tr sec",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TR_SEC]",
+            "type": "Number",
+            "id": "tr_sec",
+            "description": "A float. Tr in seconds."
+        },
+        {
+            "command-line-flag": "--update_mask",
+            "name": "Update mask",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[UPDATE_MASK]",
+            "type": "Number",
+            "id": "update_mask",
+            "description": "A boolean. Switch off mask updating."
+        },
+        {
+            "command-line-flag": "--var_norm",
+            "name": "Var norm",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[VAR_NORM]",
+            "type": "Number",
+            "id": "var_norm",
+            "description": "A boolean. Switch off variance normalization."
+        }
+    ],
+    "name": "MELODIC",
+    "command-line": "nipype_cmd nipype.interfaces.fsl MELODIC [ICS] [APPROACH] [ARGS] [BG_IMAGE] [BG_THRESHOLD] [COV_WEIGHT] [DIM] [DIM_EST] [ENVIRON] [EPSILON] [EPSILONS] [IGNORE_EXCEPTION] [IN_FILES] [LOG_POWER] [MASK] [MAX_RESTART] [MAXIT] [MIX] [MM_THRESH] [NO_BET] [NO_MASK] [NO_MM] [NON_LINEARITY] [NUM_ICS] [OUT_ALL] [OUT_DIR] [OUT_MEAN] [OUT_ORIG] [OUT_PCA] [OUT_STATS] [OUT_UNMIX] [OUT_WHITE] [OUTPUT_TYPE] [PBSC] [REM_CMP] [REMOVE_DERIV] [REPORT] [REPORT_MAPS] [S_CON] [S_DES] [SEP_VN] [SEP_WHITEN] [SMODE] [T_CON] [T_DES] [TERMINAL_OUTPUT] [TR_SEC] [UPDATE_MASK] [VAR_NORM] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[OUT_DIR]",
+            "optional": true,
+            "type": "File",
+            "name": "Out dir",
+            "id": "out_dir"
+        },
+        {
+            "path-template": "report",
+            "optional": true,
+            "type": "File",
+            "name": "Report dir",
+            "id": "report_dir"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "MELODIC, as implemented in Nipype (module: nipype.interfaces.fsl, interface: MELODIC)."
+}

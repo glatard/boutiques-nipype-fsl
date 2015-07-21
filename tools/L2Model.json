@@ -1,0 +1,55 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--num_copes",
+            "name": "Num copes",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[NUM_COPES]",
+            "type": "Number",
+            "id": "num_copes",
+            "description": "An integer >= 1. Number of copes to be combined."
+        }
+    ],
+    "name": "L2Model",
+    "command-line": "nipype_cmd nipype.interfaces.fsl L2Model [IGNORE_EXCEPTION] [NUM_COPES] ",
+    "tool-version": null,
+    "outputs": [
+        {
+            "path-template": "design.con",
+            "optional": true,
+            "type": "File",
+            "name": "Design con",
+            "id": "design_con"
+        },
+        {
+            "path-template": "design.grp",
+            "optional": true,
+            "type": "File",
+            "name": "Design grp",
+            "id": "design_grp"
+        },
+        {
+            "path-template": "design.mat",
+            "optional": true,
+            "type": "File",
+            "name": "Design mat",
+            "id": "design_mat"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "L2Model, as implemented in Nipype (module: nipype.interfaces.fsl, interface: L2Model)."
+}

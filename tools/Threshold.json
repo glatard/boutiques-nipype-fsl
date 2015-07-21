@@ -1,0 +1,163 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--direction",
+            "name": "Direction",
+            "default-value": "below",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[DIRECTION]",
+            "type": "String",
+            "id": "direction",
+            "description": "'below' or 'above'. Zero-out either below or above thresh value."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--in_file",
+            "name": "In file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[IN_FILE]",
+            "type": "File",
+            "id": "in_file",
+            "description": "An existing file name. Image to operate on."
+        },
+        {
+            "command-line-flag": "--internal_datatype",
+            "name": "Internal datatype",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[INTERNAL_DATATYPE]",
+            "type": "String",
+            "id": "internal_datatype",
+            "description": "'float' or 'char' or 'int' or 'short' or 'double' or 'input'. Datatype to use for calculations (default is float)."
+        },
+        {
+            "command-line-flag": "--nan2zeros",
+            "name": "Nan2zeros",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[NAN2ZEROS]",
+            "type": "Number",
+            "id": "nan2zeros",
+            "description": "A boolean. Change nans to zeros before doing anything."
+        },
+        {
+            "command-line-flag": "--out_file",
+            "name": "Out file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_FILE]",
+            "type": "String",
+            "id": "out_file",
+            "description": "A file name. Image to write."
+        },
+        {
+            "command-line-flag": "--output_datatype",
+            "name": "Output datatype",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_DATATYPE]",
+            "type": "String",
+            "id": "output_datatype",
+            "description": "'float' or 'char' or 'int' or 'short' or 'double' or 'input'. Datatype to use for output (default uses input type)."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--thresh",
+            "name": "Thresh",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[THRESH]",
+            "type": "Number",
+            "id": "thresh",
+            "description": "A float. Threshold value."
+        },
+        {
+            "command-line-flag": "--use_nonzero_voxels",
+            "name": "Use nonzero voxels",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[USE_NONZERO_VOXELS]",
+            "type": "Number",
+            "id": "use_nonzero_voxels",
+            "description": "A boolean. Use nonzero voxels to caluclate robust range."
+        },
+        {
+            "command-line-flag": "--use_robust_range",
+            "name": "Use robust range",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[USE_ROBUST_RANGE]",
+            "type": "Number",
+            "id": "use_robust_range",
+            "description": "A boolean. Inteperet thresh as percentage (0-100) of robust range."
+        }
+    ],
+    "name": "Threshold",
+    "command-line": "nipype_cmd nipype.interfaces.fsl Threshold [ARGS] [DIRECTION] [ENVIRON] [IGNORE_EXCEPTION] [IN_FILE] [INTERNAL_DATATYPE] [NAN2ZEROS] [OUT_FILE] [OUTPUT_DATATYPE] [OUTPUT_TYPE] [TERMINAL_OUTPUT] [THRESH] [USE_NONZERO_VOXELS] [USE_ROBUST_RANGE] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[OUT_FILE]",
+            "optional": true,
+            "type": "File",
+            "name": "Out file",
+            "id": "out_file"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "Threshold, as implemented in Nipype (module: nipype.interfaces.fsl, interface: Threshold)."
+}

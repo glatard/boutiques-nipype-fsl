@@ -1,0 +1,132 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--concat_xfm",
+            "name": "Concat xfm",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[CONCAT_XFM]",
+            "type": "Number",
+            "id": "concat_xfm",
+            "description": "A boolean. Write joint transformation of two input matrices."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--fix_scale_skew",
+            "name": "Fix scale skew",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[FIX_SCALE_SKEW]",
+            "type": "Number",
+            "id": "fix_scale_skew",
+            "description": "A boolean. Use secondary matrix to fix scale and skew."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--in_file",
+            "name": "In file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[IN_FILE]",
+            "type": "File",
+            "id": "in_file",
+            "description": "An existing file name. Input transformation matrix."
+        },
+        {
+            "command-line-flag": "--in_file2",
+            "name": "In file2",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IN_FILE2]",
+            "type": "File",
+            "id": "in_file2",
+            "description": "An existing file name. Second input matrix (for use with fix_scale_skew or concat_xfm."
+        },
+        {
+            "command-line-flag": "--invert_xfm",
+            "name": "Invert xfm",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[INVERT_XFM]",
+            "type": "Number",
+            "id": "invert_xfm",
+            "description": "A boolean. Invert input transformation."
+        },
+        {
+            "command-line-flag": "--out_file",
+            "name": "Out file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUT_FILE]",
+            "type": "String",
+            "id": "out_file",
+            "description": "A file name. Final transformation matrix."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        }
+    ],
+    "name": "ConvertXFM",
+    "command-line": "nipype_cmd nipype.interfaces.fsl ConvertXFM [ARGS] [CONCAT_XFM] [ENVIRON] [FIX_SCALE_SKEW] [IGNORE_EXCEPTION] [IN_FILE] [IN_FILE2] [INVERT_XFM] [OUT_FILE] [OUTPUT_TYPE] [TERMINAL_OUTPUT] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[OUT_FILE]",
+            "optional": true,
+            "type": "File",
+            "name": "Out file",
+            "id": "out_file"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "ConvertXFM, as implemented in Nipype (module: nipype.interfaces.fsl, interface: ConvertXFM)."
+}

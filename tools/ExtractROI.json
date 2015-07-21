@@ -1,0 +1,182 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--crop_list",
+            "name": "Crop list",
+            "optional": true,
+            "list": true,
+            "command-line-key": "[CROP_LIST]",
+            "type": "Number",
+            "id": "crop_list",
+            "description": "A list of items which are a tuple of the form: (an integer (int or long), an integer (int or long)). List of two tuples specifying crop options."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--in_file",
+            "name": "In file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[IN_FILE]",
+            "type": "File",
+            "id": "in_file",
+            "description": "An existing file name. Input file."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--roi_file",
+            "name": "Roi file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ROI_FILE]",
+            "type": "String",
+            "id": "roi_file",
+            "description": "A file name. Output file."
+        },
+        {
+            "command-line-flag": "--t_min",
+            "name": "T min",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[T_MIN]",
+            "type": "Number",
+            "id": "t_min",
+            "description": "An integer (int or long). No description provided."
+        },
+        {
+            "command-line-flag": "--t_size",
+            "name": "T size",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[T_SIZE]",
+            "type": "Number",
+            "id": "t_size",
+            "description": "An integer (int or long). No description provided."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        },
+        {
+            "command-line-flag": "--x_min",
+            "name": "X min",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[X_MIN]",
+            "type": "Number",
+            "id": "x_min",
+            "description": "An integer (int or long). No description provided."
+        },
+        {
+            "command-line-flag": "--x_size",
+            "name": "X size",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[X_SIZE]",
+            "type": "Number",
+            "id": "x_size",
+            "description": "An integer (int or long). No description provided."
+        },
+        {
+            "command-line-flag": "--y_min",
+            "name": "Y min",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[Y_MIN]",
+            "type": "Number",
+            "id": "y_min",
+            "description": "An integer (int or long). No description provided."
+        },
+        {
+            "command-line-flag": "--y_size",
+            "name": "Y size",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[Y_SIZE]",
+            "type": "Number",
+            "id": "y_size",
+            "description": "An integer (int or long). No description provided."
+        },
+        {
+            "command-line-flag": "--z_min",
+            "name": "Z min",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[Z_MIN]",
+            "type": "Number",
+            "id": "z_min",
+            "description": "An integer (int or long). No description provided."
+        },
+        {
+            "command-line-flag": "--z_size",
+            "name": "Z size",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[Z_SIZE]",
+            "type": "Number",
+            "id": "z_size",
+            "description": "An integer (int or long). No description provided."
+        }
+    ],
+    "name": "ExtractROI",
+    "command-line": "nipype_cmd nipype.interfaces.fsl ExtractROI [ARGS] [CROP_LIST] [ENVIRON] [IGNORE_EXCEPTION] [IN_FILE] [OUTPUT_TYPE] [ROI_FILE] [T_MIN] [T_SIZE] [TERMINAL_OUTPUT] [X_MIN] [X_SIZE] [Y_MIN] [Y_SIZE] [Z_MIN] [Z_SIZE] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[ROI_FILE]",
+            "optional": true,
+            "type": "File",
+            "name": "Roi file",
+            "id": "roi_file"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "ExtractROI, as implemented in Nipype (module: nipype.interfaces.fsl, interface: ExtractROI)."
+}

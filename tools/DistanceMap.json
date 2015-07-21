@@ -1,0 +1,129 @@
+{
+    "inputs": [
+        {
+            "command-line-flag": "--args",
+            "name": "Args",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ARGS]",
+            "type": "String",
+            "id": "args",
+            "description": "A string. Additional parameters to the command."
+        },
+        {
+            "command-line-flag": "--distance_map",
+            "name": "Distance map",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[DISTANCE_MAP]",
+            "type": "String",
+            "id": "distance_map",
+            "description": "A file name. Distance map to write."
+        },
+        {
+            "command-line-flag": "--environ",
+            "name": "Environ",
+            "default-value": {},
+            "optional": true,
+            "list": false,
+            "command-line-key": "[ENVIRON]",
+            "type": "String",
+            "id": "environ",
+            "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
+        },
+        {
+            "command-line-flag": "--ignore_exception",
+            "name": "Ignore exception",
+            "default-value": false,
+            "optional": true,
+            "list": false,
+            "command-line-key": "[IGNORE_EXCEPTION]",
+            "type": "Number",
+            "id": "ignore_exception",
+            "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
+        },
+        {
+            "command-line-flag": "--in_file",
+            "name": "In file",
+            "optional": false,
+            "list": false,
+            "command-line-key": "[IN_FILE]",
+            "type": "File",
+            "id": "in_file",
+            "description": "An existing file name. Image to calculate distance values for."
+        },
+        {
+            "command-line-flag": "--invert_input",
+            "name": "Invert input",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[INVERT_INPUT]",
+            "type": "Number",
+            "id": "invert_input",
+            "description": "A boolean. Invert input image."
+        },
+        {
+            "command-line-flag": "--local_max_file",
+            "name": "Local max file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[LOCAL_MAX_FILE]",
+            "type": "Number",
+            "id": "local_max_file",
+            "description": "A boolean or a file name. Write an image of the local maxima."
+        },
+        {
+            "command-line-flag": "--mask_file",
+            "name": "Mask file",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[MASK_FILE]",
+            "type": "File",
+            "id": "mask_file",
+            "description": "An existing file name. Binary mask to contrain calculations."
+        },
+        {
+            "command-line-flag": "--output_type",
+            "name": "Output type",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[OUTPUT_TYPE]",
+            "type": "String",
+            "id": "output_type",
+            "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
+        },
+        {
+            "command-line-flag": "--terminal_output",
+            "name": "Terminal output",
+            "optional": true,
+            "list": false,
+            "command-line-key": "[TERMINAL_OUTPUT]",
+            "type": "String",
+            "id": "terminal_output",
+            "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
+        }
+    ],
+    "name": "DistanceMap",
+    "command-line": "nipype_cmd nipype.interfaces.fsl DistanceMap [ARGS] [DISTANCE_MAP] [ENVIRON] [IGNORE_EXCEPTION] [IN_FILE] [INVERT_INPUT] [LOCAL_MAX_FILE] [MASK_FILE] [OUTPUT_TYPE] [TERMINAL_OUTPUT] ",
+    "tool-version": "5.0.6",
+    "outputs": [
+        {
+            "path-template": "[DISTANCE_MAP]",
+            "optional": true,
+            "type": "File",
+            "name": "Distance map",
+            "id": "distance_map"
+        },
+        {
+            "path-template": "[IN_FILE]_lclmax",
+            "optional": true,
+            "type": "File",
+            "name": "Local max file",
+            "id": "local_max_file"
+        }
+    ],
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "docker-image": "glatard/nipype_fsl",
+    "description": "DistanceMap, as implemented in Nipype (module: nipype.interfaces.fsl, interface: DistanceMap)."
+}

@@ -1,0 +1,27 @@
+BEDPOSTX		# AttributeError: 'BEDPOSTX' object has no attribute '_out_dir'
+BEDPOSTX4		# MemoryError
+BEDPOSTX5		# AttributeError: 'BEDPOSTX5' object has no attribute '_out_dir'
+ContrastMgr		# tool has no output
+Eddy                    # tool has no output
+FEAT			# output name generation needs real output.
+FEATModel		# output name generation needs real output.
+FLAMEO			# output name generation needs real output.
+FSLCommand		# doesn't seem to work in nipype_cmd.
+FUGUE                   # tool has no output.
+ImageStats		# output list is empty.
+Level1Design		# AttributeError: '_Undefined' object has no attribute 'keys' (bases should be mandatory).
+MCFLIRT                 # nibabel.spatialimages.ImageFileError: Cannot work out file type of "/tmp/tmpSrESVJtxt"
+MultipleRegressDesign	# contrasts should be mandatory?
+ProjThresh              # issue in type detection.
+Randomise               # tool has no output
+SmoothEstimate		# tool has no output.
+Split                   # tool has no output.
+UnaryMaths              # operation is mandatory and is a string restriction.
+XFibres			# 'XFibres' object has no attribute '_out_dir'.
+XFibres4                # Memory error
+XFibres5                # AttributeError: 'XFibres5' object has no attribute '_out_dir'
+
+
+
+
+
