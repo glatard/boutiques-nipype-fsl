@@ -16,7 +16,7 @@ IGNORE_FILE=$3
 SKIP_PRESENT=true
 SKIP_FILE=$4
 
-for INTERFACE in `./nipype_cmd ${MODULE} | sed 1d | sort`
+for INTERFACE in `nipype_cmd ${MODULE} | sed 1d | sort`
 do
     # Check the skip file.
     A=`awk -v I=${INTERFACE} '$1==I {print}' ${SKIP_FILE}` 
@@ -47,8 +47,8 @@ do
     then
 	IGNORE_OPTION="-t ${IGNORE}"
     fi
-    echo ./nipype2boutiques -v -n -m ${MODULE} -i ${INTERFACE} -o ${INTERFACE}.json -d ${DOCKER_IMAGE} -r http://index.docker.io ${IGNORE_OPTION}
-    ./nipype2boutiques -v -n -m ${MODULE} -i ${INTERFACE} -o ${INTERFACE}.json -d ${DOCKER_IMAGE} -r http://index.docker.io ${IGNORE_OPTION}
+    echo nipype2boutiques -v -n -m ${MODULE} -i ${INTERFACE} -o ${INTERFACE}.json -d ${DOCKER_IMAGE} -r http://index.docker.io ${IGNORE_OPTION}
+    nipype2boutiques -v -n -m ${MODULE} -i ${INTERFACE} -o ${INTERFACE}.json -d ${DOCKER_IMAGE} -r http://index.docker.io ${IGNORE_OPTION}
     if [ $? != 0 ]
     then
 	echo "!!! Cannot generate interface ${INTERFACE}."
