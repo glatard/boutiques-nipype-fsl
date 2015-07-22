@@ -118,7 +118,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
@@ -138,7 +138,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[LOG_POWER]",
-            "type": "Number",
+            "type": "String",
             "id": "log_power",
             "description": "A boolean. Calculate log of power for frequency spectrum."
         },
@@ -198,7 +198,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[NO_BET]",
-            "type": "Number",
+            "type": "String",
             "id": "no_bet",
             "description": "A boolean. Switch off bet."
         },
@@ -208,7 +208,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[NO_MASK]",
-            "type": "Number",
+            "type": "String",
             "id": "no_mask",
             "description": "A boolean. Switch off masking."
         },
@@ -218,7 +218,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[NO_MM]",
-            "type": "Number",
+            "type": "String",
             "id": "no_mm",
             "description": "A boolean. Switch off mixture modelling on ic maps."
         },
@@ -248,7 +248,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUT_ALL]",
-            "type": "Number",
+            "type": "String",
             "id": "out_all",
             "description": "A boolean. Output everything."
         },
@@ -268,7 +268,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUT_MEAN]",
-            "type": "Number",
+            "type": "String",
             "id": "out_mean",
             "description": "A boolean. Output mean volume."
         },
@@ -278,7 +278,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUT_ORIG]",
-            "type": "Number",
+            "type": "String",
             "id": "out_orig",
             "description": "A boolean. Output the original ics."
         },
@@ -288,7 +288,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUT_PCA]",
-            "type": "Number",
+            "type": "String",
             "id": "out_pca",
             "description": "A boolean. Output pca results."
         },
@@ -298,7 +298,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUT_STATS]",
-            "type": "Number",
+            "type": "String",
             "id": "out_stats",
             "description": "A boolean. Output thresholded maps and probability maps."
         },
@@ -308,7 +308,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUT_UNMIX]",
-            "type": "Number",
+            "type": "String",
             "id": "out_unmix",
             "description": "A boolean. Output unmixing matrix."
         },
@@ -318,7 +318,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUT_WHITE]",
-            "type": "Number",
+            "type": "String",
             "id": "out_white",
             "description": "A boolean. Output whitening/dewhitening matrices."
         },
@@ -338,7 +338,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[PBSC]",
-            "type": "Number",
+            "type": "String",
             "id": "pbsc",
             "description": "A boolean. Switch off conversion to percent bold signal change."
         },
@@ -358,7 +358,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[REMOVE_DERIV]",
-            "type": "Number",
+            "type": "String",
             "id": "remove_deriv",
             "description": "A boolean. Removes every second entry in paradigm file (ev derivatives)."
         },
@@ -368,7 +368,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[REPORT]",
-            "type": "Number",
+            "type": "String",
             "id": "report",
             "description": "A boolean. Generate melodic web report."
         },
@@ -408,7 +408,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[SEP_VN]",
-            "type": "Number",
+            "type": "String",
             "id": "sep_vn",
             "description": "A boolean. Switch off joined variance normalization."
         },
@@ -418,7 +418,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[SEP_WHITEN]",
-            "type": "Number",
+            "type": "String",
             "id": "sep_whiten",
             "description": "A boolean. Switch on separate whitening."
         },
@@ -478,7 +478,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[UPDATE_MASK]",
-            "type": "Number",
+            "type": "String",
             "id": "update_mask",
             "description": "A boolean. Switch off mask updating."
         },
@@ -488,7 +488,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[VAR_NORM]",
-            "type": "Number",
+            "type": "String",
             "id": "var_norm",
             "description": "A boolean. Switch off variance normalization."
         }

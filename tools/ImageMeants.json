@@ -16,7 +16,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[EIG]",
-            "type": "Number",
+            "type": "String",
             "id": "eig",
             "description": "A boolean. Calculate eigenvariate(s) instead of mean (output will have 0 mean)."
         },
@@ -38,7 +38,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
@@ -68,7 +68,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[NOBIN]",
-            "type": "Number",
+            "type": "String",
             "id": "nobin",
             "description": "A boolean. Do not binarise the mask for calculation of eigenvariates."
         },
@@ -109,7 +109,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[SHOW_ALL]",
-            "type": "Number",
+            "type": "String",
             "id": "show_all",
             "description": "A boolean. Show all voxel time series (within mask) instead of averaging."
         },
@@ -139,7 +139,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[TRANSPOSE]",
-            "type": "Number",
+            "type": "String",
             "id": "transpose",
             "description": "A boolean. Output results in transpose format (one row per voxel/mean)."
         },
@@ -149,7 +149,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[USE_MM]",
-            "type": "Number",
+            "type": "String",
             "id": "use_mm",
             "description": "A boolean. Use mm instead of voxel coordinates (for -c option)."
         }

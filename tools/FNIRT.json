@@ -86,7 +86,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[DERIVE_FROM_REF]",
-            "type": "Number",
+            "type": "String",
             "id": "derive_from_ref",
             "description": "A boolean. If true, ref image is used to calculate derivatives. default false."
         },
@@ -107,7 +107,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[FIELD_FILE]",
-            "type": "Number",
+            "type": "String",
             "id": "field_file",
             "description": "A boolean or a file name. Name of output file with field or true."
         },
@@ -117,7 +117,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[FIELDCOEFF_FILE]",
-            "type": "Number",
+            "type": "String",
             "id": "fieldcoeff_file",
             "description": "A boolean or a file name. Name of output file with field coefficients or true."
         },
@@ -138,7 +138,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
@@ -228,7 +228,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[JACOBIAN_FILE]",
-            "type": "Number",
+            "type": "String",
             "id": "jacobian_file",
             "description": "A boolean or a file name. Name of file for writing out the jacobianof the field (for diagnostic or vbm purposes)."
         },
@@ -268,7 +268,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[MODULATEDREF_FILE]",
-            "type": "Number",
+            "type": "String",
             "id": "modulatedref_file",
             "description": "A boolean or a file name. Name of file for writing out intensity modulated--ref (for diagnostic purposes)."
         },
@@ -278,7 +278,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUT_INTENSITYMAP_FILE]",
-            "type": "Number",
+            "type": "String",
             "id": "out_intensitymap_file",
             "description": "A boolean or a file name. Name of files for writing information pertaining to intensity mapping."
         },
@@ -358,7 +358,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[SKIP_IMPLICIT_IN_MASKING]",
-            "type": "Number",
+            "type": "String",
             "id": "skip_implicit_in_masking",
             "description": "A boolean. Skip implicit masking  based on valuein --in image. default = 0."
         },
@@ -368,7 +368,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[SKIP_IMPLICIT_REF_MASKING]",
-            "type": "Number",
+            "type": "String",
             "id": "skip_implicit_ref_masking",
             "description": "A boolean. Skip implicit masking  based on valuein --ref image. default = 0."
         },
@@ -378,7 +378,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[SKIP_INMASK]",
-            "type": "Number",
+            "type": "String",
             "id": "skip_inmask",
             "description": "A boolean. Skip specified inmask if set, default false."
         },
@@ -388,7 +388,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[SKIP_INTENSITY_MAPPING]",
-            "type": "Number",
+            "type": "String",
             "id": "skip_intensity_mapping",
             "description": "A boolean. Skip estimate intensity-mapping default false."
         },
@@ -398,7 +398,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[SKIP_LAMBDA_SSQ]",
-            "type": "Number",
+            "type": "String",
             "id": "skip_lambda_ssq",
             "description": "A boolean. If true, lambda is not weighted by current ssq, default false."
         },
@@ -408,7 +408,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[SKIP_REFMASK]",
-            "type": "Number",
+            "type": "String",
             "id": "skip_refmask",
             "description": "A boolean. Skip specified refmask if set, default false."
         },

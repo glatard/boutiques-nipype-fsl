@@ -28,7 +28,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
@@ -128,7 +128,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[WITH_AFFINE]",
-            "type": "Number",
+            "type": "String",
             "id": "with_affine",
             "description": "A boolean. Specifies that the affine transform (i.e. that which was specified for the --aff parameter in fnirt) should be included as displacements in the --out file. that can be useful for interfacing with software that cannot decode fsl/fnirt coefficient-files (where the affine transform is stored separately from the displacements)."
         },
@@ -139,7 +139,7 @@
             "optional": false,
             "list": false,
             "command-line-key": "[WRITE_JACOBIAN]",
-            "type": "Number",
+            "type": "String",
             "id": "write_jacobian",
             "description": "A boolean. Switch on --jac flag with automatically generated filename."
         }

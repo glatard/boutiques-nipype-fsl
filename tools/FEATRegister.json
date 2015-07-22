@@ -17,7 +17,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },

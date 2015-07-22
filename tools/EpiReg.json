@@ -78,7 +78,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
@@ -88,7 +88,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[NO_CLEAN]",
-            "type": "Number",
+            "type": "String",
             "id": "no_clean",
             "description": "A boolean. Do not clean up intermediate files."
         },
@@ -98,7 +98,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[NO_FMAPREG]",
-            "type": "Number",
+            "type": "String",
             "id": "no_fmapreg",
             "description": "A boolean. Do not perform registration of fmap to t1                         (use if fmap already registered)."
         },

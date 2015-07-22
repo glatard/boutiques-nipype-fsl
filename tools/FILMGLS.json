@@ -16,7 +16,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[AUTOCORR_ESTIMATE_ONLY]",
-            "type": "Number",
+            "type": "String",
             "id": "autocorr_estimate_only",
             "description": "A boolean. Perform autocorrelation estimation only."
         },
@@ -26,7 +26,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[AUTOCORR_NOESTIMATE]",
-            "type": "Number",
+            "type": "String",
             "id": "autocorr_noestimate",
             "description": "A boolean. Do not estimate autocorrs."
         },
@@ -67,7 +67,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[FIT_ARMODEL]",
-            "type": "Number",
+            "type": "String",
             "id": "fit_armodel",
             "description": "A boolean. Fits autoregressive model - default is to use tukey with m=sqrt(numvols)."
         },
@@ -77,7 +77,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[FULL_DATA]",
-            "type": "Number",
+            "type": "String",
             "id": "full_data",
             "description": "A boolean. Output full data."
         },
@@ -88,7 +88,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
@@ -128,7 +128,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUTPUT_PWDATA]",
-            "type": "Number",
+            "type": "String",
             "id": "output_pwdata",
             "description": "A boolean. Output prewhitened data and average design matrix."
         },
@@ -159,7 +159,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[SMOOTH_AUTOCORR]",
-            "type": "Number",
+            "type": "String",
             "id": "smooth_autocorr",
             "description": "A boolean. Smooth auto corr estimates."
         },
@@ -200,7 +200,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[USE_PAVA]",
-            "type": "Number",
+            "type": "String",
             "id": "use_pava",
             "description": "A boolean. Estimates autocorr using pava."
         }

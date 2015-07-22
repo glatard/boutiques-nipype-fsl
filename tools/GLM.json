@@ -26,7 +26,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[DAT_NORM]",
-            "type": "Number",
+            "type": "String",
             "id": "dat_norm",
             "description": "A boolean. Switch on normalization of the data time series to unit std deviation."
         },
@@ -36,7 +36,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[DEMEAN]",
-            "type": "Number",
+            "type": "String",
             "id": "demean",
             "description": "A boolean. Switch on demeaining of  design and data."
         },
@@ -46,7 +46,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[DES_NORM]",
-            "type": "Number",
+            "type": "String",
             "id": "des_norm",
             "description": "A boolean. Switch on normalization of the design matrix columns to unit std deviation."
         },
@@ -88,7 +88,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
@@ -258,7 +258,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[VAR_NORM]",
-            "type": "Number",
+            "type": "String",
             "id": "var_norm",
             "description": "A boolean. Perform melodic variance-normalisation on data."
         }

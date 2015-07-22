@@ -16,7 +16,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[CONCAT_XFM]",
-            "type": "Number",
+            "type": "String",
             "id": "concat_xfm",
             "description": "A boolean. Write joint transformation of two input matrices."
         },
@@ -37,7 +37,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[FIX_SCALE_SKEW]",
-            "type": "Number",
+            "type": "String",
             "id": "fix_scale_skew",
             "description": "A boolean. Use secondary matrix to fix scale and skew."
         },
@@ -48,7 +48,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
@@ -78,7 +78,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[INVERT_XFM]",
-            "type": "Number",
+            "type": "String",
             "id": "invert_xfm",
             "description": "A boolean. Invert input transformation."
         },

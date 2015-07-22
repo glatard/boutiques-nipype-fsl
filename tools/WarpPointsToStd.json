@@ -16,7 +16,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[COORD_MM]",
-            "type": "Number",
+            "type": "String",
             "id": "coord_mm",
             "description": "A boolean. All coordinates in mm."
         },
@@ -26,7 +26,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[COORD_VOX]",
-            "type": "Number",
+            "type": "String",
             "id": "coord_vox",
             "description": "A boolean. All coordinates in voxels - default."
         },
@@ -48,7 +48,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },

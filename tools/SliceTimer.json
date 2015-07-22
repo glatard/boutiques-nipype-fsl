@@ -58,7 +58,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
@@ -78,7 +78,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[INDEX_DIR]",
-            "type": "Number",
+            "type": "String",
             "id": "index_dir",
             "description": "A boolean. Slice indexing from top to bottom."
         },
@@ -88,7 +88,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[INTERLEAVED]",
-            "type": "Number",
+            "type": "String",
             "id": "interleaved",
             "description": "A boolean. Use interleaved acquisition."
         },

@@ -47,7 +47,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[FUNCTIONAL]",
-            "type": "Number",
+            "type": "String",
             "id": "functional",
             "description": "A boolean. Apply to 4d fmri data."
         },
@@ -58,7 +58,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
@@ -78,7 +78,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[MASK]",
-            "type": "Number",
+            "type": "String",
             "id": "mask",
             "description": "A boolean. Create binary mask image."
         },
@@ -88,7 +88,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[MESH]",
-            "type": "Number",
+            "type": "String",
             "id": "mesh",
             "description": "A boolean. Generate a vtk mesh brain surface."
         },
@@ -98,7 +98,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[NO_OUTPUT]",
-            "type": "Number",
+            "type": "String",
             "id": "no_output",
             "description": "A boolean. Don't generate segmented output."
         },
@@ -118,7 +118,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUTLINE]",
-            "type": "Number",
+            "type": "String",
             "id": "outline",
             "description": "A boolean. Create surface outline image."
         },
@@ -138,7 +138,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[PADDING]",
-            "type": "Number",
+            "type": "String",
             "id": "padding",
             "description": "A boolean. Improve bet if fov is very small in z (by temporarily padding end slices)."
         },
@@ -158,7 +158,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[REDUCE_BIAS]",
-            "type": "Number",
+            "type": "String",
             "id": "reduce_bias",
             "description": "A boolean. Bias field and neck cleanup."
         },
@@ -168,7 +168,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[REMOVE_EYES]",
-            "type": "Number",
+            "type": "String",
             "id": "remove_eyes",
             "description": "A boolean. Eye & optic nerve cleanup (can be useful in siena)."
         },
@@ -178,7 +178,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[ROBUST]",
-            "type": "Number",
+            "type": "String",
             "id": "robust",
             "description": "A boolean. Robust brain centre estimation (iterates bet several times)."
         },
@@ -188,7 +188,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[SKULL]",
-            "type": "Number",
+            "type": "String",
             "id": "skull",
             "description": "A boolean. Create skull image."
         },
@@ -198,7 +198,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[SURFACES]",
-            "type": "Number",
+            "type": "String",
             "id": "surfaces",
             "description": "A boolean. Run bet2 and then betsurf to get additional skull and scalp surfaces (includes registrations)."
         },
@@ -228,7 +228,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[THRESHOLD]",
-            "type": "Number",
+            "type": "String",
             "id": "threshold",
             "description": "A boolean. Apply thresholding to segmented brain image and mask."
         },

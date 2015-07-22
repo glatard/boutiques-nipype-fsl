@@ -6,7 +6,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[ABSWARP]",
-            "type": "Number",
+            "type": "String",
             "id": "abswarp",
             "description": "A boolean. If set it indicates that the warps in --warp1 and --warp2 should be interpreted as absolute. i.e. the values in --warp1/2 are the coordinates in the next space, rather than displacements. this flag is ignored if --warp1/2 was created by fnirt, which always creates relative displacements."
         },
@@ -26,7 +26,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[CONS_JACOBIAN]",
-            "type": "Number",
+            "type": "String",
             "id": "cons_jacobian",
             "description": "A boolean. Constrain the jacobian of the warpfield to lie within specified min/max limits."
         },
@@ -48,7 +48,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
@@ -88,7 +88,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUT_ABSWARP]",
-            "type": "Number",
+            "type": "String",
             "id": "out_abswarp",
             "description": "A boolean. If set it indicates that the warps in --out should be absolute, i.e. the values in --out are displacements from the coordinates in --ref."
         },
@@ -108,7 +108,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUT_RELWARP]",
-            "type": "Number",
+            "type": "String",
             "id": "out_relwarp",
             "description": "A boolean. If set it indicates that the warps in --out should be relative, i.e. the values in --out are displacements from the coordinates in --ref."
         },
@@ -158,7 +158,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[RELWARP]",
-            "type": "Number",
+            "type": "String",
             "id": "relwarp",
             "description": "A boolean. If set it indicates that the warps in --warp1/2 should be interpreted as relative. i.e. the values in --warp1/2 are displacements from the coordinates in the next space."
         },

@@ -16,7 +16,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[COMPLEX_CARTESIAN]",
-            "type": "Number",
+            "type": "String",
             "id": "complex_cartesian",
             "description": "A boolean. No description provided."
         },
@@ -46,7 +46,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[COMPLEX_MERGE]",
-            "type": "Number",
+            "type": "String",
             "id": "complex_merge",
             "description": "A boolean. No description provided."
         },
@@ -66,7 +66,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[COMPLEX_POLAR]",
-            "type": "Number",
+            "type": "String",
             "id": "complex_polar",
             "description": "A boolean. No description provided."
         },
@@ -76,7 +76,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[COMPLEX_SPLIT]",
-            "type": "Number",
+            "type": "String",
             "id": "complex_split",
             "description": "A boolean. No description provided."
         },
@@ -108,7 +108,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
@@ -188,7 +188,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[REAL_CARTESIAN]",
-            "type": "Number",
+            "type": "String",
             "id": "real_cartesian",
             "description": "A boolean. No description provided."
         },
@@ -218,7 +218,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[REAL_POLAR]",
-            "type": "Number",
+            "type": "String",
             "id": "real_polar",
             "description": "A boolean. No description provided."
         },

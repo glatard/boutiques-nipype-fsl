@@ -6,7 +6,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[ABSOLUTE]",
-            "type": "Number",
+            "type": "String",
             "id": "absolute",
             "description": "A boolean. If set it indicates that the warps in --warp should be interpreted as absolute, provided that it is not created by fnirt (which always uses relative warps). if set it also indicates that the output --out should be absolute."
         },
@@ -38,7 +38,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
@@ -88,7 +88,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[NOCONSTRAINT]",
-            "type": "Number",
+            "type": "String",
             "id": "noconstraint",
             "description": "A boolean. Do not apply jacobian constraint."
         },
@@ -128,7 +128,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[RELATIVE]",
-            "type": "Number",
+            "type": "String",
             "id": "relative",
             "description": "A boolean. If set it indicates that the warps in --warp should be interpreted as relative. i.e. the values in --warp are displacements from the coordinates in the --ref space. if set it also indicates that the output --out should be relative."
         },

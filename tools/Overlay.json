@@ -16,7 +16,7 @@
             "optional": false,
             "list": false,
             "command-line-key": "[AUTO_THRESH_BG]",
-            "type": "Number",
+            "type": "String",
             "id": "auto_thresh_bg",
             "description": "A boolean. Automatically threshold the background image."
         },
@@ -57,7 +57,7 @@
             "optional": false,
             "list": false,
             "command-line-key": "[FULL_BG_RANGE]",
-            "type": "Number",
+            "type": "String",
             "id": "full_bg_range",
             "description": "A boolean. Use full range of background image."
         },
@@ -68,7 +68,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
@@ -109,7 +109,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[SHOW_NEGATIVE_STATS]",
-            "type": "Number",
+            "type": "String",
             "id": "show_negative_stats",
             "description": "A boolean. Display negative statistics in overlay."
         },
@@ -170,7 +170,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[TRANSPARENCY]",
-            "type": "Number",
+            "type": "String",
             "id": "transparency",
             "description": "A boolean. Make overlay colors semi-transparent."
         },
@@ -180,7 +180,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[USE_CHECKERBOARD]",
-            "type": "Number",
+            "type": "String",
             "id": "use_checkerboard",
             "description": "A boolean. Use checkerboard mask for overlay."
         }

@@ -57,7 +57,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[FIND_MIN]",
-            "type": "Number",
+            "type": "String",
             "id": "find_min",
             "description": "A boolean. Find minima instead of maxima."
         },
@@ -67,7 +67,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[FRACTIONAL]",
-            "type": "Number",
+            "type": "String",
             "id": "fractional",
             "description": "A boolean. Interprets the threshold as a fraction of the robust range."
         },
@@ -78,7 +78,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
@@ -98,7 +98,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[MINCLUSTERSIZE]",
-            "type": "Number",
+            "type": "String",
             "id": "minclustersize",
             "description": "A boolean. Prints out minimum significant cluster size."
         },
@@ -108,7 +108,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[NO_TABLE]",
-            "type": "Number",
+            "type": "String",
             "id": "no_table",
             "description": "A boolean. Suppresses printing of the table info."
         },
@@ -128,7 +128,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUT_INDEX_FILE]",
-            "type": "Number",
+            "type": "String",
             "id": "out_index_file",
             "description": "A boolean or a file name. Output of cluster index (in size order)."
         },
@@ -138,7 +138,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUT_LOCALMAX_TXT_FILE]",
-            "type": "Number",
+            "type": "String",
             "id": "out_localmax_txt_file",
             "description": "A boolean or a file name. Local maxima text file."
         },
@@ -148,7 +148,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUT_LOCALMAX_VOL_FILE]",
-            "type": "Number",
+            "type": "String",
             "id": "out_localmax_vol_file",
             "description": "A boolean or a file name. Output of local maxima volume."
         },
@@ -158,7 +158,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUT_MAX_FILE]",
-            "type": "Number",
+            "type": "String",
             "id": "out_max_file",
             "description": "A boolean or a file name. Filename for output of max image."
         },
@@ -168,7 +168,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUT_MEAN_FILE]",
-            "type": "Number",
+            "type": "String",
             "id": "out_mean_file",
             "description": "A boolean or a file name. Filename for output of mean image."
         },
@@ -178,7 +178,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUT_PVAL_FILE]",
-            "type": "Number",
+            "type": "String",
             "id": "out_pval_file",
             "description": "A boolean or a file name. Filename for image output of log pvals."
         },
@@ -188,7 +188,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUT_SIZE_FILE]",
-            "type": "Number",
+            "type": "String",
             "id": "out_size_file",
             "description": "A boolean or a file name. Filename for output of size image."
         },
@@ -198,7 +198,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUT_THRESHOLD_FILE]",
-            "type": "Number",
+            "type": "String",
             "id": "out_threshold_file",
             "description": "A boolean or a file name. Thresholded image."
         },
@@ -268,7 +268,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[USE_MM]",
-            "type": "Number",
+            "type": "String",
             "id": "use_mm",
             "description": "A boolean. Use mm, not voxel, coordinates."
         },

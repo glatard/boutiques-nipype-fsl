@@ -89,7 +89,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
@@ -99,7 +99,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[LITTLE_BIT]",
-            "type": "Number",
+            "type": "String",
             "id": "little_bit",
             "description": "A boolean. Only process small area of brain."
         },
@@ -189,7 +189,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[SAVE_TENSOR]",
-            "type": "Number",
+            "type": "String",
             "id": "save_tensor",
             "description": "A boolean. Save the elements of the tensor."
         },
@@ -199,7 +199,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[SSE]",
-            "type": "Number",
+            "type": "String",
             "id": "sse",
             "description": "A boolean. Output sum of squared errors."
         },

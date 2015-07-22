@@ -46,7 +46,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[CORRECT_PATH_DISTRIBUTION]",
-            "type": "Number",
+            "type": "String",
             "id": "correct_path_distribution",
             "description": "A boolean. Correct path distribution for the length of the pathways."
         },
@@ -118,7 +118,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[FORCE_DIR]",
-            "type": "Number",
+            "type": "String",
             "id": "force_dir",
             "description": "A boolean. Use the actual directory name given - i.e. do not add + to make a new directory."
         },
@@ -139,7 +139,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
@@ -159,7 +159,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[LOOP_CHECK]",
-            "type": "Number",
+            "type": "String",
             "id": "loop_check",
             "description": "A boolean. Perform loop_checks on paths - slower, but allows lower curvature threshold."
         },
@@ -199,7 +199,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[MOD_EULER]",
-            "type": "Number",
+            "type": "String",
             "id": "mod_euler",
             "description": "A boolean. Use modified euler streamlining."
         },
@@ -230,7 +230,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[NETWORK]",
-            "type": "Number",
+            "type": "String",
             "id": "network",
             "description": "A boolean. Activate network mode - only keep paths going through at least one seed mask (required if multiple seed masks)."
         },
@@ -240,7 +240,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OMATRIX1]",
-            "type": "Number",
+            "type": "String",
             "id": "omatrix1",
             "description": "A boolean. Output matrix1 - seedtoseed connectivity."
         },
@@ -250,7 +250,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OMATRIX2]",
-            "type": "Number",
+            "type": "String",
             "id": "omatrix2",
             "description": "A boolean. Output matrix2 - seedtolowresmask."
         },
@@ -260,7 +260,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OMATRIX3]",
-            "type": "Number",
+            "type": "String",
             "id": "omatrix3",
             "description": "A boolean. Output matrix3 (nxn connectivity matrix)."
         },
@@ -270,7 +270,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OMATRIX4]",
-            "type": "Number",
+            "type": "String",
             "id": "omatrix4",
             "description": "A boolean. Output matrix4 - dtimasktoseed (special oxford sparse format)."
         },
@@ -280,7 +280,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[ONEWAYCONDITION]",
-            "type": "Number",
+            "type": "String",
             "id": "onewaycondition",
             "description": "A boolean. Apply waypoint conditions to each half tract separately."
         },
@@ -291,7 +291,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OPD]",
-            "type": "Number",
+            "type": "String",
             "id": "opd",
             "description": "A boolean. Outputs path distributions."
         },
@@ -301,7 +301,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OS2T]",
-            "type": "Number",
+            "type": "String",
             "id": "os2t",
             "description": "A boolean. Outputs seeds to targets."
         },
@@ -351,7 +351,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[RANDOM_SEED]",
-            "type": "Number",
+            "type": "String",
             "id": "random_seed",
             "description": "A boolean. Random seed."
         },
@@ -361,7 +361,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[S2TASTEXT]",
-            "type": "Number",
+            "type": "String",
             "id": "s2tastext",
             "description": "A boolean. Output seed-to-target counts as a text file (useful when seeding from a mesh)."
         },
@@ -371,7 +371,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[SAMPLE_RANDOM_POINTS]",
-            "type": "Number",
+            "type": "String",
             "id": "sample_random_points",
             "description": "A boolean. Sample random points within seed voxels."
         },
@@ -412,7 +412,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[SIMPLE]",
-            "type": "Number",
+            "type": "String",
             "id": "simple",
             "description": "A boolean. Rack from a list of voxels (seed must be a ascii list of coordinates)."
         },
@@ -502,7 +502,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[USE_ANISOTROPY]",
-            "type": "Number",
+            "type": "String",
             "id": "use_anisotropy",
             "description": "A boolean. Use anisotropy to constrain tracking."
         },
@@ -532,7 +532,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[WAYORDER]",
-            "type": "Number",
+            "type": "String",
             "id": "wayorder",
             "description": "A boolean. Reject streamlines that do not hit waypoints in given order. only valid if waycond=and."
         },

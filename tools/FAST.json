@@ -58,7 +58,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
@@ -138,7 +138,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[NO_BIAS]",
-            "type": "Number",
+            "type": "String",
             "id": "no_bias",
             "description": "A boolean. Do not remove bias field."
         },
@@ -148,7 +148,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[NO_PVE]",
-            "type": "Number",
+            "type": "String",
             "id": "no_pve",
             "description": "A boolean. Turn off pve (partial volume estimation)."
         },
@@ -188,7 +188,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUTPUT_BIASCORRECTED]",
-            "type": "Number",
+            "type": "String",
             "id": "output_biascorrected",
             "description": "A boolean. Output restored image (bias-corrected image)."
         },
@@ -198,7 +198,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUTPUT_BIASFIELD]",
-            "type": "Number",
+            "type": "String",
             "id": "output_biasfield",
             "description": "A boolean. Output estimated bias field."
         },
@@ -218,7 +218,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[PROBABILITY_MAPS]",
-            "type": "Number",
+            "type": "String",
             "id": "probability_maps",
             "description": "A boolean. Outputs individual probability maps."
         },
@@ -238,7 +238,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[SEGMENTS]",
-            "type": "Number",
+            "type": "String",
             "id": "segments",
             "description": "A boolean. Outputs a separate binary image for each tissue type."
         },
@@ -258,7 +258,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[USE_PRIORS]",
-            "type": "Number",
+            "type": "String",
             "id": "use_priors",
             "description": "A boolean. Use priors throughout."
         },
@@ -268,7 +268,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[VERBOSE]",
-            "type": "Number",
+            "type": "String",
             "id": "verbose",
             "description": "A boolean. Switch on diagnostic messages."
         }

@@ -37,7 +37,7 @@
             "optional": false,
             "list": false,
             "command-line-key": "[FILTER_ALL]",
-            "type": "Number",
+            "type": "String",
             "id": "filter_all",
             "description": "A boolean. Use all columns in the design file in denoising."
         },
@@ -58,7 +58,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
@@ -98,7 +98,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[OUT_VNSCALES]",
-            "type": "Number",
+            "type": "String",
             "id": "out_vnscales",
             "description": "A boolean. Output scaling factors for variance normalization."
         },
@@ -128,7 +128,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[VAR_NORM]",
-            "type": "Number",
+            "type": "String",
             "id": "var_norm",
             "description": "A boolean. Perform variance-normalization on data."
         }

@@ -68,7 +68,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
@@ -98,7 +98,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[PROJECT_DATA]",
-            "type": "Number",
+            "type": "String",
             "id": "project_data",
             "description": "A boolean. Project data onto skeleton."
         },
@@ -128,7 +128,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[SKELETON_FILE]",
-            "type": "Number",
+            "type": "String",
             "id": "skeleton_file",
             "description": "A boolean or a file name. Write out skeleton image."
         },
@@ -159,7 +159,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[USE_CINGULUM_MASK]",
-            "type": "Number",
+            "type": "String",
             "id": "use_cingulum_mask",
             "description": "A boolean. Perform alternate search using built-in cingulum mask."
         }

@@ -26,7 +26,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[BRAIN_EXTRACTED]",
-            "type": "Number",
+            "type": "String",
             "id": "brain_extracted",
             "description": "A boolean. Input structural image is already brain-extracted."
         },
@@ -48,7 +48,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
-            "type": "Number",
+            "type": "String",
             "id": "ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
@@ -99,7 +99,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[NO_CLEANUP]",
-            "type": "Number",
+            "type": "String",
             "id": "no_cleanup",
             "description": "A boolean. Input structural image is already brain-extracted."
         },
@@ -140,7 +140,7 @@
             "optional": true,
             "list": false,
             "command-line-key": "[VERBOSE]",
-            "type": "Number",
+            "type": "String",
             "id": "verbose",
             "description": "A boolean. Use verbose logging."
         }
