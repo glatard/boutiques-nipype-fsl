@@ -23,7 +23,7 @@
         {
             "command-line-flag": "--environ",
             "name": "Environ",
-            "default-value": {},
+            "default-value": "{}",
             "optional": true,
             "list": false,
             "command-line-key": "[ENVIRON]",
@@ -34,7 +34,7 @@
         {
             "command-line-flag": "--ignore_exception",
             "name": "Ignore exception",
-            "default-value": false,
+            "default-value": "False",
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
@@ -96,7 +96,9 @@
     "name": "Merge",
     "command-line": "nipype_cmd nipype.interfaces.fsl Merge [ARGS] [DIMENSION] [ENVIRON] [IGNORE_EXCEPTION] [IN_FILES] [MERGED_FILE] [OUTPUT_TYPE] [TERMINAL_OUTPUT] [TR] ",
     "tool-version": "5.0.6",
-    "outputs": [
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "output-files": [
         {
             "path-template": "[MERGED_FILE]",
             "optional": true,
@@ -105,8 +107,6 @@
             "id": "merged_file"
         }
     ],
-    "docker-index": "http://index.docker.io",
-    "schema-version": "0.2-snapshot",
     "docker-image": "glatard/nipype_fsl",
     "description": "Merge, as implemented in Nipype (module: nipype.interfaces.fsl, interface: Merge)."
 }

@@ -83,7 +83,7 @@
         {
             "command-line-flag": "--environ",
             "name": "Environ",
-            "default-value": {},
+            "default-value": "{}",
             "optional": true,
             "list": false,
             "command-line-key": "[ENVIRON]",
@@ -114,7 +114,7 @@
         {
             "command-line-flag": "--ignore_exception",
             "name": "Ignore exception",
-            "default-value": false,
+            "default-value": "False",
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
@@ -496,7 +496,9 @@
     "name": "MELODIC",
     "command-line": "nipype_cmd nipype.interfaces.fsl MELODIC [ICS] [APPROACH] [ARGS] [BG_IMAGE] [BG_THRESHOLD] [COV_WEIGHT] [DIM] [DIM_EST] [ENVIRON] [EPSILON] [EPSILONS] [IGNORE_EXCEPTION] [IN_FILES] [LOG_POWER] [MASK] [MAX_RESTART] [MAXIT] [MIX] [MM_THRESH] [NO_BET] [NO_MASK] [NO_MM] [NON_LINEARITY] [NUM_ICS] [OUT_ALL] [OUT_DIR] [OUT_MEAN] [OUT_ORIG] [OUT_PCA] [OUT_STATS] [OUT_UNMIX] [OUT_WHITE] [OUTPUT_TYPE] [PBSC] [REM_CMP] [REMOVE_DERIV] [REPORT] [REPORT_MAPS] [S_CON] [S_DES] [SEP_VN] [SEP_WHITEN] [SMODE] [T_CON] [T_DES] [TERMINAL_OUTPUT] [TR_SEC] [UPDATE_MASK] [VAR_NORM] ",
     "tool-version": "5.0.6",
-    "outputs": [
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "output-files": [
         {
             "path-template": "[OUT_DIR]",
             "optional": true,
@@ -512,8 +514,6 @@
             "id": "report_dir"
         }
     ],
-    "docker-index": "http://index.docker.io",
-    "schema-version": "0.2-snapshot",
     "docker-image": "glatard/nipype_fsl",
     "description": "MELODIC, as implemented in Nipype (module: nipype.interfaces.fsl, interface: MELODIC)."
 }

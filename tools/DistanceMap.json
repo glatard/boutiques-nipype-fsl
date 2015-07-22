@@ -23,7 +23,7 @@
         {
             "command-line-flag": "--environ",
             "name": "Environ",
-            "default-value": {},
+            "default-value": "{}",
             "optional": true,
             "list": false,
             "command-line-key": "[ENVIRON]",
@@ -34,7 +34,7 @@
         {
             "command-line-flag": "--ignore_exception",
             "name": "Ignore exception",
-            "default-value": false,
+            "default-value": "False",
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
@@ -106,7 +106,9 @@
     "name": "DistanceMap",
     "command-line": "nipype_cmd nipype.interfaces.fsl DistanceMap [ARGS] [DISTANCE_MAP] [ENVIRON] [IGNORE_EXCEPTION] [IN_FILE] [INVERT_INPUT] [LOCAL_MAX_FILE] [MASK_FILE] [OUTPUT_TYPE] [TERMINAL_OUTPUT] ",
     "tool-version": "5.0.6",
-    "outputs": [
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "output-files": [
         {
             "path-template": "[DISTANCE_MAP]",
             "optional": true,
@@ -122,8 +124,6 @@
             "id": "local_max_file"
         }
     ],
-    "docker-index": "http://index.docker.io",
-    "schema-version": "0.2-snapshot",
     "docker-image": "glatard/nipype_fsl",
     "description": "DistanceMap, as implemented in Nipype (module: nipype.interfaces.fsl, interface: DistanceMap)."
 }

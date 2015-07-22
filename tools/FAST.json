@@ -33,7 +33,7 @@
         {
             "command-line-flag": "--environ",
             "name": "Environ",
-            "default-value": {},
+            "default-value": "{}",
             "optional": true,
             "list": false,
             "command-line-key": "[ENVIRON]",
@@ -54,7 +54,7 @@
         {
             "command-line-flag": "--ignore_exception",
             "name": "Ignore exception",
-            "default-value": false,
+            "default-value": "False",
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
@@ -276,7 +276,9 @@
     "name": "FAST",
     "command-line": "nipype_cmd nipype.interfaces.fsl FAST [ARGS] [BIAS_ITERS] [BIAS_LOWPASS] [ENVIRON] [HYPER] [IGNORE_EXCEPTION] [IMG_TYPE] [IN_FILES] [INIT_SEG_SMOOTH] [INIT_TRANSFORM] [ITERS_AFTERBIAS] [MANUAL_SEG] [MIXEL_SMOOTH] [NO_BIAS] [NO_PVE] [NUMBER_CLASSES] [OTHER_PRIORS] [OUT_BASENAME] [OUTPUT_BIASCORRECTED] [OUTPUT_BIASFIELD] [OUTPUT_TYPE] [PROBABILITY_MAPS] [SEGMENT_ITERS] [SEGMENTS] [TERMINAL_OUTPUT] [USE_PRIORS] [VERBOSE] ",
     "tool-version": "5.0.6",
-    "outputs": [
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "output-files": [
         {
             "path-template": "[OUT_BASENAME]_mixeltype.nii.gz",
             "optional": true,
@@ -299,8 +301,6 @@
             "id": "tissue_class_map"
         }
     ],
-    "docker-index": "http://index.docker.io",
-    "schema-version": "0.2-snapshot",
     "docker-image": "glatard/nipype_fsl",
     "description": "FAST, as implemented in Nipype (module: nipype.interfaces.fsl, interface: FAST)."
 }

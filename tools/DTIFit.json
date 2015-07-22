@@ -64,7 +64,7 @@
         {
             "command-line-flag": "--environ",
             "name": "Environ",
-            "default-value": {},
+            "default-value": "{}",
             "optional": true,
             "list": false,
             "command-line-key": "[ENVIRON]",
@@ -85,7 +85,7 @@
         {
             "command-line-flag": "--ignore_exception",
             "name": "Ignore exception",
-            "default-value": false,
+            "default-value": "False",
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
@@ -217,7 +217,9 @@
     "name": "DTIFit",
     "command-line": "nipype_cmd nipype.interfaces.fsl DTIFit [ARGS] [BASE_NAME] [BVALS] [BVECS] [CNI] [DWI] [ENVIRON] [GRADNONLIN] [IGNORE_EXCEPTION] [LITTLE_BIT] [MASK] [MAX_X] [MAX_Y] [MAX_Z] [MIN_X] [MIN_Y] [MIN_Z] [OUTPUT_TYPE] [SAVE_TENSOR] [SSE] [TERMINAL_OUTPUT] ",
     "tool-version": "5.0.6",
-    "outputs": [
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "output-files": [
         {
             "path-template": "[BASE_NAME]_FA.nii.gz",
             "optional": true,
@@ -296,8 +298,6 @@
             "id": "tensor"
         }
     ],
-    "docker-index": "http://index.docker.io",
-    "schema-version": "0.2-snapshot",
     "docker-image": "glatard/nipype_fsl",
     "description": "DTIFit, as implemented in Nipype (module: nipype.interfaces.fsl, interface: DTIFit)."
 }

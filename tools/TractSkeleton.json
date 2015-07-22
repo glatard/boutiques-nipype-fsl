@@ -53,7 +53,7 @@
         {
             "command-line-flag": "--environ",
             "name": "Environ",
-            "default-value": {},
+            "default-value": "{}",
             "optional": true,
             "list": false,
             "command-line-key": "[ENVIRON]",
@@ -64,7 +64,7 @@
         {
             "command-line-flag": "--ignore_exception",
             "name": "Ignore exception",
-            "default-value": false,
+            "default-value": "False",
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
@@ -155,7 +155,7 @@
         {
             "command-line-flag": "--use_cingulum_mask",
             "name": "Use cingulum mask",
-            "default-value": true,
+            "default-value": "True",
             "optional": true,
             "list": false,
             "command-line-key": "[USE_CINGULUM_MASK]",
@@ -167,7 +167,9 @@
     "name": "TractSkeleton",
     "command-line": "nipype_cmd nipype.interfaces.fsl TractSkeleton [ALT_DATA_FILE] [ALT_SKELETON] [ARGS] [DATA_FILE] [DISTANCE_MAP] [ENVIRON] [IGNORE_EXCEPTION] [IN_FILE] [OUTPUT_TYPE] [PROJECT_DATA] [PROJECTED_DATA] [SEARCH_MASK_FILE] [SKELETON_FILE] [TERMINAL_OUTPUT] [THRESHOLD] [USE_CINGULUM_MASK] ",
     "tool-version": "5.0.6",
-    "outputs": [
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "output-files": [
         {
             "path-template": "[PROJECTED_DATA]",
             "optional": true,
@@ -183,8 +185,6 @@
             "id": "skeleton_file"
         }
     ],
-    "docker-index": "http://index.docker.io",
-    "schema-version": "0.2-snapshot",
     "docker-image": "glatard/nipype_fsl",
     "description": "TractSkeleton, as implemented in Nipype (module: nipype.interfaces.fsl, interface: TractSkeleton)."
 }

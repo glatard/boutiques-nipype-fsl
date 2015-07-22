@@ -13,7 +13,7 @@
         {
             "command-line-flag": "--environ",
             "name": "Environ",
-            "default-value": {},
+            "default-value": "{}",
             "optional": true,
             "list": false,
             "command-line-key": "[ENVIRON]",
@@ -24,7 +24,7 @@
         {
             "command-line-flag": "--ignore_exception",
             "name": "Ignore exception",
-            "default-value": false,
+            "default-value": "False",
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
@@ -135,7 +135,7 @@
         {
             "command-line-flag": "--write_jacobian",
             "name": "Write jacobian",
-            "default-value": false,
+            "default-value": "False",
             "optional": false,
             "list": false,
             "command-line-key": "[WRITE_JACOBIAN]",
@@ -147,7 +147,9 @@
     "name": "WarpUtils",
     "command-line": "nipype_cmd nipype.interfaces.fsl WarpUtils [ARGS] [ENVIRON] [IGNORE_EXCEPTION] [IN_FILE] [KNOT_SPACE] [OUT_FILE] [OUT_FORMAT] [OUT_JACOBIAN] [OUTPUT_TYPE] [REFERENCE] [TERMINAL_OUTPUT] [WARP_RESOLUTION] [WITH_AFFINE] [WRITE_JACOBIAN] ",
     "tool-version": "5.0.6",
-    "outputs": [
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "output-files": [
         {
             "path-template": "[OUT_FILE]",
             "optional": true,
@@ -156,8 +158,6 @@
             "id": "out_file"
         }
     ],
-    "docker-index": "http://index.docker.io",
-    "schema-version": "0.2-snapshot",
     "docker-image": "glatard/nipype_fsl",
     "description": "WarpUtils, as implemented in Nipype (module: nipype.interfaces.fsl, interface: WarpUtils)."
 }

@@ -33,7 +33,7 @@
         {
             "command-line-flag": "--environ",
             "name": "Environ",
-            "default-value": {},
+            "default-value": "{}",
             "optional": true,
             "list": false,
             "command-line-key": "[ENVIRON]",
@@ -54,7 +54,7 @@
         {
             "command-line-flag": "--ignore_exception",
             "name": "Ignore exception",
-            "default-value": false,
+            "default-value": "False",
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
@@ -186,7 +186,9 @@
     "name": "ApplyWarp",
     "command-line": "nipype_cmd nipype.interfaces.fsl ApplyWarp [ABSWARP] [ARGS] [DATATYPE] [ENVIRON] [FIELD_FILE] [IGNORE_EXCEPTION] [IN_FILE] [INTERP] [MASK_FILE] [OUT_FILE] [OUTPUT_TYPE] [POSTMAT] [PREMAT] [REF_FILE] [RELWARP] [SUPERLEVEL] [SUPERSAMPLE] [TERMINAL_OUTPUT] ",
     "tool-version": "5.0.6",
-    "outputs": [
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "output-files": [
         {
             "path-template": "[OUT_FILE]",
             "optional": true,
@@ -195,8 +197,6 @@
             "id": "out_file"
         }
     ],
-    "docker-index": "http://index.docker.io",
-    "schema-version": "0.2-snapshot",
     "docker-image": "glatard/nipype_fsl",
     "description": "ApplyWarp, as implemented in Nipype (module: nipype.interfaces.fsl, interface: ApplyWarp)."
 }

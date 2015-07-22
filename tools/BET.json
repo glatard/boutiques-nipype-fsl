@@ -23,7 +23,7 @@
         {
             "command-line-flag": "--environ",
             "name": "Environ",
-            "default-value": {},
+            "default-value": "{}",
             "optional": true,
             "list": false,
             "command-line-key": "[ENVIRON]",
@@ -54,7 +54,7 @@
         {
             "command-line-flag": "--ignore_exception",
             "name": "Ignore exception",
-            "default-value": false,
+            "default-value": "False",
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
@@ -246,7 +246,9 @@
     "name": "BET",
     "command-line": "nipype_cmd nipype.interfaces.fsl BET [ARGS] [CENTER] [ENVIRON] [FRAC] [FUNCTIONAL] [IGNORE_EXCEPTION] [IN_FILE] [MASK] [MESH] [NO_OUTPUT] [OUT_FILE] [OUTLINE] [OUTPUT_TYPE] [PADDING] [RADIUS] [REDUCE_BIAS] [REMOVE_EYES] [ROBUST] [SKULL] [SURFACES] [T2_GUIDED] [TERMINAL_OUTPUT] [THRESHOLD] [VERTICAL_GRADIENT] ",
     "tool-version": "5.0.6",
-    "outputs": [
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "output-files": [
         {
             "path-template": "[OUT_FILE]_mask.nii.gz",
             "optional": true,
@@ -276,8 +278,6 @@
             "id": "outline_file"
         }
     ],
-    "docker-index": "http://index.docker.io",
-    "schema-version": "0.2-snapshot",
     "docker-image": "glatard/nipype_fsl",
     "description": "BET, as implemented in Nipype (module: nipype.interfaces.fsl, interface: BET)."
 }

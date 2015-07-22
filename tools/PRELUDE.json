@@ -33,7 +33,7 @@
         {
             "command-line-flag": "--environ",
             "name": "Environ",
-            "default-value": {},
+            "default-value": "{}",
             "optional": true,
             "list": false,
             "command-line-key": "[ENVIRON]",
@@ -44,7 +44,7 @@
         {
             "command-line-flag": "--ignore_exception",
             "name": "Ignore exception",
-            "default-value": false,
+            "default-value": "False",
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
@@ -216,7 +216,9 @@
     "name": "PRELUDE",
     "command-line": "nipype_cmd nipype.interfaces.fsl PRELUDE [ARGS] [COMPLEX_PHASE_FILE] [END] [ENVIRON] [IGNORE_EXCEPTION] [LABEL_FILE] [LABELPROCESS2D] [MAGNITUDE_FILE] [MASK_FILE] [NUM_PARTITIONS] [OUTPUT_TYPE] [PHASE_FILE] [PROCESS2D] [PROCESS3D] [RAWPHASE_FILE] [REMOVERAMPS] [SAVEMASK_FILE] [START] [TERMINAL_OUTPUT] [THRESHOLD] [UNWRAPPED_PHASE_FILE] ",
     "tool-version": "5.0.6",
-    "outputs": [
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "output-files": [
         {
             "path-template": "[UNWRAPPED_PHASE_FILE]",
             "optional": true,
@@ -225,8 +227,6 @@
             "id": "unwrapped_phase_file"
         }
     ],
-    "docker-index": "http://index.docker.io",
-    "schema-version": "0.2-snapshot",
     "docker-image": "glatard/nipype_fsl",
     "description": "PRELUDE, as implemented in Nipype (module: nipype.interfaces.fsl, interface: PRELUDE)."
 }

@@ -33,7 +33,7 @@
         {
             "command-line-flag": "--environ",
             "name": "Environ",
-            "default-value": {},
+            "default-value": "{}",
             "optional": true,
             "list": false,
             "command-line-key": "[ENVIRON]",
@@ -44,7 +44,7 @@
         {
             "command-line-flag": "--ignore_exception",
             "name": "Ignore exception",
-            "default-value": false,
+            "default-value": "False",
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
@@ -135,8 +135,9 @@
     ],
     "name": "WarpPointsToStd",
     "command-line": "nipype_cmd nipype.interfaces.fsl WarpPointsToStd [ARGS] [COORD_MM] [COORD_VOX] [ENVIRON] [IGNORE_EXCEPTION] [IMG_FILE] [IN_COORDS] [OUT_FILE] [PREMAT_FILE] [STD_FILE] [TERMINAL_OUTPUT] [WARP_FILE] [XFM_FILE] ",
-    "tool-version": null,
-    "outputs": [
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "output-files": [
         {
             "path-template": "[OUT_FILE]",
             "optional": true,
@@ -145,8 +146,6 @@
             "id": "out_file"
         }
     ],
-    "docker-index": "http://index.docker.io",
-    "schema-version": "0.2-snapshot",
     "docker-image": "glatard/nipype_fsl",
     "description": "WarpPointsToStd, as implemented in Nipype (module: nipype.interfaces.fsl, interface: WarpPointsToStd)."
 }

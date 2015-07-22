@@ -13,7 +13,7 @@
         {
             "command-line-flag": "--environ",
             "name": "Environ",
-            "default-value": {},
+            "default-value": "{}",
             "optional": true,
             "list": false,
             "command-line-key": "[ENVIRON]",
@@ -24,7 +24,7 @@
         {
             "command-line-flag": "--highpass_sigma",
             "name": "Highpass sigma",
-            "default-value": -1,
+            "default-value": "-1",
             "optional": true,
             "list": false,
             "command-line-key": "[HIGHPASS_SIGMA]",
@@ -35,7 +35,7 @@
         {
             "command-line-flag": "--ignore_exception",
             "name": "Ignore exception",
-            "default-value": false,
+            "default-value": "False",
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
@@ -66,7 +66,7 @@
         {
             "command-line-flag": "--lowpass_sigma",
             "name": "Lowpass sigma",
-            "default-value": -1,
+            "default-value": "-1",
             "optional": true,
             "list": false,
             "command-line-key": "[LOWPASS_SIGMA]",
@@ -128,7 +128,9 @@
     "name": "TemporalFilter",
     "command-line": "nipype_cmd nipype.interfaces.fsl TemporalFilter [ARGS] [ENVIRON] [HIGHPASS_SIGMA] [IGNORE_EXCEPTION] [IN_FILE] [INTERNAL_DATATYPE] [LOWPASS_SIGMA] [NAN2ZEROS] [OUT_FILE] [OUTPUT_DATATYPE] [OUTPUT_TYPE] [TERMINAL_OUTPUT] ",
     "tool-version": "5.0.6",
-    "outputs": [
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "output-files": [
         {
             "path-template": "[OUT_FILE]",
             "optional": true,
@@ -137,8 +139,6 @@
             "id": "out_file"
         }
     ],
-    "docker-index": "http://index.docker.io",
-    "schema-version": "0.2-snapshot",
     "docker-image": "glatard/nipype_fsl",
     "description": "TemporalFilter, as implemented in Nipype (module: nipype.interfaces.fsl, interface: TemporalFilter)."
 }

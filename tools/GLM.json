@@ -73,7 +73,7 @@
         {
             "command-line-flag": "--environ",
             "name": "Environ",
-            "default-value": {},
+            "default-value": "{}",
             "optional": true,
             "list": false,
             "command-line-key": "[ENVIRON]",
@@ -84,7 +84,7 @@
         {
             "command-line-flag": "--ignore_exception",
             "name": "Ignore exception",
-            "default-value": false,
+            "default-value": "False",
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
@@ -266,7 +266,9 @@
     "name": "GLM",
     "command-line": "nipype_cmd nipype.interfaces.fsl GLM [ARGS] [CONTRASTS] [DAT_NORM] [DEMEAN] [DES_NORM] [DESIGN] [DOF] [ENVIRON] [IGNORE_EXCEPTION] [IN_FILE] [MASK] [OUT_COPE] [OUT_DATA_NAME] [OUT_F_NAME] [OUT_FILE] [OUT_P_NAME] [OUT_PF_NAME] [OUT_RES_NAME] [OUT_SIGSQ_NAME] [OUT_T_NAME] [OUT_VARCB_NAME] [OUT_VNSCALES_NAME] [OUT_Z_NAME] [OUTPUT_TYPE] [TERMINAL_OUTPUT] [VAR_NORM] ",
     "tool-version": "5.0.6",
-    "outputs": [
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "output-files": [
         {
             "path-template": "[OUT_COPE]",
             "optional": true,
@@ -352,8 +354,6 @@
             "id": "out_z"
         }
     ],
-    "docker-index": "http://index.docker.io",
-    "schema-version": "0.2-snapshot",
     "docker-image": "glatard/nipype_fsl",
     "description": "GLM, as implemented in Nipype (module: nipype.interfaces.fsl, interface: GLM)."
 }

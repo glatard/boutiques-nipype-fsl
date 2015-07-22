@@ -23,7 +23,7 @@
         {
             "command-line-flag": "--dimension",
             "name": "Dimension",
-            "default-value": 3,
+            "default-value": "3",
             "optional": true,
             "list": false,
             "command-line-key": "[DIMENSION]",
@@ -34,7 +34,7 @@
         {
             "command-line-flag": "--environ",
             "name": "Environ",
-            "default-value": {},
+            "default-value": "{}",
             "optional": true,
             "list": false,
             "command-line-key": "[ENVIRON]",
@@ -55,7 +55,7 @@
         {
             "command-line-flag": "--ignore_exception",
             "name": "Ignore exception",
-            "default-value": false,
+            "default-value": "False",
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
@@ -106,7 +106,7 @@
         {
             "command-line-flag": "--usans",
             "name": "Usans",
-            "default-value": [],
+            "default-value": "[]",
             "optional": true,
             "list": true,
             "command-line-key": "[USANS]",
@@ -117,7 +117,7 @@
         {
             "command-line-flag": "--use_median",
             "name": "Use median",
-            "default-value": 1,
+            "default-value": "1",
             "optional": true,
             "list": false,
             "command-line-key": "[USE_MEDIAN]",
@@ -129,7 +129,9 @@
     "name": "SUSAN",
     "command-line": "nipype_cmd nipype.interfaces.fsl SUSAN [ARGS] [BRIGHTNESS_THRESHOLD] [DIMENSION] [ENVIRON] [FWHM] [IGNORE_EXCEPTION] [IN_FILE] [OUT_FILE] [OUTPUT_TYPE] [TERMINAL_OUTPUT] [USANS] [USE_MEDIAN] ",
     "tool-version": "5.0.6",
-    "outputs": [
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "output-files": [
         {
             "path-template": "[OUT_FILE]",
             "optional": true,
@@ -138,8 +140,6 @@
             "id": "smoothed_file"
         }
     ],
-    "docker-index": "http://index.docker.io",
-    "schema-version": "0.2-snapshot",
     "docker-image": "glatard/nipype_fsl",
     "description": "SUSAN, as implemented in Nipype (module: nipype.interfaces.fsl, interface: SUSAN)."
 }

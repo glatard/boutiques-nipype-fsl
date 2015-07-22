@@ -3,7 +3,7 @@
         {
             "command-line-flag": "--ignore_exception",
             "name": "Ignore exception",
-            "default-value": false,
+            "default-value": "False",
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
@@ -24,8 +24,9 @@
     ],
     "name": "L2Model",
     "command-line": "nipype_cmd nipype.interfaces.fsl L2Model [IGNORE_EXCEPTION] [NUM_COPES] ",
-    "tool-version": null,
-    "outputs": [
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "output-files": [
         {
             "path-template": "design.con",
             "optional": true,
@@ -48,8 +49,6 @@
             "id": "design_mat"
         }
     ],
-    "docker-index": "http://index.docker.io",
-    "schema-version": "0.2-snapshot",
     "docker-image": "glatard/nipype_fsl",
     "description": "L2Model, as implemented in Nipype (module: nipype.interfaces.fsl, interface: L2Model)."
 }

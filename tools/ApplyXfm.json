@@ -23,7 +23,7 @@
         {
             "command-line-flag": "--apply_xfm",
             "name": "Apply xfm",
-            "default-value": true,
+            "default-value": "True",
             "optional": true,
             "list": false,
             "command-line-key": "[APPLY_XFM]",
@@ -154,7 +154,7 @@
         {
             "command-line-flag": "--environ",
             "name": "Environ",
-            "default-value": {},
+            "default-value": "{}",
             "optional": true,
             "list": false,
             "command-line-key": "[ENVIRON]",
@@ -205,7 +205,7 @@
         {
             "command-line-flag": "--ignore_exception",
             "name": "Ignore exception",
-            "default-value": false,
+            "default-value": "False",
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
@@ -527,7 +527,9 @@
     "name": "ApplyXfm",
     "command-line": "nipype_cmd nipype.interfaces.fsl ApplyXfm [ANGLE_REP] [APPLY_ISOXFM] [APPLY_XFM] [ARGS] [BBRSLOPE] [BBRTYPE] [BGVALUE] [BINS] [COARSE_SEARCH] [COST] [COST_FUNC] [DATATYPE] [DISPLAY_INIT] [DOF] [ECHOSPACING] [ENVIRON] [FIELDMAP] [FIELDMAPMASK] [FINE_SEARCH] [FORCE_SCALING] [IGNORE_EXCEPTION] [IN_FILE] [IN_MATRIX_FILE] [IN_WEIGHT] [INTERP] [MIN_SAMPLING] [NO_CLAMP] [NO_RESAMPLE] [NO_RESAMPLE_BLUR] [NO_SEARCH] [OUT_FILE] [OUT_LOG] [OUT_MATRIX_FILE] [OUTPUT_TYPE] [PADDING_SIZE] [PEDIR] [REF_WEIGHT] [REFERENCE] [RIGID2D] [SAVE_LOG] [SCHEDULE] [SEARCHR_X] [SEARCHR_Y] [SEARCHR_Z] [SINC_WIDTH] [SINC_WINDOW] [TERMINAL_OUTPUT] [USES_QFORM] [VERBOSE] [WM_SEG] [WMCOORDS] [WMNORMS] ",
     "tool-version": "5.0.6",
-    "outputs": [
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "output-files": [
         {
             "path-template": "[OUT_FILE]",
             "optional": true,
@@ -550,8 +552,6 @@
             "id": "out_matrix_file"
         }
     ],
-    "docker-index": "http://index.docker.io",
-    "schema-version": "0.2-snapshot",
     "docker-image": "glatard/nipype_fsl",
     "description": "ApplyXfm, as implemented in Nipype (module: nipype.interfaces.fsl, interface: ApplyXfm)."
 }

@@ -33,7 +33,7 @@
         {
             "command-line-flag": "--environ",
             "name": "Environ",
-            "default-value": {},
+            "default-value": "{}",
             "optional": true,
             "list": false,
             "command-line-key": "[ENVIRON]",
@@ -64,7 +64,7 @@
         {
             "command-line-flag": "--esp",
             "name": "Esp",
-            "default-value": 0.58,
+            "default-value": "0.58",
             "optional": true,
             "list": false,
             "command-line-key": "[ESP]",
@@ -95,7 +95,7 @@
         {
             "command-line-flag": "--ignore_exception",
             "name": "Ignore exception",
-            "default-value": false,
+            "default-value": "False",
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
@@ -116,7 +116,7 @@
         {
             "command-line-flag": "--nocleanup",
             "name": "Nocleanup",
-            "default-value": true,
+            "default-value": "True",
             "optional": true,
             "list": false,
             "command-line-key": "[NOCLEANUP]",
@@ -137,7 +137,7 @@
         {
             "command-line-flag": "--sigma",
             "name": "Sigma",
-            "default-value": 2,
+            "default-value": "2",
             "optional": true,
             "list": false,
             "command-line-key": "[SIGMA]",
@@ -148,7 +148,7 @@
         {
             "command-line-flag": "--tediff",
             "name": "Tediff",
-            "default-value": 2.46,
+            "default-value": "2.46",
             "optional": true,
             "list": false,
             "command-line-key": "[TEDIFF]",
@@ -190,7 +190,9 @@
     "name": "EPIDeWarp",
     "command-line": "nipype_cmd nipype.interfaces.fsl EPIDeWarp [ARGS] [CLEANUP] [DPH_FILE] [ENVIRON] [EPI_FILE] [EPIDW] [ESP] [EXF_FILE] [EXFDW] [IGNORE_EXCEPTION] [MAG_FILE] [NOCLEANUP] [OUTPUT_TYPE] [SIGMA] [TEDIFF] [TERMINAL_OUTPUT] [TMPDIR] [VSM] ",
     "tool-version": "5.0.6",
-    "outputs": [
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "output-files": [
         {
             "path-template": "maskexf.nii.gz",
             "optional": true,
@@ -220,8 +222,6 @@
             "id": "vsm_file"
         }
     ],
-    "docker-index": "http://index.docker.io",
-    "schema-version": "0.2-snapshot",
     "docker-image": "glatard/nipype_fsl",
     "description": "EPIDeWarp, as implemented in Nipype (module: nipype.interfaces.fsl, interface: EPIDeWarp)."
 }

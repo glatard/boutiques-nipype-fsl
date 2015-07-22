@@ -23,7 +23,7 @@
         {
             "command-line-flag": "--environ",
             "name": "Environ",
-            "default-value": {},
+            "default-value": "{}",
             "optional": true,
             "list": false,
             "command-line-key": "[ENVIRON]",
@@ -44,7 +44,7 @@
         {
             "command-line-flag": "--ignore_exception",
             "name": "Ignore exception",
-            "default-value": false,
+            "default-value": "False",
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
@@ -116,7 +116,9 @@
     "name": "ConvertXFM",
     "command-line": "nipype_cmd nipype.interfaces.fsl ConvertXFM [ARGS] [CONCAT_XFM] [ENVIRON] [FIX_SCALE_SKEW] [IGNORE_EXCEPTION] [IN_FILE] [IN_FILE2] [INVERT_XFM] [OUT_FILE] [OUTPUT_TYPE] [TERMINAL_OUTPUT] ",
     "tool-version": "5.0.6",
-    "outputs": [
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "output-files": [
         {
             "path-template": "[OUT_FILE]",
             "optional": true,
@@ -125,8 +127,6 @@
             "id": "out_file"
         }
     ],
-    "docker-index": "http://index.docker.io",
-    "schema-version": "0.2-snapshot",
     "docker-image": "glatard/nipype_fsl",
     "description": "ConvertXFM, as implemented in Nipype (module: nipype.interfaces.fsl, interface: ConvertXFM)."
 }

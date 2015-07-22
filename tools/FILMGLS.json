@@ -53,7 +53,7 @@
         {
             "command-line-flag": "--environ",
             "name": "Environ",
-            "default-value": {},
+            "default-value": "{}",
             "optional": true,
             "list": false,
             "command-line-key": "[ENVIRON]",
@@ -84,7 +84,7 @@
         {
             "command-line-flag": "--ignore_exception",
             "name": "Ignore exception",
-            "default-value": false,
+            "default-value": "False",
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
@@ -176,7 +176,7 @@
         {
             "command-line-flag": "--threshold",
             "name": "Threshold",
-            "default-value": 0.0,
+            "default-value": "0.0",
             "optional": true,
             "list": false,
             "command-line-key": "[THRESHOLD]",
@@ -208,7 +208,9 @@
     "name": "FILMGLS",
     "command-line": "nipype_cmd nipype.interfaces.fsl FILMGLS [ARGS] [AUTOCORR_ESTIMATE_ONLY] [AUTOCORR_NOESTIMATE] [BRIGHTNESS_THRESHOLD] [DESIGN_FILE] [ENVIRON] [FIT_ARMODEL] [FULL_DATA] [IGNORE_EXCEPTION] [IN_FILE] [MASK_SIZE] [MULTITAPER_PRODUCT] [OUTPUT_PWDATA] [OUTPUT_TYPE] [RESULTS_DIR] [SMOOTH_AUTOCORR] [TERMINAL_OUTPUT] [THRESHOLD] [TUKEY_WINDOW] [USE_PAVA] ",
     "tool-version": "5.0.6",
-    "outputs": [
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "output-files": [
         {
             "path-template": "corrections.nii.gz",
             "optional": true,
@@ -259,8 +261,6 @@
             "id": "thresholdac"
         }
     ],
-    "docker-index": "http://index.docker.io",
-    "schema-version": "0.2-snapshot",
     "docker-image": "glatard/nipype_fsl",
     "description": "FILMGLS, as implemented in Nipype (module: nipype.interfaces.fsl, interface: FILMGLS)."
 }

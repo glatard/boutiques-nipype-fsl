@@ -53,7 +53,7 @@
         {
             "command-line-flag": "--environ",
             "name": "Environ",
-            "default-value": {},
+            "default-value": "{}",
             "optional": true,
             "list": false,
             "command-line-key": "[ENVIRON]",
@@ -74,7 +74,7 @@
         {
             "command-line-flag": "--force_dir",
             "name": "Force dir",
-            "default-value": true,
+            "default-value": "True",
             "optional": true,
             "list": false,
             "command-line-key": "[FORCE_DIR]",
@@ -95,7 +95,7 @@
         {
             "command-line-flag": "--ignore_exception",
             "name": "Ignore exception",
-            "default-value": false,
+            "default-value": "False",
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
@@ -176,7 +176,7 @@
         {
             "command-line-flag": "--n_samples",
             "name": "N samples",
-            "default-value": 5000,
+            "default-value": "5000",
             "optional": true,
             "list": false,
             "command-line-key": "[N_SAMPLES]",
@@ -207,7 +207,7 @@
         {
             "command-line-flag": "--opd",
             "name": "Opd",
-            "default-value": true,
+            "default-value": "True",
             "optional": true,
             "list": false,
             "command-line-key": "[OPD]",
@@ -420,7 +420,9 @@
     "name": "ProbTrackX",
     "command-line": "nipype_cmd nipype.interfaces.fsl ProbTrackX [ARGS] [AVOID_MP] [C_THRESH] [CORRECT_PATH_DISTRIBUTION] [DIST_THRESH] [ENVIRON] [FIBST] [FORCE_DIR] [FSAMPLES] [IGNORE_EXCEPTION] [INV_XFM] [LOOP_CHECK] [MASK] [MASK2] [MESH] [MOD_EULER] [MODE] [N_SAMPLES] [N_STEPS] [NETWORK] [OPD] [OS2T] [OUT_DIR] [OUTPUT_TYPE] [PHSAMPLES] [RAND_FIB] [RANDOM_SEED] [S2TASTEXT] [SAMPLE_RANDOM_POINTS] [SAMPLES_BASE_NAME] [SEED] [SEED_REF] [STEP_LENGTH] [STOP_MASK] [TARGET_MASKS] [TERMINAL_OUTPUT] [THSAMPLES] [USE_ANISOTROPY] [VERBOSE] [WAYPOINTS] [XFM] ",
     "tool-version": "5.0.6",
-    "outputs": [
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "output-files": [
         {
             "path-template": "fdt_paths.nii.gz",
             "optional": true,
@@ -436,8 +438,6 @@
             "id": "log"
         }
     ],
-    "docker-index": "http://index.docker.io",
-    "schema-version": "0.2-snapshot",
     "docker-image": "glatard/nipype_fsl",
     "description": "ProbTrackX, as implemented in Nipype (module: nipype.interfaces.fsl, interface: ProbTrackX)."
 }

@@ -23,7 +23,7 @@
         {
             "command-line-flag": "--environ",
             "name": "Environ",
-            "default-value": {},
+            "default-value": "{}",
             "optional": true,
             "list": false,
             "command-line-key": "[ENVIRON]",
@@ -34,7 +34,7 @@
         {
             "command-line-flag": "--ignore_exception",
             "name": "Ignore exception",
-            "default-value": false,
+            "default-value": "False",
             "optional": true,
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
@@ -166,7 +166,9 @@
     "name": "ExtractROI",
     "command-line": "nipype_cmd nipype.interfaces.fsl ExtractROI [ARGS] [CROP_LIST] [ENVIRON] [IGNORE_EXCEPTION] [IN_FILE] [OUTPUT_TYPE] [ROI_FILE] [T_MIN] [T_SIZE] [TERMINAL_OUTPUT] [X_MIN] [X_SIZE] [Y_MIN] [Y_SIZE] [Z_MIN] [Z_SIZE] ",
     "tool-version": "5.0.6",
-    "outputs": [
+    "docker-index": "http://index.docker.io",
+    "schema-version": "0.2-snapshot",
+    "output-files": [
         {
             "path-template": "[ROI_FILE]",
             "optional": true,
@@ -175,8 +177,6 @@
             "id": "roi_file"
         }
     ],
-    "docker-index": "http://index.docker.io",
-    "schema-version": "0.2-snapshot",
     "docker-image": "glatard/nipype_fsl",
     "description": "ExtractROI, as implemented in Nipype (module: nipype.interfaces.fsl, interface: ExtractROI)."
 }
