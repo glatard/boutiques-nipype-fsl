@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -17,7 +17,7 @@
             "list": false,
             "command-line-key": "[AVOID_MP]",
             "type": "File",
-            "id": "avoid_mp",
+            "id": "input_avoid_mp",
             "description": "An existing file name. Reject pathways passing through locations given by this mask."
         },
         {
@@ -27,7 +27,7 @@
             "list": false,
             "command-line-key": "[C_THRESH]",
             "type": "Number",
-            "id": "c_thresh",
+            "id": "input_c_thresh",
             "description": "A float. Curvature threshold - default=0.2."
         },
         {
@@ -37,7 +37,7 @@
             "list": false,
             "command-line-key": "[COLMASK4]",
             "type": "File",
-            "id": "colmask4",
+            "id": "input_colmask4",
             "description": "An existing file name. Mask for columns of matrix4 (default=seed mask)."
         },
         {
@@ -47,7 +47,7 @@
             "list": false,
             "command-line-key": "[CORRECT_PATH_DISTRIBUTION]",
             "type": "String",
-            "id": "correct_path_distribution",
+            "id": "input_correct_path_distribution",
             "description": "A boolean. Correct path distribution for the length of the pathways."
         },
         {
@@ -57,7 +57,7 @@
             "list": false,
             "command-line-key": "[DIST_THRESH]",
             "type": "Number",
-            "id": "dist_thresh",
+            "id": "input_dist_thresh",
             "description": "A float. Discards samples shorter than this threshold (in mm - default=0)."
         },
         {
@@ -67,7 +67,7 @@
             "list": false,
             "command-line-key": "[DISTTHRESH1]",
             "type": "Number",
-            "id": "distthresh1",
+            "id": "input_distthresh1",
             "description": "A float. Discards samples (in matrix1) shorter than this threshold (in mm - default=0)."
         },
         {
@@ -77,7 +77,7 @@
             "list": false,
             "command-line-key": "[DISTTHRESH3]",
             "type": "Number",
-            "id": "distthresh3",
+            "id": "input_distthresh3",
             "description": "A float. Discards samples (in matrix3) shorter than this threshold (in mm - default=0)."
         },
         {
@@ -88,7 +88,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -98,7 +98,7 @@
             "list": false,
             "command-line-key": "[FIBST]",
             "type": "Number",
-            "id": "fibst",
+            "id": "input_fibst",
             "description": "An integer (int or long). Force a starting fibre for tracking - default=1, i.e. first fibre orientation. only works if randfib==0."
         },
         {
@@ -108,7 +108,7 @@
             "list": false,
             "command-line-key": "[FOPD]",
             "type": "File",
-            "id": "fopd",
+            "id": "input_fopd",
             "description": "An existing file name. Other mask for binning tract distribution."
         },
         {
@@ -119,7 +119,7 @@
             "list": false,
             "command-line-key": "[FORCE_DIR]",
             "type": "String",
-            "id": "force_dir",
+            "id": "input_force_dir",
             "description": "A boolean. Use the actual directory name given - i.e. do not add + to make a new directory."
         },
         {
@@ -129,7 +129,7 @@
             "list": true,
             "command-line-key": "[FSAMPLES]",
             "type": "File",
-            "id": "fsamples",
+            "id": "input_fsamples",
             "description": "A list of items which are an existing file name. No description provided."
         },
         {
@@ -140,7 +140,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -150,7 +150,7 @@
             "list": false,
             "command-line-key": "[INV_XFM]",
             "type": "String",
-            "id": "inv_xfm",
+            "id": "input_inv_xfm",
             "description": "A file name. Transformation matrix taking dti space to seed space (compulsory when using a warp_field for seeds_to_dti)."
         },
         {
@@ -160,7 +160,7 @@
             "list": false,
             "command-line-key": "[LOOP_CHECK]",
             "type": "String",
-            "id": "loop_check",
+            "id": "input_loop_check",
             "description": "A boolean. Perform loop_checks on paths - slower, but allows lower curvature threshold."
         },
         {
@@ -170,7 +170,7 @@
             "list": false,
             "command-line-key": "[LRTARGET3]",
             "type": "File",
-            "id": "lrtarget3",
+            "id": "input_lrtarget3",
             "description": "An existing file name. Column-space mask used for nxn connectivity matrix."
         },
         {
@@ -180,7 +180,7 @@
             "list": false,
             "command-line-key": "[MASK]",
             "type": "File",
-            "id": "mask",
+            "id": "input_mask",
             "description": "An existing file name. Bet binary mask file in diffusion space."
         },
         {
@@ -190,7 +190,7 @@
             "list": false,
             "command-line-key": "[MESHSPACE]",
             "type": "String",
-            "id": "meshspace",
+            "id": "input_meshspace",
             "description": "'caret' or 'freesurfer' or 'first' or 'vox'. Mesh reference space - either \"caret\" (default) or \"freesurfer\" or \"first\" or \"vox\"."
         },
         {
@@ -200,7 +200,7 @@
             "list": false,
             "command-line-key": "[MOD_EULER]",
             "type": "String",
-            "id": "mod_euler",
+            "id": "input_mod_euler",
             "description": "A boolean. Use modified euler streamlining."
         },
         {
@@ -211,7 +211,7 @@
             "list": false,
             "command-line-key": "[N_SAMPLES]",
             "type": "Number",
-            "id": "n_samples",
+            "id": "input_n_samples",
             "description": "An integer (int or long). Number of samples - default=5000."
         },
         {
@@ -221,7 +221,7 @@
             "list": false,
             "command-line-key": "[N_STEPS]",
             "type": "Number",
-            "id": "n_steps",
+            "id": "input_n_steps",
             "description": "An integer (int or long). Number of steps per sample - default=2000."
         },
         {
@@ -231,7 +231,7 @@
             "list": false,
             "command-line-key": "[NETWORK]",
             "type": "String",
-            "id": "network",
+            "id": "input_network",
             "description": "A boolean. Activate network mode - only keep paths going through at least one seed mask (required if multiple seed masks)."
         },
         {
@@ -241,7 +241,7 @@
             "list": false,
             "command-line-key": "[OMATRIX1]",
             "type": "String",
-            "id": "omatrix1",
+            "id": "input_omatrix1",
             "description": "A boolean. Output matrix1 - seedtoseed connectivity."
         },
         {
@@ -251,7 +251,7 @@
             "list": false,
             "command-line-key": "[OMATRIX2]",
             "type": "String",
-            "id": "omatrix2",
+            "id": "input_omatrix2",
             "description": "A boolean. Output matrix2 - seedtolowresmask."
         },
         {
@@ -261,7 +261,7 @@
             "list": false,
             "command-line-key": "[OMATRIX3]",
             "type": "String",
-            "id": "omatrix3",
+            "id": "input_omatrix3",
             "description": "A boolean. Output matrix3 (nxn connectivity matrix)."
         },
         {
@@ -271,7 +271,7 @@
             "list": false,
             "command-line-key": "[OMATRIX4]",
             "type": "String",
-            "id": "omatrix4",
+            "id": "input_omatrix4",
             "description": "A boolean. Output matrix4 - dtimasktoseed (special oxford sparse format)."
         },
         {
@@ -281,7 +281,7 @@
             "list": false,
             "command-line-key": "[ONEWAYCONDITION]",
             "type": "String",
-            "id": "onewaycondition",
+            "id": "input_onewaycondition",
             "description": "A boolean. Apply waypoint conditions to each half tract separately."
         },
         {
@@ -292,7 +292,7 @@
             "list": false,
             "command-line-key": "[OPD]",
             "type": "String",
-            "id": "opd",
+            "id": "input_opd",
             "description": "A boolean. Outputs path distributions."
         },
         {
@@ -302,7 +302,7 @@
             "list": false,
             "command-line-key": "[OS2T]",
             "type": "String",
-            "id": "os2t",
+            "id": "input_os2t",
             "description": "A boolean. Outputs seeds to targets."
         },
         {
@@ -312,7 +312,7 @@
             "list": false,
             "command-line-key": "[OUT_DIR]",
             "type": "String",
-            "id": "out_dir",
+            "id": "input_out_dir",
             "description": "An existing directory name. Directory to put the final volumes in."
         },
         {
@@ -322,7 +322,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -332,7 +332,7 @@
             "list": true,
             "command-line-key": "[PHSAMPLES]",
             "type": "File",
-            "id": "phsamples",
+            "id": "input_phsamples",
             "description": "A list of items which are an existing file name. No description provided."
         },
         {
@@ -342,7 +342,7 @@
             "list": false,
             "command-line-key": "[RAND_FIB]",
             "type": "String",
-            "id": "rand_fib",
+            "id": "input_rand_fib",
             "description": "0 or 1 or 2 or 3. Options: 0 - default, 1 - to randomly sample initial fibres (with f > fibthresh), 2 - to sample in proportion fibres (with f>fibthresh) to f, 3 - to sample all populations at random (even if f<fibthresh)."
         },
         {
@@ -352,7 +352,7 @@
             "list": false,
             "command-line-key": "[RANDOM_SEED]",
             "type": "String",
-            "id": "random_seed",
+            "id": "input_random_seed",
             "description": "A boolean. Random seed."
         },
         {
@@ -362,7 +362,7 @@
             "list": false,
             "command-line-key": "[S2TASTEXT]",
             "type": "String",
-            "id": "s2tastext",
+            "id": "input_s2tastext",
             "description": "A boolean. Output seed-to-target counts as a text file (useful when seeding from a mesh)."
         },
         {
@@ -372,7 +372,7 @@
             "list": false,
             "command-line-key": "[SAMPLE_RANDOM_POINTS]",
             "type": "String",
-            "id": "sample_random_points",
+            "id": "input_sample_random_points",
             "description": "A boolean. Sample random points within seed voxels."
         },
         {
@@ -383,7 +383,7 @@
             "list": false,
             "command-line-key": "[SAMPLES_BASE_NAME]",
             "type": "String",
-            "id": "samples_base_name",
+            "id": "input_samples_base_name",
             "description": "A string. The rootname/base_name for samples files."
         },
         {
@@ -393,7 +393,7 @@
             "list": true,
             "command-line-key": "[SEED]",
             "type": "File",
-            "id": "seed",
+            "id": "input_seed",
             "description": "An existing file name or a list of items which are an existing file name or a list of items which are a list of from 3 to 3 items which are an integer (int or long). Seed volume(s), or voxel(s)or freesurfer label file."
         },
         {
@@ -403,7 +403,7 @@
             "list": false,
             "command-line-key": "[SEED_REF]",
             "type": "File",
-            "id": "seed_ref",
+            "id": "input_seed_ref",
             "description": "An existing file name. Reference vol to define seed space in simple mode - diffusion space assumed if absent."
         },
         {
@@ -413,7 +413,7 @@
             "list": false,
             "command-line-key": "[SIMPLE]",
             "type": "String",
-            "id": "simple",
+            "id": "input_simple",
             "description": "A boolean. Rack from a list of voxels (seed must be a ascii list of coordinates)."
         },
         {
@@ -423,7 +423,7 @@
             "list": false,
             "command-line-key": "[STEP_LENGTH]",
             "type": "Number",
-            "id": "step_length",
+            "id": "input_step_length",
             "description": "A float. Step_length in mm - default=0.5."
         },
         {
@@ -433,7 +433,7 @@
             "list": false,
             "command-line-key": "[STOP_MASK]",
             "type": "File",
-            "id": "stop_mask",
+            "id": "input_stop_mask",
             "description": "An existing file name. Stop tracking at locations given by this mask file."
         },
         {
@@ -443,7 +443,7 @@
             "list": false,
             "command-line-key": "[TARGET2]",
             "type": "File",
-            "id": "target2",
+            "id": "input_target2",
             "description": "An existing file name. Low resolution binary brain mask for storing connectivity distribution in matrix2 mode."
         },
         {
@@ -453,7 +453,7 @@
             "list": false,
             "command-line-key": "[TARGET3]",
             "type": "File",
-            "id": "target3",
+            "id": "input_target3",
             "description": "An existing file name. Mask used for nxn connectivity matrix (or nxn if lrtarget3 is set)."
         },
         {
@@ -463,7 +463,7 @@
             "list": false,
             "command-line-key": "[TARGET4]",
             "type": "File",
-            "id": "target4",
+            "id": "input_target4",
             "description": "An existing file name. Brain mask in dti space."
         },
         {
@@ -473,7 +473,7 @@
             "list": true,
             "command-line-key": "[TARGET_MASKS]",
             "type": "String",
-            "id": "target_masks",
+            "id": "input_target_masks",
             "description": "A list of items which are a file name. List of target masks - required for seeds_to_targets classification."
         },
         {
@@ -483,7 +483,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -493,7 +493,7 @@
             "list": true,
             "command-line-key": "[THSAMPLES]",
             "type": "File",
-            "id": "thsamples",
+            "id": "input_thsamples",
             "description": "A list of items which are an existing file name. No description provided."
         },
         {
@@ -503,7 +503,7 @@
             "list": false,
             "command-line-key": "[USE_ANISOTROPY]",
             "type": "String",
-            "id": "use_anisotropy",
+            "id": "input_use_anisotropy",
             "description": "A boolean. Use anisotropy to constrain tracking."
         },
         {
@@ -513,7 +513,7 @@
             "list": false,
             "command-line-key": "[VERBOSE]",
             "type": "String",
-            "id": "verbose",
+            "id": "input_verbose",
             "description": "0 or 1 or 2. Verbose level, [0-2].level 2 is required to output particle files."
         },
         {
@@ -523,7 +523,7 @@
             "list": false,
             "command-line-key": "[WAYCOND]",
             "type": "String",
-            "id": "waycond",
+            "id": "input_waycond",
             "description": "'or' or 'and'. Waypoint condition. either \"and\" (default) or \"or\"."
         },
         {
@@ -533,7 +533,7 @@
             "list": false,
             "command-line-key": "[WAYORDER]",
             "type": "String",
-            "id": "wayorder",
+            "id": "input_wayorder",
             "description": "A boolean. Reject streamlines that do not hit waypoints in given order. only valid if waycond=and."
         },
         {
@@ -543,7 +543,7 @@
             "list": false,
             "command-line-key": "[WAYPOINTS]",
             "type": "File",
-            "id": "waypoints",
+            "id": "input_waypoints",
             "description": "An existing file name. Waypoint mask or ascii list of waypoint masks - only keep paths going through all the masks."
         },
         {
@@ -553,7 +553,7 @@
             "list": false,
             "command-line-key": "[XFM]",
             "type": "File",
-            "id": "xfm",
+            "id": "input_xfm",
             "description": "An existing file name. Transformation matrix taking seed space to dti space (either flirt matrix or fnirt warp_field) - default is identity."
         }
     ],
@@ -568,49 +568,49 @@
             "optional": true,
             "type": "File",
             "name": "Fdt paths",
-            "id": "fdt_paths"
+            "id": "output+fdt_paths"
         },
         {
             "path-template": "probtrackx.log",
             "optional": true,
             "type": "File",
             "name": "Log",
-            "id": "log"
+            "id": "output+log"
         },
         {
             "path-template": "lookup_tractspace_fdt_matrix2.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Lookup tractspace",
-            "id": "lookup_tractspace"
+            "id": "output+lookup_tractspace"
         },
         {
             "path-template": "fdt_matrix1.dot",
             "optional": true,
             "type": "File",
             "name": "Matrix1 dot",
-            "id": "matrix1_dot"
+            "id": "output+matrix1_dot"
         },
         {
             "path-template": "fdt_matrix2.dot",
             "optional": true,
             "type": "File",
             "name": "Matrix2 dot",
-            "id": "matrix2_dot"
+            "id": "output+matrix2_dot"
         },
         {
             "path-template": "fdt_matrix3.dot",
             "optional": true,
             "type": "File",
             "name": "Matrix3 dot",
-            "id": "matrix3_dot"
+            "id": "output+matrix3_dot"
         },
         {
             "path-template": "fdt_network_matrix",
             "optional": true,
             "type": "File",
             "name": "Network matrix",
-            "id": "network_matrix"
+            "id": "output+network_matrix"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

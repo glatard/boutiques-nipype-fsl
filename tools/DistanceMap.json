@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -17,7 +17,7 @@
             "list": false,
             "command-line-key": "[DISTANCE_MAP]",
             "type": "String",
-            "id": "distance_map",
+            "id": "input_distance_map",
             "description": "A file name. Distance map to write."
         },
         {
@@ -28,7 +28,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -39,7 +39,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -49,7 +49,7 @@
             "list": false,
             "command-line-key": "[IN_FILE]",
             "type": "File",
-            "id": "in_file",
+            "id": "input_in_file",
             "description": "An existing file name. Image to calculate distance values for."
         },
         {
@@ -59,7 +59,7 @@
             "list": false,
             "command-line-key": "[INVERT_INPUT]",
             "type": "String",
-            "id": "invert_input",
+            "id": "input_invert_input",
             "description": "A boolean. Invert input image."
         },
         {
@@ -69,7 +69,7 @@
             "list": false,
             "command-line-key": "[LOCAL_MAX_FILE]",
             "type": "String",
-            "id": "local_max_file",
+            "id": "input_local_max_file",
             "description": "A boolean or a file name. Write an image of the local maxima."
         },
         {
@@ -79,7 +79,7 @@
             "list": false,
             "command-line-key": "[MASK_FILE]",
             "type": "File",
-            "id": "mask_file",
+            "id": "input_mask_file",
             "description": "An existing file name. Binary mask to contrain calculations."
         },
         {
@@ -89,7 +89,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -99,7 +99,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         }
     ],
@@ -114,14 +114,14 @@
             "optional": true,
             "type": "File",
             "name": "Distance map",
-            "id": "distance_map"
+            "id": "output+distance_map"
         },
         {
             "path-template": "[IN_FILE]_lclmax",
             "optional": true,
             "type": "File",
             "name": "Local max file",
-            "id": "local_max_file"
+            "id": "output+local_max_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

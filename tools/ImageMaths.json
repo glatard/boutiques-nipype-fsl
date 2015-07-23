@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -18,7 +18,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -29,7 +29,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -39,7 +39,7 @@
             "list": false,
             "command-line-key": "[IN_FILE]",
             "type": "File",
-            "id": "in_file",
+            "id": "input_in_file",
             "description": "An existing file name. No description provided."
         },
         {
@@ -49,7 +49,7 @@
             "list": false,
             "command-line-key": "[IN_FILE2]",
             "type": "File",
-            "id": "in_file2",
+            "id": "input_in_file2",
             "description": "An existing file name. No description provided."
         },
         {
@@ -59,7 +59,7 @@
             "list": false,
             "command-line-key": "[OP_STRING]",
             "type": "String",
-            "id": "op_string",
+            "id": "input_op_string",
             "description": "A string. String defining the operation, i. e. -add."
         },
         {
@@ -69,7 +69,7 @@
             "list": false,
             "command-line-key": "[OUT_DATA_TYPE]",
             "type": "String",
-            "id": "out_data_type",
+            "id": "input_out_data_type",
             "description": "'char' or 'short' or 'int' or 'float' or 'double' or 'input'. Output datatype, one of (char, short, int, float, double, input)."
         },
         {
@@ -79,7 +79,7 @@
             "list": false,
             "command-line-key": "[OUT_FILE]",
             "type": "String",
-            "id": "out_file",
+            "id": "input_out_file",
             "description": "A file name. No description provided."
         },
         {
@@ -89,7 +89,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -99,7 +99,7 @@
             "list": false,
             "command-line-key": "[SUFFIX]",
             "type": "String",
-            "id": "suffix",
+            "id": "input_suffix",
             "description": "A string. Out_file suffix."
         },
         {
@@ -109,7 +109,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         }
     ],
@@ -124,7 +124,7 @@
             "optional": true,
             "type": "File",
             "name": "Out file",
-            "id": "out_file"
+            "id": "output+out_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -17,7 +17,7 @@
             "list": false,
             "command-line-key": "[CLEANUP]",
             "type": "String",
-            "id": "cleanup",
+            "id": "input_cleanup",
             "description": "A boolean. Cleanup."
         },
         {
@@ -27,7 +27,7 @@
             "list": false,
             "command-line-key": "[DPH_FILE]",
             "type": "File",
-            "id": "dph_file",
+            "id": "input_dph_file",
             "description": "An existing file name. Phase file assumed to be scaled from 0 to 4095."
         },
         {
@@ -38,7 +38,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -48,7 +48,7 @@
             "list": false,
             "command-line-key": "[EPI_FILE]",
             "type": "File",
-            "id": "epi_file",
+            "id": "input_epi_file",
             "description": "An existing file name. Epi volume to unwarp."
         },
         {
@@ -58,7 +58,7 @@
             "list": false,
             "command-line-key": "[EPIDW]",
             "type": "String",
-            "id": "epidw",
+            "id": "input_epidw",
             "description": "A string. Dewarped epi volume."
         },
         {
@@ -69,7 +69,7 @@
             "list": false,
             "command-line-key": "[ESP]",
             "type": "Number",
-            "id": "esp",
+            "id": "input_esp",
             "description": "A float. Epi echo spacing."
         },
         {
@@ -79,7 +79,7 @@
             "list": false,
             "command-line-key": "[EXF_FILE]",
             "type": "File",
-            "id": "exf_file",
+            "id": "input_exf_file",
             "description": "An existing file name. Example func volume (or use epi)."
         },
         {
@@ -89,7 +89,7 @@
             "list": false,
             "command-line-key": "[EXFDW]",
             "type": "String",
-            "id": "exfdw",
+            "id": "input_exfdw",
             "description": "A string. Dewarped example func volume."
         },
         {
@@ -100,7 +100,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -110,7 +110,7 @@
             "list": false,
             "command-line-key": "[MAG_FILE]",
             "type": "File",
-            "id": "mag_file",
+            "id": "input_mag_file",
             "description": "An existing file name. Magnitude file."
         },
         {
@@ -121,7 +121,7 @@
             "list": false,
             "command-line-key": "[NOCLEANUP]",
             "type": "String",
-            "id": "nocleanup",
+            "id": "input_nocleanup",
             "description": "A boolean. No cleanup."
         },
         {
@@ -131,7 +131,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -142,7 +142,7 @@
             "list": false,
             "command-line-key": "[SIGMA]",
             "type": "Number",
-            "id": "sigma",
+            "id": "input_sigma",
             "description": "An integer (int or long). 2d spatial gaussing smoothing                        stdev (default = 2mm)."
         },
         {
@@ -153,7 +153,7 @@
             "list": false,
             "command-line-key": "[TEDIFF]",
             "type": "Number",
-            "id": "tediff",
+            "id": "input_tediff",
             "description": "A float. Difference in b0 field map tes."
         },
         {
@@ -163,7 +163,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -173,7 +173,7 @@
             "list": false,
             "command-line-key": "[TMPDIR]",
             "type": "String",
-            "id": "tmpdir",
+            "id": "input_tmpdir",
             "description": "A string. Tmpdir."
         },
         {
@@ -183,7 +183,7 @@
             "list": false,
             "command-line-key": "[VSM]",
             "type": "String",
-            "id": "vsm",
+            "id": "input_vsm",
             "description": "A string. Voxel shift map."
         }
     ],
@@ -198,28 +198,28 @@
             "optional": true,
             "type": "File",
             "name": "Exf mask",
-            "id": "exf_mask"
+            "id": "output+exf_mask"
         },
         {
             "path-template": "[EXFDW]",
             "optional": true,
             "type": "File",
             "name": "Exfdw",
-            "id": "exfdw"
+            "id": "output+exfdw"
         },
         {
             "path-template": "[EPIDW]",
             "optional": true,
             "type": "File",
             "name": "Unwarped file",
-            "id": "unwarped_file"
+            "id": "output+unwarped_file"
         },
         {
             "path-template": "[VSM].nii.gz",
             "optional": true,
             "type": "File",
             "name": "Vsm file",
-            "id": "vsm_file"
+            "id": "output+vsm_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

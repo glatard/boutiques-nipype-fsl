@@ -7,7 +7,7 @@
             "list": true,
             "command-line-key": "[FEAT_DIRS]",
             "type": "String",
-            "id": "feat_dirs",
+            "id": "input_feat_dirs",
             "description": "A list of items which are an existing directory name. Lower level feat dirs."
         },
         {
@@ -18,7 +18,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -29,7 +29,7 @@
             "list": false,
             "command-line-key": "[REG_DOF]",
             "type": "Number",
-            "id": "reg_dof",
+            "id": "input_reg_dof",
             "description": "An integer (int or long). Registration degrees of freedom."
         },
         {
@@ -39,7 +39,7 @@
             "list": false,
             "command-line-key": "[REG_IMAGE]",
             "type": "File",
-            "id": "reg_image",
+            "id": "input_reg_image",
             "description": "An existing file name. Image to register to (will be treated as standard)."
         }
     ],
@@ -53,7 +53,7 @@
             "optional": true,
             "type": "File",
             "name": "Fsf file",
-            "id": "fsf_file"
+            "id": "output+fsf_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

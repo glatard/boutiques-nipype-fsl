@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -17,7 +17,7 @@
             "list": false,
             "command-line-key": "[COMPLEX_PHASE_FILE]",
             "type": "File",
-            "id": "complex_phase_file",
+            "id": "input_complex_phase_file",
             "description": "An existing file name. Complex phase input volume."
         },
         {
@@ -27,7 +27,7 @@
             "list": false,
             "command-line-key": "[END]",
             "type": "Number",
-            "id": "end",
+            "id": "input_end",
             "description": "An integer (int or long). Final image number to process (default inf)."
         },
         {
@@ -38,7 +38,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -49,7 +49,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -59,7 +59,7 @@
             "list": false,
             "command-line-key": "[LABEL_FILE]",
             "type": "String",
-            "id": "label_file",
+            "id": "input_label_file",
             "description": "A file name. Saving the area labels output."
         },
         {
@@ -69,7 +69,7 @@
             "list": false,
             "command-line-key": "[LABELPROCESS2D]",
             "type": "String",
-            "id": "labelprocess2d",
+            "id": "input_labelprocess2d",
             "description": "A boolean. Does label processing in 2d (slice at a time)."
         },
         {
@@ -79,7 +79,7 @@
             "list": false,
             "command-line-key": "[MAGNITUDE_FILE]",
             "type": "File",
-            "id": "magnitude_file",
+            "id": "input_magnitude_file",
             "description": "An existing file name. File containing magnitude image."
         },
         {
@@ -89,7 +89,7 @@
             "list": false,
             "command-line-key": "[MASK_FILE]",
             "type": "File",
-            "id": "mask_file",
+            "id": "input_mask_file",
             "description": "An existing file name. Filename of mask input volume."
         },
         {
@@ -99,7 +99,7 @@
             "list": false,
             "command-line-key": "[NUM_PARTITIONS]",
             "type": "Number",
-            "id": "num_partitions",
+            "id": "input_num_partitions",
             "description": "An integer (int or long). Number of phase partitions to use."
         },
         {
@@ -109,7 +109,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -119,7 +119,7 @@
             "list": false,
             "command-line-key": "[PHASE_FILE]",
             "type": "File",
-            "id": "phase_file",
+            "id": "input_phase_file",
             "description": "An existing file name. Raw phase file."
         },
         {
@@ -129,7 +129,7 @@
             "list": false,
             "command-line-key": "[PROCESS2D]",
             "type": "String",
-            "id": "process2d",
+            "id": "input_process2d",
             "description": "A boolean. Does all processing in 2d (slice at a time)."
         },
         {
@@ -139,7 +139,7 @@
             "list": false,
             "command-line-key": "[PROCESS3D]",
             "type": "String",
-            "id": "process3d",
+            "id": "input_process3d",
             "description": "A boolean. Forces all processing to be full 3d."
         },
         {
@@ -149,7 +149,7 @@
             "list": false,
             "command-line-key": "[RAWPHASE_FILE]",
             "type": "String",
-            "id": "rawphase_file",
+            "id": "input_rawphase_file",
             "description": "A file name. Saving the raw phase output."
         },
         {
@@ -159,7 +159,7 @@
             "list": false,
             "command-line-key": "[REMOVERAMPS]",
             "type": "String",
-            "id": "removeramps",
+            "id": "input_removeramps",
             "description": "A boolean. Remove phase ramps during unwrapping."
         },
         {
@@ -169,7 +169,7 @@
             "list": false,
             "command-line-key": "[SAVEMASK_FILE]",
             "type": "String",
-            "id": "savemask_file",
+            "id": "input_savemask_file",
             "description": "A file name. Saving the mask volume."
         },
         {
@@ -179,7 +179,7 @@
             "list": false,
             "command-line-key": "[START]",
             "type": "Number",
-            "id": "start",
+            "id": "input_start",
             "description": "An integer (int or long). First image number to process (default 0)."
         },
         {
@@ -189,7 +189,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -199,7 +199,7 @@
             "list": false,
             "command-line-key": "[THRESHOLD]",
             "type": "Number",
-            "id": "threshold",
+            "id": "input_threshold",
             "description": "A float. Intensity threshold for masking."
         },
         {
@@ -209,7 +209,7 @@
             "list": false,
             "command-line-key": "[UNWRAPPED_PHASE_FILE]",
             "type": "String",
-            "id": "unwrapped_phase_file",
+            "id": "input_unwrapped_phase_file",
             "description": "A file name. File containing unwrapepd phase."
         }
     ],
@@ -224,7 +224,7 @@
             "optional": true,
             "type": "File",
             "name": "Unwrapped phase file",
-            "id": "unwrapped_phase_file"
+            "id": "output+unwrapped_phase_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

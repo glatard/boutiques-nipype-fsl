@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -17,7 +17,7 @@
             "list": false,
             "command-line-key": "[AUTO_THRESH_BG]",
             "type": "String",
-            "id": "auto_thresh_bg",
+            "id": "input_auto_thresh_bg",
             "description": "A boolean. Automatically threshold the background image."
         },
         {
@@ -27,7 +27,7 @@
             "list": false,
             "command-line-key": "[BACKGROUND_IMAGE]",
             "type": "File",
-            "id": "background_image",
+            "id": "input_background_image",
             "description": "An existing file name. Image to use as background."
         },
         {
@@ -37,7 +37,7 @@
             "list": false,
             "command-line-key": "[BG_THRESH]",
             "type": "Number",
-            "id": "bg_thresh",
+            "id": "input_bg_thresh",
             "description": "A tuple of the form: (a float, a float). Min and max values for background intensity."
         },
         {
@@ -48,7 +48,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -58,7 +58,7 @@
             "list": false,
             "command-line-key": "[FULL_BG_RANGE]",
             "type": "String",
-            "id": "full_bg_range",
+            "id": "input_full_bg_range",
             "description": "A boolean. Use full range of background image."
         },
         {
@@ -69,7 +69,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -79,7 +79,7 @@
             "list": false,
             "command-line-key": "[OUT_FILE]",
             "type": "String",
-            "id": "out_file",
+            "id": "input_out_file",
             "description": "A file name. Combined image volume."
         },
         {
@@ -90,7 +90,7 @@
             "list": false,
             "command-line-key": "[OUT_TYPE]",
             "type": "String",
-            "id": "out_type",
+            "id": "input_out_type",
             "description": "'float' or 'int'. Write output with float or int."
         },
         {
@@ -100,7 +100,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -110,7 +110,7 @@
             "list": false,
             "command-line-key": "[SHOW_NEGATIVE_STATS]",
             "type": "String",
-            "id": "show_negative_stats",
+            "id": "input_show_negative_stats",
             "description": "A boolean. Display negative statistics in overlay."
         },
         {
@@ -120,7 +120,7 @@
             "list": false,
             "command-line-key": "[STAT_IMAGE]",
             "type": "File",
-            "id": "stat_image",
+            "id": "input_stat_image",
             "description": "An existing file name. Statistical image to overlay in color."
         },
         {
@@ -130,7 +130,7 @@
             "list": false,
             "command-line-key": "[STAT_IMAGE2]",
             "type": "File",
-            "id": "stat_image2",
+            "id": "input_stat_image2",
             "description": "An existing file name. Second statistical image to overlay in color."
         },
         {
@@ -140,7 +140,7 @@
             "list": false,
             "command-line-key": "[STAT_THRESH]",
             "type": "Number",
-            "id": "stat_thresh",
+            "id": "input_stat_thresh",
             "description": "A tuple of the form: (a float, a float). Min and max values for the statistical overlay."
         },
         {
@@ -150,7 +150,7 @@
             "list": false,
             "command-line-key": "[STAT_THRESH2]",
             "type": "Number",
-            "id": "stat_thresh2",
+            "id": "input_stat_thresh2",
             "description": "A tuple of the form: (a float, a float). Min and max values for second statistical overlay."
         },
         {
@@ -160,7 +160,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -171,7 +171,7 @@
             "list": false,
             "command-line-key": "[TRANSPARENCY]",
             "type": "String",
-            "id": "transparency",
+            "id": "input_transparency",
             "description": "A boolean. Make overlay colors semi-transparent."
         },
         {
@@ -181,7 +181,7 @@
             "list": false,
             "command-line-key": "[USE_CHECKERBOARD]",
             "type": "String",
-            "id": "use_checkerboard",
+            "id": "input_use_checkerboard",
             "description": "A boolean. Use checkerboard mask for overlay."
         }
     ],
@@ -196,7 +196,7 @@
             "optional": true,
             "type": "File",
             "name": "Out file",
-            "id": "out_file"
+            "id": "output+out_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

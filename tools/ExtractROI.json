@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -17,7 +17,7 @@
             "list": true,
             "command-line-key": "[CROP_LIST]",
             "type": "Number",
-            "id": "crop_list",
+            "id": "input_crop_list",
             "description": "A list of items which are a tuple of the form: (an integer (int or long), an integer (int or long)). List of two tuples specifying crop options."
         },
         {
@@ -28,7 +28,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -39,7 +39,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -49,7 +49,7 @@
             "list": false,
             "command-line-key": "[IN_FILE]",
             "type": "File",
-            "id": "in_file",
+            "id": "input_in_file",
             "description": "An existing file name. Input file."
         },
         {
@@ -59,7 +59,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -69,7 +69,7 @@
             "list": false,
             "command-line-key": "[ROI_FILE]",
             "type": "String",
-            "id": "roi_file",
+            "id": "input_roi_file",
             "description": "A file name. Output file."
         },
         {
@@ -79,7 +79,7 @@
             "list": false,
             "command-line-key": "[T_MIN]",
             "type": "Number",
-            "id": "t_min",
+            "id": "input_t_min",
             "description": "An integer (int or long). No description provided."
         },
         {
@@ -89,7 +89,7 @@
             "list": false,
             "command-line-key": "[T_SIZE]",
             "type": "Number",
-            "id": "t_size",
+            "id": "input_t_size",
             "description": "An integer (int or long). No description provided."
         },
         {
@@ -99,7 +99,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -109,7 +109,7 @@
             "list": false,
             "command-line-key": "[X_MIN]",
             "type": "Number",
-            "id": "x_min",
+            "id": "input_x_min",
             "description": "An integer (int or long). No description provided."
         },
         {
@@ -119,7 +119,7 @@
             "list": false,
             "command-line-key": "[X_SIZE]",
             "type": "Number",
-            "id": "x_size",
+            "id": "input_x_size",
             "description": "An integer (int or long). No description provided."
         },
         {
@@ -129,7 +129,7 @@
             "list": false,
             "command-line-key": "[Y_MIN]",
             "type": "Number",
-            "id": "y_min",
+            "id": "input_y_min",
             "description": "An integer (int or long). No description provided."
         },
         {
@@ -139,7 +139,7 @@
             "list": false,
             "command-line-key": "[Y_SIZE]",
             "type": "Number",
-            "id": "y_size",
+            "id": "input_y_size",
             "description": "An integer (int or long). No description provided."
         },
         {
@@ -149,7 +149,7 @@
             "list": false,
             "command-line-key": "[Z_MIN]",
             "type": "Number",
-            "id": "z_min",
+            "id": "input_z_min",
             "description": "An integer (int or long). No description provided."
         },
         {
@@ -159,7 +159,7 @@
             "list": false,
             "command-line-key": "[Z_SIZE]",
             "type": "Number",
-            "id": "z_size",
+            "id": "input_z_size",
             "description": "An integer (int or long). No description provided."
         }
     ],
@@ -174,7 +174,7 @@
             "optional": true,
             "type": "File",
             "name": "Roi file",
-            "id": "roi_file"
+            "id": "output+roi_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -18,7 +18,7 @@
             "list": false,
             "command-line-key": "[BASE_NAME]",
             "type": "String",
-            "id": "base_name",
+            "id": "input_base_name",
             "description": "A string. Base_name that all output files will start with."
         },
         {
@@ -28,7 +28,7 @@
             "list": false,
             "command-line-key": "[BVALS]",
             "type": "File",
-            "id": "bvals",
+            "id": "input_bvals",
             "description": "An existing file name. B values file."
         },
         {
@@ -38,7 +38,7 @@
             "list": false,
             "command-line-key": "[BVECS]",
             "type": "File",
-            "id": "bvecs",
+            "id": "input_bvecs",
             "description": "An existing file name. B vectors file."
         },
         {
@@ -48,7 +48,7 @@
             "list": false,
             "command-line-key": "[CNI]",
             "type": "File",
-            "id": "cni",
+            "id": "input_cni",
             "description": "An existing file name. Input counfound regressors."
         },
         {
@@ -58,7 +58,7 @@
             "list": false,
             "command-line-key": "[DWI]",
             "type": "File",
-            "id": "dwi",
+            "id": "input_dwi",
             "description": "An existing file name. Diffusion weighted image data file."
         },
         {
@@ -69,7 +69,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -79,7 +79,7 @@
             "list": false,
             "command-line-key": "[GRADNONLIN]",
             "type": "File",
-            "id": "gradnonlin",
+            "id": "input_gradnonlin",
             "description": "An existing file name. Gradient non linearities."
         },
         {
@@ -90,7 +90,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -100,7 +100,7 @@
             "list": false,
             "command-line-key": "[LITTLE_BIT]",
             "type": "String",
-            "id": "little_bit",
+            "id": "input_little_bit",
             "description": "A boolean. Only process small area of brain."
         },
         {
@@ -110,7 +110,7 @@
             "list": false,
             "command-line-key": "[MASK]",
             "type": "File",
-            "id": "mask",
+            "id": "input_mask",
             "description": "An existing file name. Bet binary mask file."
         },
         {
@@ -120,7 +120,7 @@
             "list": false,
             "command-line-key": "[MAX_X]",
             "type": "Number",
-            "id": "max_x",
+            "id": "input_max_x",
             "description": "An integer (int or long). Max x."
         },
         {
@@ -130,7 +130,7 @@
             "list": false,
             "command-line-key": "[MAX_Y]",
             "type": "Number",
-            "id": "max_y",
+            "id": "input_max_y",
             "description": "An integer (int or long). Max y."
         },
         {
@@ -140,7 +140,7 @@
             "list": false,
             "command-line-key": "[MAX_Z]",
             "type": "Number",
-            "id": "max_z",
+            "id": "input_max_z",
             "description": "An integer (int or long). Max z."
         },
         {
@@ -150,7 +150,7 @@
             "list": false,
             "command-line-key": "[MIN_X]",
             "type": "Number",
-            "id": "min_x",
+            "id": "input_min_x",
             "description": "An integer (int or long). Min x."
         },
         {
@@ -160,7 +160,7 @@
             "list": false,
             "command-line-key": "[MIN_Y]",
             "type": "Number",
-            "id": "min_y",
+            "id": "input_min_y",
             "description": "An integer (int or long). Min y."
         },
         {
@@ -170,7 +170,7 @@
             "list": false,
             "command-line-key": "[MIN_Z]",
             "type": "Number",
-            "id": "min_z",
+            "id": "input_min_z",
             "description": "An integer (int or long). Min z."
         },
         {
@@ -180,7 +180,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -190,7 +190,7 @@
             "list": false,
             "command-line-key": "[SAVE_TENSOR]",
             "type": "String",
-            "id": "save_tensor",
+            "id": "input_save_tensor",
             "description": "A boolean. Save the elements of the tensor."
         },
         {
@@ -200,7 +200,7 @@
             "list": false,
             "command-line-key": "[SSE]",
             "type": "String",
-            "id": "sse",
+            "id": "input_sse",
             "description": "A boolean. Output sum of squared errors."
         },
         {
@@ -210,7 +210,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         }
     ],
@@ -225,77 +225,77 @@
             "optional": true,
             "type": "File",
             "name": "Fa",
-            "id": "FA"
+            "id": "output+FA"
         },
         {
             "path-template": "[BASE_NAME]_L1.nii.gz",
             "optional": true,
             "type": "File",
             "name": "L1",
-            "id": "L1"
+            "id": "output+L1"
         },
         {
             "path-template": "[BASE_NAME]_L2.nii.gz",
             "optional": true,
             "type": "File",
             "name": "L2",
-            "id": "L2"
+            "id": "output+L2"
         },
         {
             "path-template": "[BASE_NAME]_L3.nii.gz",
             "optional": true,
             "type": "File",
             "name": "L3",
-            "id": "L3"
+            "id": "output+L3"
         },
         {
             "path-template": "[BASE_NAME]_MD.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Md",
-            "id": "MD"
+            "id": "output+MD"
         },
         {
             "path-template": "[BASE_NAME]_MO.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Mo",
-            "id": "MO"
+            "id": "output+MO"
         },
         {
             "path-template": "[BASE_NAME]_S0.nii.gz",
             "optional": true,
             "type": "File",
             "name": "S0",
-            "id": "S0"
+            "id": "output+S0"
         },
         {
             "path-template": "[BASE_NAME]_V1.nii.gz",
             "optional": true,
             "type": "File",
             "name": "V1",
-            "id": "V1"
+            "id": "output+V1"
         },
         {
             "path-template": "[BASE_NAME]_V2.nii.gz",
             "optional": true,
             "type": "File",
             "name": "V2",
-            "id": "V2"
+            "id": "output+V2"
         },
         {
             "path-template": "[BASE_NAME]_V3.nii.gz",
             "optional": true,
             "type": "File",
             "name": "V3",
-            "id": "V3"
+            "id": "output+V3"
         },
         {
             "path-template": "[BASE_NAME]_tensor.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Tensor",
-            "id": "tensor"
+            "id": "output+tensor"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -17,7 +17,7 @@
             "list": false,
             "command-line-key": "[CONCAT_XFM]",
             "type": "String",
-            "id": "concat_xfm",
+            "id": "input_concat_xfm",
             "description": "A boolean. Write joint transformation of two input matrices."
         },
         {
@@ -28,7 +28,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -38,7 +38,7 @@
             "list": false,
             "command-line-key": "[FIX_SCALE_SKEW]",
             "type": "String",
-            "id": "fix_scale_skew",
+            "id": "input_fix_scale_skew",
             "description": "A boolean. Use secondary matrix to fix scale and skew."
         },
         {
@@ -49,7 +49,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -59,7 +59,7 @@
             "list": false,
             "command-line-key": "[IN_FILE]",
             "type": "File",
-            "id": "in_file",
+            "id": "input_in_file",
             "description": "An existing file name. Input transformation matrix."
         },
         {
@@ -69,7 +69,7 @@
             "list": false,
             "command-line-key": "[IN_FILE2]",
             "type": "File",
-            "id": "in_file2",
+            "id": "input_in_file2",
             "description": "An existing file name. Second input matrix (for use with fix_scale_skew or concat_xfm."
         },
         {
@@ -79,7 +79,7 @@
             "list": false,
             "command-line-key": "[INVERT_XFM]",
             "type": "String",
-            "id": "invert_xfm",
+            "id": "input_invert_xfm",
             "description": "A boolean. Invert input transformation."
         },
         {
@@ -89,7 +89,7 @@
             "list": false,
             "command-line-key": "[OUT_FILE]",
             "type": "String",
-            "id": "out_file",
+            "id": "input_out_file",
             "description": "A file name. Final transformation matrix."
         },
         {
@@ -99,7 +99,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -109,7 +109,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         }
     ],
@@ -124,7 +124,7 @@
             "optional": true,
             "type": "File",
             "name": "Out file",
-            "id": "out_file"
+            "id": "output+out_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

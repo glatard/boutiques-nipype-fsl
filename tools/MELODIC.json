@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ICS]",
             "type": "File",
-            "id": "ICs",
+            "id": "input_ICs",
             "description": "An existing file name. Filename of the ic components file for mixture modelling."
         },
         {
@@ -17,7 +17,7 @@
             "list": false,
             "command-line-key": "[APPROACH]",
             "type": "String",
-            "id": "approach",
+            "id": "input_approach",
             "description": "A string. Approach for decomposition, 2d: defl, symm (default),  3d: tica (default), concat."
         },
         {
@@ -27,7 +27,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -37,7 +37,7 @@
             "list": false,
             "command-line-key": "[BG_IMAGE]",
             "type": "File",
-            "id": "bg_image",
+            "id": "input_bg_image",
             "description": "An existing file name. Specify background image for report (default: mean image)."
         },
         {
@@ -47,7 +47,7 @@
             "list": false,
             "command-line-key": "[BG_THRESHOLD]",
             "type": "Number",
-            "id": "bg_threshold",
+            "id": "input_bg_threshold",
             "description": "A float. Brain/non-brain threshold used to mask non-brain voxels, as a percentage (only if --nobet selected)."
         },
         {
@@ -57,7 +57,7 @@
             "list": false,
             "command-line-key": "[COV_WEIGHT]",
             "type": "Number",
-            "id": "cov_weight",
+            "id": "input_cov_weight",
             "description": "A float. Voxel-wise weights for the covariance matrix (e.g. segmentation information)."
         },
         {
@@ -67,7 +67,7 @@
             "list": false,
             "command-line-key": "[DIM]",
             "type": "Number",
-            "id": "dim",
+            "id": "input_dim",
             "description": "An integer (int or long). Dimensionality reduction into #num dimensions(default: automatic estimation)."
         },
         {
@@ -77,7 +77,7 @@
             "list": false,
             "command-line-key": "[DIM_EST]",
             "type": "String",
-            "id": "dim_est",
+            "id": "input_dim_est",
             "description": "A string. Use specific dim. estimation technique: lap, bic, mdl, aic, mean (default: lap)."
         },
         {
@@ -88,7 +88,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -98,7 +98,7 @@
             "list": false,
             "command-line-key": "[EPSILON]",
             "type": "Number",
-            "id": "epsilon",
+            "id": "input_epsilon",
             "description": "A float. Minimum error change."
         },
         {
@@ -108,7 +108,7 @@
             "list": false,
             "command-line-key": "[EPSILONS]",
             "type": "Number",
-            "id": "epsilonS",
+            "id": "input_epsilonS",
             "description": "A float. Minimum error change for rank-1 approximation in tica."
         },
         {
@@ -119,7 +119,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -129,7 +129,7 @@
             "list": true,
             "command-line-key": "[IN_FILES]",
             "type": "File",
-            "id": "in_files",
+            "id": "input_in_files",
             "description": "A list of items which are an existing file name. Input file names (either single file name or a list)."
         },
         {
@@ -139,7 +139,7 @@
             "list": false,
             "command-line-key": "[LOG_POWER]",
             "type": "String",
-            "id": "log_power",
+            "id": "input_log_power",
             "description": "A boolean. Calculate log of power for frequency spectrum."
         },
         {
@@ -149,7 +149,7 @@
             "list": false,
             "command-line-key": "[MASK]",
             "type": "File",
-            "id": "mask",
+            "id": "input_mask",
             "description": "An existing file name. File name of mask for thresholding."
         },
         {
@@ -159,7 +159,7 @@
             "list": false,
             "command-line-key": "[MAX_RESTART]",
             "type": "Number",
-            "id": "max_restart",
+            "id": "input_max_restart",
             "description": "An integer (int or long). Maximum number of restarts."
         },
         {
@@ -169,7 +169,7 @@
             "list": false,
             "command-line-key": "[MAXIT]",
             "type": "Number",
-            "id": "maxit",
+            "id": "input_maxit",
             "description": "An integer (int or long). Maximum number of iterations before restart."
         },
         {
@@ -179,7 +179,7 @@
             "list": false,
             "command-line-key": "[MIX]",
             "type": "File",
-            "id": "mix",
+            "id": "input_mix",
             "description": "An existing file name. Mixing matrix for mixture modelling / filtering."
         },
         {
@@ -189,7 +189,7 @@
             "list": false,
             "command-line-key": "[MM_THRESH]",
             "type": "Number",
-            "id": "mm_thresh",
+            "id": "input_mm_thresh",
             "description": "A float. Threshold for mixture model based inference."
         },
         {
@@ -199,7 +199,7 @@
             "list": false,
             "command-line-key": "[NO_BET]",
             "type": "String",
-            "id": "no_bet",
+            "id": "input_no_bet",
             "description": "A boolean. Switch off bet."
         },
         {
@@ -209,7 +209,7 @@
             "list": false,
             "command-line-key": "[NO_MASK]",
             "type": "String",
-            "id": "no_mask",
+            "id": "input_no_mask",
             "description": "A boolean. Switch off masking."
         },
         {
@@ -219,7 +219,7 @@
             "list": false,
             "command-line-key": "[NO_MM]",
             "type": "String",
-            "id": "no_mm",
+            "id": "input_no_mm",
             "description": "A boolean. Switch off mixture modelling on ic maps."
         },
         {
@@ -229,7 +229,7 @@
             "list": false,
             "command-line-key": "[NON_LINEARITY]",
             "type": "String",
-            "id": "non_linearity",
+            "id": "input_non_linearity",
             "description": "A string. Nonlinearity: gauss, tanh, pow3, pow4."
         },
         {
@@ -239,7 +239,7 @@
             "list": false,
             "command-line-key": "[NUM_ICS]",
             "type": "Number",
-            "id": "num_ICs",
+            "id": "input_num_ICs",
             "description": "An integer (int or long). Number of ic's to extract (for deflation approach)."
         },
         {
@@ -249,7 +249,7 @@
             "list": false,
             "command-line-key": "[OUT_ALL]",
             "type": "String",
-            "id": "out_all",
+            "id": "input_out_all",
             "description": "A boolean. Output everything."
         },
         {
@@ -259,7 +259,7 @@
             "list": false,
             "command-line-key": "[OUT_DIR]",
             "type": "String",
-            "id": "out_dir",
+            "id": "input_out_dir",
             "description": "A directory name. Output directory name."
         },
         {
@@ -269,7 +269,7 @@
             "list": false,
             "command-line-key": "[OUT_MEAN]",
             "type": "String",
-            "id": "out_mean",
+            "id": "input_out_mean",
             "description": "A boolean. Output mean volume."
         },
         {
@@ -279,7 +279,7 @@
             "list": false,
             "command-line-key": "[OUT_ORIG]",
             "type": "String",
-            "id": "out_orig",
+            "id": "input_out_orig",
             "description": "A boolean. Output the original ics."
         },
         {
@@ -289,7 +289,7 @@
             "list": false,
             "command-line-key": "[OUT_PCA]",
             "type": "String",
-            "id": "out_pca",
+            "id": "input_out_pca",
             "description": "A boolean. Output pca results."
         },
         {
@@ -299,7 +299,7 @@
             "list": false,
             "command-line-key": "[OUT_STATS]",
             "type": "String",
-            "id": "out_stats",
+            "id": "input_out_stats",
             "description": "A boolean. Output thresholded maps and probability maps."
         },
         {
@@ -309,7 +309,7 @@
             "list": false,
             "command-line-key": "[OUT_UNMIX]",
             "type": "String",
-            "id": "out_unmix",
+            "id": "input_out_unmix",
             "description": "A boolean. Output unmixing matrix."
         },
         {
@@ -319,7 +319,7 @@
             "list": false,
             "command-line-key": "[OUT_WHITE]",
             "type": "String",
-            "id": "out_white",
+            "id": "input_out_white",
             "description": "A boolean. Output whitening/dewhitening matrices."
         },
         {
@@ -329,7 +329,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -339,7 +339,7 @@
             "list": false,
             "command-line-key": "[PBSC]",
             "type": "String",
-            "id": "pbsc",
+            "id": "input_pbsc",
             "description": "A boolean. Switch off conversion to percent bold signal change."
         },
         {
@@ -349,7 +349,7 @@
             "list": true,
             "command-line-key": "[REM_CMP]",
             "type": "Number",
-            "id": "rem_cmp",
+            "id": "input_rem_cmp",
             "description": "A list of items which are an integer (int or long). Component numbers to remove."
         },
         {
@@ -359,7 +359,7 @@
             "list": false,
             "command-line-key": "[REMOVE_DERIV]",
             "type": "String",
-            "id": "remove_deriv",
+            "id": "input_remove_deriv",
             "description": "A boolean. Removes every second entry in paradigm file (ev derivatives)."
         },
         {
@@ -369,7 +369,7 @@
             "list": false,
             "command-line-key": "[REPORT]",
             "type": "String",
-            "id": "report",
+            "id": "input_report",
             "description": "A boolean. Generate melodic web report."
         },
         {
@@ -379,7 +379,7 @@
             "list": false,
             "command-line-key": "[REPORT_MAPS]",
             "type": "String",
-            "id": "report_maps",
+            "id": "input_report_maps",
             "description": "A string. Control string for spatial map images (see slicer)."
         },
         {
@@ -389,7 +389,7 @@
             "list": false,
             "command-line-key": "[S_CON]",
             "type": "File",
-            "id": "s_con",
+            "id": "input_s_con",
             "description": "An existing file name. T-contrast matrix across subject-domain."
         },
         {
@@ -399,7 +399,7 @@
             "list": false,
             "command-line-key": "[S_DES]",
             "type": "File",
-            "id": "s_des",
+            "id": "input_s_des",
             "description": "An existing file name. Design matrix across subject-domain."
         },
         {
@@ -409,7 +409,7 @@
             "list": false,
             "command-line-key": "[SEP_VN]",
             "type": "String",
-            "id": "sep_vn",
+            "id": "input_sep_vn",
             "description": "A boolean. Switch off joined variance normalization."
         },
         {
@@ -419,7 +419,7 @@
             "list": false,
             "command-line-key": "[SEP_WHITEN]",
             "type": "String",
-            "id": "sep_whiten",
+            "id": "input_sep_whiten",
             "description": "A boolean. Switch on separate whitening."
         },
         {
@@ -429,7 +429,7 @@
             "list": false,
             "command-line-key": "[SMODE]",
             "type": "File",
-            "id": "smode",
+            "id": "input_smode",
             "description": "An existing file name. Matrix of session modes for report generation."
         },
         {
@@ -439,7 +439,7 @@
             "list": false,
             "command-line-key": "[T_CON]",
             "type": "File",
-            "id": "t_con",
+            "id": "input_t_con",
             "description": "An existing file name. T-contrast matrix across time-domain."
         },
         {
@@ -449,7 +449,7 @@
             "list": false,
             "command-line-key": "[T_DES]",
             "type": "File",
-            "id": "t_des",
+            "id": "input_t_des",
             "description": "An existing file name. Design matrix across time-domain."
         },
         {
@@ -459,7 +459,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -469,7 +469,7 @@
             "list": false,
             "command-line-key": "[TR_SEC]",
             "type": "Number",
-            "id": "tr_sec",
+            "id": "input_tr_sec",
             "description": "A float. Tr in seconds."
         },
         {
@@ -479,7 +479,7 @@
             "list": false,
             "command-line-key": "[UPDATE_MASK]",
             "type": "String",
-            "id": "update_mask",
+            "id": "input_update_mask",
             "description": "A boolean. Switch off mask updating."
         },
         {
@@ -489,7 +489,7 @@
             "list": false,
             "command-line-key": "[VAR_NORM]",
             "type": "String",
-            "id": "var_norm",
+            "id": "input_var_norm",
             "description": "A boolean. Switch off variance normalization."
         }
     ],
@@ -504,14 +504,14 @@
             "optional": true,
             "type": "File",
             "name": "Out dir",
-            "id": "out_dir"
+            "id": "output+out_dir"
         },
         {
             "path-template": "report",
             "optional": true,
             "type": "File",
             "name": "Report dir",
-            "id": "report_dir"
+            "id": "output+report_dir"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

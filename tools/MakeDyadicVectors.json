@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -18,7 +18,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -29,7 +29,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -39,7 +39,7 @@
             "list": false,
             "command-line-key": "[MASK]",
             "type": "File",
-            "id": "mask",
+            "id": "input_mask",
             "description": "An existing file name. No description provided."
         },
         {
@@ -50,7 +50,7 @@
             "list": false,
             "command-line-key": "[OUTPUT]",
             "type": "String",
-            "id": "output",
+            "id": "input_output",
             "description": "A file name. No description provided."
         },
         {
@@ -60,7 +60,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -70,7 +70,7 @@
             "list": false,
             "command-line-key": "[PERC]",
             "type": "Number",
-            "id": "perc",
+            "id": "input_perc",
             "description": "A float. The {perc}% angle of the output cone of uncertainty (output will be in degrees)."
         },
         {
@@ -80,7 +80,7 @@
             "list": false,
             "command-line-key": "[PHI_VOL]",
             "type": "File",
-            "id": "phi_vol",
+            "id": "input_phi_vol",
             "description": "An existing file name. No description provided."
         },
         {
@@ -90,7 +90,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -100,7 +100,7 @@
             "list": false,
             "command-line-key": "[THETA_VOL]",
             "type": "File",
-            "id": "theta_vol",
+            "id": "input_theta_vol",
             "description": "An existing file name. No description provided."
         }
     ],
@@ -115,14 +115,14 @@
             "optional": true,
             "type": "File",
             "name": "Dispersion",
-            "id": "dispersion"
+            "id": "output+dispersion"
         },
         {
             "path-template": "[OUTPUT].nii.gz",
             "optional": true,
             "type": "File",
             "name": "Dyads",
-            "id": "dyads"
+            "id": "output+dyads"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

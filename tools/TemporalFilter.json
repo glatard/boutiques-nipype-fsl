@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -18,7 +18,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -29,7 +29,7 @@
             "list": false,
             "command-line-key": "[HIGHPASS_SIGMA]",
             "type": "Number",
-            "id": "highpass_sigma",
+            "id": "input_highpass_sigma",
             "description": "A float. Highpass filter sigma (in volumes)."
         },
         {
@@ -40,7 +40,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -50,7 +50,7 @@
             "list": false,
             "command-line-key": "[IN_FILE]",
             "type": "File",
-            "id": "in_file",
+            "id": "input_in_file",
             "description": "An existing file name. Image to operate on."
         },
         {
@@ -60,7 +60,7 @@
             "list": false,
             "command-line-key": "[INTERNAL_DATATYPE]",
             "type": "String",
-            "id": "internal_datatype",
+            "id": "input_internal_datatype",
             "description": "'float' or 'char' or 'int' or 'short' or 'double' or 'input'. Datatype to use for calculations (default is float)."
         },
         {
@@ -71,7 +71,7 @@
             "list": false,
             "command-line-key": "[LOWPASS_SIGMA]",
             "type": "Number",
-            "id": "lowpass_sigma",
+            "id": "input_lowpass_sigma",
             "description": "A float. Lowpass filter sigma (in volumes)."
         },
         {
@@ -81,7 +81,7 @@
             "list": false,
             "command-line-key": "[NAN2ZEROS]",
             "type": "String",
-            "id": "nan2zeros",
+            "id": "input_nan2zeros",
             "description": "A boolean. Change nans to zeros before doing anything."
         },
         {
@@ -91,7 +91,7 @@
             "list": false,
             "command-line-key": "[OUT_FILE]",
             "type": "String",
-            "id": "out_file",
+            "id": "input_out_file",
             "description": "A file name. Image to write."
         },
         {
@@ -101,7 +101,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_DATATYPE]",
             "type": "String",
-            "id": "output_datatype",
+            "id": "input_output_datatype",
             "description": "'float' or 'char' or 'int' or 'short' or 'double' or 'input'. Datatype to use for output (default uses input type)."
         },
         {
@@ -111,7 +111,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -121,7 +121,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         }
     ],
@@ -136,7 +136,7 @@
             "optional": true,
             "type": "File",
             "name": "Out file",
-            "id": "out_file"
+            "id": "output+out_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

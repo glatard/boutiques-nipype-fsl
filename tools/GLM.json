@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -17,7 +17,7 @@
             "list": false,
             "command-line-key": "[CONTRASTS]",
             "type": "File",
-            "id": "contrasts",
+            "id": "input_contrasts",
             "description": "An existing file name. Matrix of t-statics contrasts."
         },
         {
@@ -27,7 +27,7 @@
             "list": false,
             "command-line-key": "[DAT_NORM]",
             "type": "String",
-            "id": "dat_norm",
+            "id": "input_dat_norm",
             "description": "A boolean. Switch on normalization of the data time series to unit std deviation."
         },
         {
@@ -37,7 +37,7 @@
             "list": false,
             "command-line-key": "[DEMEAN]",
             "type": "String",
-            "id": "demean",
+            "id": "input_demean",
             "description": "A boolean. Switch on demeaining of  design and data."
         },
         {
@@ -47,7 +47,7 @@
             "list": false,
             "command-line-key": "[DES_NORM]",
             "type": "String",
-            "id": "des_norm",
+            "id": "input_des_norm",
             "description": "A boolean. Switch on normalization of the design matrix columns to unit std deviation."
         },
         {
@@ -57,7 +57,7 @@
             "list": false,
             "command-line-key": "[DESIGN]",
             "type": "File",
-            "id": "design",
+            "id": "input_design",
             "description": "An existing file name. File name of the glm design matrix (text time courses for temporal regression or an image file for spatial regression)."
         },
         {
@@ -67,7 +67,7 @@
             "list": false,
             "command-line-key": "[DOF]",
             "type": "Number",
-            "id": "dof",
+            "id": "input_dof",
             "description": "An integer (int or long). Set degrees of freedom explicitly."
         },
         {
@@ -78,7 +78,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -89,7 +89,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -99,7 +99,7 @@
             "list": false,
             "command-line-key": "[IN_FILE]",
             "type": "File",
-            "id": "in_file",
+            "id": "input_in_file",
             "description": "An existing file name. Input file name (text matrix or 3d/4d image file)."
         },
         {
@@ -109,7 +109,7 @@
             "list": false,
             "command-line-key": "[MASK]",
             "type": "File",
-            "id": "mask",
+            "id": "input_mask",
             "description": "An existing file name. Mask image file name if input is image."
         },
         {
@@ -119,7 +119,7 @@
             "list": false,
             "command-line-key": "[OUT_COPE]",
             "type": "String",
-            "id": "out_cope",
+            "id": "input_out_cope",
             "description": "A file name. Output file name for cope (either as txt or image."
         },
         {
@@ -129,7 +129,7 @@
             "list": false,
             "command-line-key": "[OUT_DATA_NAME]",
             "type": "String",
-            "id": "out_data_name",
+            "id": "input_out_data_name",
             "description": "A file name. Output file name for pre-processed data."
         },
         {
@@ -139,7 +139,7 @@
             "list": false,
             "command-line-key": "[OUT_F_NAME]",
             "type": "String",
-            "id": "out_f_name",
+            "id": "input_out_f_name",
             "description": "A file name. Output file name for f-value of full model fit."
         },
         {
@@ -149,7 +149,7 @@
             "list": false,
             "command-line-key": "[OUT_FILE]",
             "type": "String",
-            "id": "out_file",
+            "id": "input_out_file",
             "description": "A file name. Filename for glm parameter estimates (glm betas)."
         },
         {
@@ -159,7 +159,7 @@
             "list": false,
             "command-line-key": "[OUT_P_NAME]",
             "type": "String",
-            "id": "out_p_name",
+            "id": "input_out_p_name",
             "description": "A file name. Output file name for p-values of z-stats (either as text file or image)."
         },
         {
@@ -169,7 +169,7 @@
             "list": false,
             "command-line-key": "[OUT_PF_NAME]",
             "type": "String",
-            "id": "out_pf_name",
+            "id": "input_out_pf_name",
             "description": "A file name. Output file name for p-value for full model fit."
         },
         {
@@ -179,7 +179,7 @@
             "list": false,
             "command-line-key": "[OUT_RES_NAME]",
             "type": "String",
-            "id": "out_res_name",
+            "id": "input_out_res_name",
             "description": "A file name. Output file name for residuals."
         },
         {
@@ -189,7 +189,7 @@
             "list": false,
             "command-line-key": "[OUT_SIGSQ_NAME]",
             "type": "String",
-            "id": "out_sigsq_name",
+            "id": "input_out_sigsq_name",
             "description": "A file name. Output file name for residual noise variance sigma-square."
         },
         {
@@ -199,7 +199,7 @@
             "list": false,
             "command-line-key": "[OUT_T_NAME]",
             "type": "String",
-            "id": "out_t_name",
+            "id": "input_out_t_name",
             "description": "A file name. Output file name for t-stats (either as txt or image."
         },
         {
@@ -209,7 +209,7 @@
             "list": false,
             "command-line-key": "[OUT_VARCB_NAME]",
             "type": "String",
-            "id": "out_varcb_name",
+            "id": "input_out_varcb_name",
             "description": "A file name. Output file name for variance of copes."
         },
         {
@@ -219,7 +219,7 @@
             "list": false,
             "command-line-key": "[OUT_VNSCALES_NAME]",
             "type": "String",
-            "id": "out_vnscales_name",
+            "id": "input_out_vnscales_name",
             "description": "A file name. Output file name for scaling factors for variance normalisation."
         },
         {
@@ -229,7 +229,7 @@
             "list": false,
             "command-line-key": "[OUT_Z_NAME]",
             "type": "String",
-            "id": "out_z_name",
+            "id": "input_out_z_name",
             "description": "A file name. Output file name for z-stats (either as txt or image."
         },
         {
@@ -239,7 +239,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -249,7 +249,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -259,7 +259,7 @@
             "list": false,
             "command-line-key": "[VAR_NORM]",
             "type": "String",
-            "id": "var_norm",
+            "id": "input_var_norm",
             "description": "A boolean. Perform melodic variance-normalisation on data."
         }
     ],
@@ -274,84 +274,84 @@
             "optional": true,
             "type": "File",
             "name": "Out cope",
-            "id": "out_cope"
+            "id": "output+out_cope"
         },
         {
             "path-template": "[OUT_DATA_NAME]",
             "optional": true,
             "type": "File",
             "name": "Out data",
-            "id": "out_data"
+            "id": "output+out_data"
         },
         {
             "path-template": "[OUT_F_NAME]",
             "optional": true,
             "type": "File",
             "name": "Out f",
-            "id": "out_f"
+            "id": "output+out_f"
         },
         {
             "path-template": "[OUT_FILE]",
             "optional": true,
             "type": "File",
             "name": "Out file",
-            "id": "out_file"
+            "id": "output+out_file"
         },
         {
             "path-template": "[OUT_P_NAME]",
             "optional": true,
             "type": "File",
             "name": "Out p",
-            "id": "out_p"
+            "id": "output+out_p"
         },
         {
             "path-template": "[OUT_PF_NAME]",
             "optional": true,
             "type": "File",
             "name": "Out pf",
-            "id": "out_pf"
+            "id": "output+out_pf"
         },
         {
             "path-template": "[OUT_RES_NAME]",
             "optional": true,
             "type": "File",
             "name": "Out res",
-            "id": "out_res"
+            "id": "output+out_res"
         },
         {
             "path-template": "[OUT_SIGSQ_NAME]",
             "optional": true,
             "type": "File",
             "name": "Out sigsq",
-            "id": "out_sigsq"
+            "id": "output+out_sigsq"
         },
         {
             "path-template": "[OUT_T_NAME]",
             "optional": true,
             "type": "File",
             "name": "Out t",
-            "id": "out_t"
+            "id": "output+out_t"
         },
         {
             "path-template": "[OUT_VARCB_NAME]",
             "optional": true,
             "type": "File",
             "name": "Out varcb",
-            "id": "out_varcb"
+            "id": "output+out_varcb"
         },
         {
             "path-template": "[OUT_VNSCALES_NAME]",
             "optional": true,
             "type": "File",
             "name": "Out vnscales",
-            "id": "out_vnscales"
+            "id": "output+out_vnscales"
         },
         {
             "path-template": "[OUT_Z_NAME]",
             "optional": true,
             "type": "File",
             "name": "Out z",
-            "id": "out_z"
+            "id": "output+out_z"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

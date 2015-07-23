@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -18,7 +18,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -29,7 +29,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -39,7 +39,7 @@
             "list": false,
             "command-line-key": "[IN_FILE]",
             "type": "File",
-            "id": "in_file",
+            "id": "input_in_file",
             "description": "An existing file name. Name of file containing warp-coefficients/fields. this would typically be the output from the --cout switch of fnirt (but can also use fields, like the output from --fout)."
         },
         {
@@ -49,7 +49,7 @@
             "list": false,
             "command-line-key": "[KNOT_SPACE]",
             "type": "Number",
-            "id": "knot_space",
+            "id": "input_knot_space",
             "description": "A tuple of the form: (an integer (int or long), an integer (int or long), an integer (int or long)). Alternative (to --warpres) specification of the resolution of the output spline-field."
         },
         {
@@ -59,7 +59,7 @@
             "list": false,
             "command-line-key": "[OUT_FILE]",
             "type": "String",
-            "id": "out_file",
+            "id": "input_out_file",
             "description": "A file name. Name of output file. the format of the output depends on what other parameters are set. the default format is a (4d) field-file. if the --outformat is set to spline the format will be a (4d) file of spline coefficients."
         },
         {
@@ -69,7 +69,7 @@
             "list": false,
             "command-line-key": "[OUT_FORMAT]",
             "type": "String",
-            "id": "out_format",
+            "id": "input_out_format",
             "description": "'spline' or 'field'. Specifies the output format. if set to field (default) the output will be a (4d) field-file. if set to spline the format will be a (4d) file of spline coefficients."
         },
         {
@@ -79,7 +79,7 @@
             "list": false,
             "command-line-key": "[OUT_JACOBIAN]",
             "type": "String",
-            "id": "out_jacobian",
+            "id": "input_out_jacobian",
             "description": "A file name. Specifies that a (3d) file of jacobian determinants corresponding to --in should be produced and written to filename."
         },
         {
@@ -89,7 +89,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -99,7 +99,7 @@
             "list": false,
             "command-line-key": "[REFERENCE]",
             "type": "File",
-            "id": "reference",
+            "id": "input_reference",
             "description": "An existing file name. Name of a file in target space. note that the target space is now different from the target space that was used to create the --warp file. it would typically be the file that was specified with the --in argument when running fnirt."
         },
         {
@@ -109,7 +109,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -119,7 +119,7 @@
             "list": false,
             "command-line-key": "[WARP_RESOLUTION]",
             "type": "Number",
-            "id": "warp_resolution",
+            "id": "input_warp_resolution",
             "description": "A tuple of the form: (a float, a float, a float). Specifies the resolution/knot-spacing of the splines pertaining to the coefficients in the --out file. this parameter is only relevant if --outformat is set to spline. it should be noted that if the --in file has a higher resolution, the resulting coefficients will pertain to the closest (in a least-squares sense) file in the space of fields with the --warpres resolution. it should also be noted that the resolution will always be an integer multiple of the voxel size."
         },
         {
@@ -129,7 +129,7 @@
             "list": false,
             "command-line-key": "[WITH_AFFINE]",
             "type": "String",
-            "id": "with_affine",
+            "id": "input_with_affine",
             "description": "A boolean. Specifies that the affine transform (i.e. that which was specified for the --aff parameter in fnirt) should be included as displacements in the --out file. that can be useful for interfacing with software that cannot decode fsl/fnirt coefficient-files (where the affine transform is stored separately from the displacements)."
         },
         {
@@ -140,7 +140,7 @@
             "list": false,
             "command-line-key": "[WRITE_JACOBIAN]",
             "type": "String",
-            "id": "write_jacobian",
+            "id": "input_write_jacobian",
             "description": "A boolean. Switch on --jac flag with automatically generated filename."
         }
     ],
@@ -155,7 +155,7 @@
             "optional": true,
             "type": "File",
             "name": "Out file",
-            "id": "out_file"
+            "id": "output+out_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

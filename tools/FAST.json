@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -17,7 +17,7 @@
             "list": false,
             "command-line-key": "[BIAS_ITERS]",
             "type": "Number",
-            "id": "bias_iters",
+            "id": "input_bias_iters",
             "description": "1 <= an integer <= 10. Number of main-loop iterations during bias-field removal."
         },
         {
@@ -27,7 +27,7 @@
             "list": false,
             "command-line-key": "[BIAS_LOWPASS]",
             "type": "Number",
-            "id": "bias_lowpass",
+            "id": "input_bias_lowpass",
             "description": "4 <= an integer <= 40. Bias field smoothing extent (fwhm) in mm."
         },
         {
@@ -38,7 +38,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -48,7 +48,7 @@
             "list": false,
             "command-line-key": "[HYPER]",
             "type": "Number",
-            "id": "hyper",
+            "id": "input_hyper",
             "description": "0.0 <= a floating point number <= 1.0. Segmentation spatial smoothness."
         },
         {
@@ -59,7 +59,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -69,7 +69,7 @@
             "list": false,
             "command-line-key": "[IMG_TYPE]",
             "type": "String",
-            "id": "img_type",
+            "id": "input_img_type",
             "description": "1 or 2 or 3. Int specifying type of image: (1 = t1, 2 = t2, 3 = pd)."
         },
         {
@@ -79,7 +79,7 @@
             "list": true,
             "command-line-key": "[IN_FILES]",
             "type": "File",
-            "id": "in_files",
+            "id": "input_in_files",
             "description": "A list of items which are an existing file name. Image, or multi-channel set of images, to be segmented."
         },
         {
@@ -89,7 +89,7 @@
             "list": false,
             "command-line-key": "[INIT_SEG_SMOOTH]",
             "type": "Number",
-            "id": "init_seg_smooth",
+            "id": "input_init_seg_smooth",
             "description": "0.0001 <= a floating point number <= 0.1. Initial segmentation spatial smoothness (during bias field estimation)."
         },
         {
@@ -99,7 +99,7 @@
             "list": false,
             "command-line-key": "[INIT_TRANSFORM]",
             "type": "File",
-            "id": "init_transform",
+            "id": "input_init_transform",
             "description": "An existing file name. <standard2input.mat> initialise using priors."
         },
         {
@@ -109,7 +109,7 @@
             "list": false,
             "command-line-key": "[ITERS_AFTERBIAS]",
             "type": "Number",
-            "id": "iters_afterbias",
+            "id": "input_iters_afterbias",
             "description": "1 <= an integer <= 20. Number of main-loop iterations after bias-field removal."
         },
         {
@@ -119,7 +119,7 @@
             "list": false,
             "command-line-key": "[MANUAL_SEG]",
             "type": "File",
-            "id": "manual_seg",
+            "id": "input_manual_seg",
             "description": "An existing file name. Filename containing intensities."
         },
         {
@@ -129,7 +129,7 @@
             "list": false,
             "command-line-key": "[MIXEL_SMOOTH]",
             "type": "Number",
-            "id": "mixel_smooth",
+            "id": "input_mixel_smooth",
             "description": "0.0 <= a floating point number <= 1.0. Spatial smoothness for mixeltype."
         },
         {
@@ -139,7 +139,7 @@
             "list": false,
             "command-line-key": "[NO_BIAS]",
             "type": "String",
-            "id": "no_bias",
+            "id": "input_no_bias",
             "description": "A boolean. Do not remove bias field."
         },
         {
@@ -149,7 +149,7 @@
             "list": false,
             "command-line-key": "[NO_PVE]",
             "type": "String",
-            "id": "no_pve",
+            "id": "input_no_pve",
             "description": "A boolean. Turn off pve (partial volume estimation)."
         },
         {
@@ -159,7 +159,7 @@
             "list": false,
             "command-line-key": "[NUMBER_CLASSES]",
             "type": "Number",
-            "id": "number_classes",
+            "id": "input_number_classes",
             "description": "1 <= an integer <= 10. Number of tissue-type classes."
         },
         {
@@ -169,7 +169,7 @@
             "list": true,
             "command-line-key": "[OTHER_PRIORS]",
             "type": "String",
-            "id": "other_priors",
+            "id": "input_other_priors",
             "description": "A list of from 3 to 3 items which are a file name. Alternative prior images."
         },
         {
@@ -179,7 +179,7 @@
             "list": false,
             "command-line-key": "[OUT_BASENAME]",
             "type": "String",
-            "id": "out_basename",
+            "id": "input_out_basename",
             "description": "A file name. Base name of output files."
         },
         {
@@ -189,7 +189,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_BIASCORRECTED]",
             "type": "String",
-            "id": "output_biascorrected",
+            "id": "input_output_biascorrected",
             "description": "A boolean. Output restored image (bias-corrected image)."
         },
         {
@@ -199,7 +199,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_BIASFIELD]",
             "type": "String",
-            "id": "output_biasfield",
+            "id": "input_output_biasfield",
             "description": "A boolean. Output estimated bias field."
         },
         {
@@ -209,7 +209,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -219,7 +219,7 @@
             "list": false,
             "command-line-key": "[PROBABILITY_MAPS]",
             "type": "String",
-            "id": "probability_maps",
+            "id": "input_probability_maps",
             "description": "A boolean. Outputs individual probability maps."
         },
         {
@@ -229,7 +229,7 @@
             "list": false,
             "command-line-key": "[SEGMENT_ITERS]",
             "type": "Number",
-            "id": "segment_iters",
+            "id": "input_segment_iters",
             "description": "1 <= an integer <= 50. Number of segmentation-initialisation iterations."
         },
         {
@@ -239,7 +239,7 @@
             "list": false,
             "command-line-key": "[SEGMENTS]",
             "type": "String",
-            "id": "segments",
+            "id": "input_segments",
             "description": "A boolean. Outputs a separate binary image for each tissue type."
         },
         {
@@ -249,7 +249,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -259,7 +259,7 @@
             "list": false,
             "command-line-key": "[USE_PRIORS]",
             "type": "String",
-            "id": "use_priors",
+            "id": "input_use_priors",
             "description": "A boolean. Use priors throughout."
         },
         {
@@ -269,7 +269,7 @@
             "list": false,
             "command-line-key": "[VERBOSE]",
             "type": "String",
-            "id": "verbose",
+            "id": "input_verbose",
             "description": "A boolean. Switch on diagnostic messages."
         }
     ],
@@ -284,21 +284,21 @@
             "optional": true,
             "type": "File",
             "name": "Mixeltype",
-            "id": "mixeltype"
+            "id": "output+mixeltype"
         },
         {
             "path-template": "[OUT_BASENAME]_pveseg.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Partial volume map",
-            "id": "partial_volume_map"
+            "id": "output+partial_volume_map"
         },
         {
             "path-template": "[OUT_BASENAME]_seg.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Tissue class map",
-            "id": "tissue_class_map"
+            "id": "output+tissue_class_map"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

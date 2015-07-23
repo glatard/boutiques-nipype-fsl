@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -17,7 +17,7 @@
             "list": false,
             "command-line-key": "[COORD_MM]",
             "type": "String",
-            "id": "coord_mm",
+            "id": "input_coord_mm",
             "description": "A boolean. All coordinates in mm."
         },
         {
@@ -27,7 +27,7 @@
             "list": false,
             "command-line-key": "[COORD_VOX]",
             "type": "String",
-            "id": "coord_vox",
+            "id": "input_coord_vox",
             "description": "A boolean. All coordinates in voxels - default."
         },
         {
@@ -37,7 +37,7 @@
             "list": false,
             "command-line-key": "[DEST_FILE]",
             "type": "File",
-            "id": "dest_file",
+            "id": "input_dest_file",
             "description": "An existing file name. Filename of destination image."
         },
         {
@@ -48,7 +48,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -59,7 +59,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -69,7 +69,7 @@
             "list": false,
             "command-line-key": "[IN_COORDS]",
             "type": "File",
-            "id": "in_coords",
+            "id": "input_in_coords",
             "description": "An existing file name. Filename of file containing coordinates."
         },
         {
@@ -79,7 +79,7 @@
             "list": false,
             "command-line-key": "[OUT_FILE]",
             "type": "String",
-            "id": "out_file",
+            "id": "input_out_file",
             "description": "A file name. Output file name."
         },
         {
@@ -89,7 +89,7 @@
             "list": false,
             "command-line-key": "[SRC_FILE]",
             "type": "File",
-            "id": "src_file",
+            "id": "input_src_file",
             "description": "An existing file name. Filename of source image."
         },
         {
@@ -99,7 +99,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -109,7 +109,7 @@
             "list": false,
             "command-line-key": "[WARP_FILE]",
             "type": "File",
-            "id": "warp_file",
+            "id": "input_warp_file",
             "description": "An existing file name. Filename of warpfield (e.g. intermediate2dest_warp.nii.gz)."
         },
         {
@@ -119,7 +119,7 @@
             "list": false,
             "command-line-key": "[XFM_FILE]",
             "type": "File",
-            "id": "xfm_file",
+            "id": "input_xfm_file",
             "description": "An existing file name. Filename of affine transform (e.g. source2dest.mat)."
         }
     ],
@@ -133,7 +133,7 @@
             "optional": true,
             "type": "File",
             "name": "Out file",
-            "id": "out_file"
+            "id": "output+out_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

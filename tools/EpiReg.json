@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -17,7 +17,7 @@
             "list": false,
             "command-line-key": "[ECHOSPACING]",
             "type": "Number",
-            "id": "echospacing",
+            "id": "input_echospacing",
             "description": "A float. Effective epi echo spacing                                 (sometimes called dwell time) - in seconds."
         },
         {
@@ -28,7 +28,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -38,7 +38,7 @@
             "list": false,
             "command-line-key": "[EPI]",
             "type": "File",
-            "id": "epi",
+            "id": "input_epi",
             "description": "An existing file name. Epi image."
         },
         {
@@ -48,7 +48,7 @@
             "list": false,
             "command-line-key": "[FMAP]",
             "type": "File",
-            "id": "fmap",
+            "id": "input_fmap",
             "description": "An existing file name. Fieldmap image (in rad/s)."
         },
         {
@@ -58,7 +58,7 @@
             "list": false,
             "command-line-key": "[FMAPMAG]",
             "type": "File",
-            "id": "fmapmag",
+            "id": "input_fmapmag",
             "description": "An existing file name. Fieldmap magnitude image - wholehead."
         },
         {
@@ -68,7 +68,7 @@
             "list": false,
             "command-line-key": "[FMAPMAGBRAIN]",
             "type": "File",
-            "id": "fmapmagbrain",
+            "id": "input_fmapmagbrain",
             "description": "An existing file name. Fieldmap magnitude image - brain extracted."
         },
         {
@@ -79,7 +79,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -89,7 +89,7 @@
             "list": false,
             "command-line-key": "[NO_CLEAN]",
             "type": "String",
-            "id": "no_clean",
+            "id": "input_no_clean",
             "description": "A boolean. Do not clean up intermediate files."
         },
         {
@@ -99,7 +99,7 @@
             "list": false,
             "command-line-key": "[NO_FMAPREG]",
             "type": "String",
-            "id": "no_fmapreg",
+            "id": "input_no_fmapreg",
             "description": "A boolean. Do not perform registration of fmap to t1                         (use if fmap already registered)."
         },
         {
@@ -109,7 +109,7 @@
             "list": false,
             "command-line-key": "[OUT_BASE]",
             "type": "String",
-            "id": "out_base",
+            "id": "input_out_base",
             "description": "A string. Output base name."
         },
         {
@@ -119,7 +119,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -129,7 +129,7 @@
             "list": false,
             "command-line-key": "[PEDIR]",
             "type": "String",
-            "id": "pedir",
+            "id": "input_pedir",
             "description": "'x' or 'y' or 'z' or '-x' or '-y' or '-z'. Phase encoding direction, dir = x/y/z/-x/-y/-z."
         },
         {
@@ -139,7 +139,7 @@
             "list": false,
             "command-line-key": "[T1_BRAIN]",
             "type": "File",
-            "id": "t1_brain",
+            "id": "input_t1_brain",
             "description": "An existing file name. Brain extracted t1 image."
         },
         {
@@ -149,7 +149,7 @@
             "list": false,
             "command-line-key": "[T1_HEAD]",
             "type": "File",
-            "id": "t1_head",
+            "id": "input_t1_head",
             "description": "An existing file name. Wholehead t1 image."
         },
         {
@@ -159,7 +159,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -169,7 +169,7 @@
             "list": false,
             "command-line-key": "[WEIGHT_IMAGE]",
             "type": "File",
-            "id": "weight_image",
+            "id": "input_weight_image",
             "description": "An existing file name. Weighting image (in t1 space)."
         },
         {
@@ -179,7 +179,7 @@
             "list": false,
             "command-line-key": "[WMSEG]",
             "type": "File",
-            "id": "wmseg",
+            "id": "input_wmseg",
             "description": "An existing file name. White matter segmentation of t1 image, has to be named                  like the t1brain and end on _wmseg."
         }
     ],
@@ -194,91 +194,91 @@
             "optional": true,
             "type": "File",
             "name": "Epi2str inv",
-            "id": "epi2str_inv"
+            "id": "output+epi2str_inv"
         },
         {
             "path-template": "[OUT_BASE].mat",
             "optional": true,
             "type": "File",
             "name": "Epi2str mat",
-            "id": "epi2str_mat"
+            "id": "output+epi2str_mat"
         },
         {
             "path-template": "[OUT_BASE]_fieldmaprads2epi.mat",
             "optional": true,
             "type": "File",
             "name": "Fmap2epi mat",
-            "id": "fmap2epi_mat"
+            "id": "output+fmap2epi_mat"
         },
         {
             "path-template": "[OUT_BASE]_fieldmap2str.mat",
             "optional": true,
             "type": "File",
             "name": "Fmap2str mat",
-            "id": "fmap2str_mat"
+            "id": "output+fmap2str_mat"
         },
         {
             "path-template": "[OUT_BASE]_fieldmaprads2epi.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Fmap epi",
-            "id": "fmap_epi"
+            "id": "output+fmap_epi"
         },
         {
             "path-template": "[OUT_BASE]_fieldmaprads2str.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Fmap str",
-            "id": "fmap_str"
+            "id": "output+fmap_str"
         },
         {
             "path-template": "[OUT_BASE]_fieldmap2str.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Fmapmag str",
-            "id": "fmapmag_str"
+            "id": "output+fmapmag_str"
         },
         {
             "path-template": "[OUT_BASE]_warp.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Fullwarp",
-            "id": "fullwarp"
+            "id": "output+fullwarp"
         },
         {
             "path-template": "[OUT_BASE]_1vol.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Out 1vol",
-            "id": "out_1vol"
+            "id": "output+out_1vol"
         },
         {
             "path-template": "[OUT_BASE].nii.gz",
             "optional": true,
             "type": "File",
             "name": "Out file",
-            "id": "out_file"
+            "id": "output+out_file"
         },
         {
             "path-template": "[OUT_BASE]_fieldmaprads2epi_shift.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Shiftmap",
-            "id": "shiftmap"
+            "id": "output+shiftmap"
         },
         {
             "path-template": "[OUT_BASE]_fast_wmedge.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Wmedge",
-            "id": "wmedge"
+            "id": "output+wmedge"
         },
         {
             "path-template": "[OUT_BASE]_fast_wmseg.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Wmseg",
-            "id": "wmseg"
+            "id": "output+wmseg"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

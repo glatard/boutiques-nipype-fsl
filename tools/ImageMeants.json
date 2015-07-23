@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -17,7 +17,7 @@
             "list": false,
             "command-line-key": "[EIG]",
             "type": "String",
-            "id": "eig",
+            "id": "input_eig",
             "description": "A boolean. Calculate eigenvariate(s) instead of mean (output will have 0 mean)."
         },
         {
@@ -28,7 +28,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -39,7 +39,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -49,7 +49,7 @@
             "list": false,
             "command-line-key": "[IN_FILE]",
             "type": "File",
-            "id": "in_file",
+            "id": "input_in_file",
             "description": "An existing file name. Input file for computing the average timeseries."
         },
         {
@@ -59,7 +59,7 @@
             "list": false,
             "command-line-key": "[MASK]",
             "type": "File",
-            "id": "mask",
+            "id": "input_mask",
             "description": "An existing file name. Input 3d mask."
         },
         {
@@ -69,7 +69,7 @@
             "list": false,
             "command-line-key": "[NOBIN]",
             "type": "String",
-            "id": "nobin",
+            "id": "input_nobin",
             "description": "A boolean. Do not binarise the mask for calculation of eigenvariates."
         },
         {
@@ -80,7 +80,7 @@
             "list": false,
             "command-line-key": "[ORDER]",
             "type": "Number",
-            "id": "order",
+            "id": "input_order",
             "description": "An integer (int or long). Select number of eigenvariates."
         },
         {
@@ -90,7 +90,7 @@
             "list": false,
             "command-line-key": "[OUT_FILE]",
             "type": "String",
-            "id": "out_file",
+            "id": "input_out_file",
             "description": "A file name. Name of output text matrix."
         },
         {
@@ -100,7 +100,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -110,7 +110,7 @@
             "list": false,
             "command-line-key": "[SHOW_ALL]",
             "type": "String",
-            "id": "show_all",
+            "id": "input_show_all",
             "description": "A boolean. Show all voxel time series (within mask) instead of averaging."
         },
         {
@@ -120,7 +120,7 @@
             "list": true,
             "command-line-key": "[SPATIAL_COORD]",
             "type": "Number",
-            "id": "spatial_coord",
+            "id": "input_spatial_coord",
             "description": "A list of items which are an integer (int or long). <x y z>\trequested spatial coordinate (instead of mask)."
         },
         {
@@ -130,7 +130,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -140,7 +140,7 @@
             "list": false,
             "command-line-key": "[TRANSPOSE]",
             "type": "String",
-            "id": "transpose",
+            "id": "input_transpose",
             "description": "A boolean. Output results in transpose format (one row per voxel/mean)."
         },
         {
@@ -150,7 +150,7 @@
             "list": false,
             "command-line-key": "[USE_MM]",
             "type": "String",
-            "id": "use_mm",
+            "id": "input_use_mm",
             "description": "A boolean. Use mm instead of voxel coordinates (for -c option)."
         }
     ],
@@ -165,7 +165,7 @@
             "optional": true,
             "type": "File",
             "name": "Out file",
-            "id": "out_file"
+            "id": "output+out_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

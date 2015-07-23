@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ALL_AXIAL]",
             "type": "String",
-            "id": "all_axial",
+            "id": "input_all_axial",
             "description": "A boolean. Output all axial slices into one picture."
         },
         {
@@ -17,7 +17,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -27,7 +27,7 @@
             "list": false,
             "command-line-key": "[COLOUR_MAP]",
             "type": "File",
-            "id": "colour_map",
+            "id": "input_colour_map",
             "description": "An existing file name. Use different colour map from that stored in nifti header."
         },
         {
@@ -37,7 +37,7 @@
             "list": false,
             "command-line-key": "[DITHER_EDGES]",
             "type": "String",
-            "id": "dither_edges",
+            "id": "input_dither_edges",
             "description": "A boolean. Produce semi-transparent (dithered) edges."
         },
         {
@@ -48,7 +48,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -59,7 +59,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -69,7 +69,7 @@
             "list": false,
             "command-line-key": "[IMAGE_EDGES]",
             "type": "File",
-            "id": "image_edges",
+            "id": "input_image_edges",
             "description": "An existing file name. Volume to display edge overlay for (useful for checking registration."
         },
         {
@@ -79,7 +79,7 @@
             "list": false,
             "command-line-key": "[IMAGE_WIDTH]",
             "type": "Number",
-            "id": "image_width",
+            "id": "input_image_width",
             "description": "An integer (int or long). Max picture width."
         },
         {
@@ -89,7 +89,7 @@
             "list": false,
             "command-line-key": "[IN_FILE]",
             "type": "File",
-            "id": "in_file",
+            "id": "input_in_file",
             "description": "An existing file name. Input volume."
         },
         {
@@ -99,7 +99,7 @@
             "list": false,
             "command-line-key": "[INTENSITY_RANGE]",
             "type": "Number",
-            "id": "intensity_range",
+            "id": "input_intensity_range",
             "description": "A tuple of the form: (a float, a float). Min and max intensities to display."
         },
         {
@@ -110,7 +110,7 @@
             "list": false,
             "command-line-key": "[LABEL_SLICES]",
             "type": "String",
-            "id": "label_slices",
+            "id": "input_label_slices",
             "description": "A boolean. Display slice number."
         },
         {
@@ -120,7 +120,7 @@
             "list": false,
             "command-line-key": "[MIDDLE_SLICES]",
             "type": "String",
-            "id": "middle_slices",
+            "id": "input_middle_slices",
             "description": "A boolean. Output picture of mid-sagittal, axial, and coronal slices."
         },
         {
@@ -130,7 +130,7 @@
             "list": false,
             "command-line-key": "[NEAREST_NEIGHBOUR]",
             "type": "String",
-            "id": "nearest_neighbour",
+            "id": "input_nearest_neighbour",
             "description": "A boolean. Use nearest neighbor interpolation for output."
         },
         {
@@ -140,7 +140,7 @@
             "list": false,
             "command-line-key": "[OUT_FILE]",
             "type": "String",
-            "id": "out_file",
+            "id": "input_out_file",
             "description": "A file name. Picture to write."
         },
         {
@@ -150,7 +150,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -160,7 +160,7 @@
             "list": false,
             "command-line-key": "[SAMPLE_AXIAL]",
             "type": "Number",
-            "id": "sample_axial",
+            "id": "input_sample_axial",
             "description": "An integer (int or long). Output every n axial slices into one picture."
         },
         {
@@ -170,7 +170,7 @@
             "list": false,
             "command-line-key": "[SCALING]",
             "type": "Number",
-            "id": "scaling",
+            "id": "input_scaling",
             "description": "A float. Image scale."
         },
         {
@@ -181,7 +181,7 @@
             "list": false,
             "command-line-key": "[SHOW_ORIENTATION]",
             "type": "String",
-            "id": "show_orientation",
+            "id": "input_show_orientation",
             "description": "A boolean. Label left-right orientation."
         },
         {
@@ -191,7 +191,7 @@
             "list": false,
             "command-line-key": "[SINGLE_SLICE]",
             "type": "String",
-            "id": "single_slice",
+            "id": "input_single_slice",
             "description": "'x' or 'y' or 'z'. Output picture of single slice in the x, y, or z plane."
         },
         {
@@ -201,7 +201,7 @@
             "list": false,
             "command-line-key": "[SLICE_NUMBER]",
             "type": "Number",
-            "id": "slice_number",
+            "id": "input_slice_number",
             "description": "An integer (int or long). Slice number to save in picture."
         },
         {
@@ -211,7 +211,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -221,7 +221,7 @@
             "list": false,
             "command-line-key": "[THRESHOLD_EDGES]",
             "type": "Number",
-            "id": "threshold_edges",
+            "id": "input_threshold_edges",
             "description": "A float. Use threshold for edges."
         }
     ],
@@ -236,7 +236,7 @@
             "optional": true,
             "type": "File",
             "name": "Out file",
-            "id": "out_file"
+            "id": "output+out_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

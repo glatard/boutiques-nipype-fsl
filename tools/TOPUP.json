@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -18,7 +18,7 @@
             "list": false,
             "command-line-key": "[CONFIG]",
             "type": "String",
-            "id": "config",
+            "id": "input_config",
             "description": "A string. Name of config file specifying command line arguments."
         },
         {
@@ -28,7 +28,7 @@
             "list": true,
             "command-line-key": "[ENCODING_DIRECTION]",
             "type": "String",
-            "id": "encoding_direction",
+            "id": "input_encoding_direction",
             "description": "A list of items which are 'y' or 'x' or 'z' or 'x-' or 'y-' or 'z-'. Encoding direction for automatic generation of encoding_file."
         },
         {
@@ -38,7 +38,7 @@
             "list": false,
             "command-line-key": "[ENCODING_FILE]",
             "type": "File",
-            "id": "encoding_file",
+            "id": "input_encoding_file",
             "description": "An existing file name. Name of text file with pe directions/times."
         },
         {
@@ -49,7 +49,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -59,7 +59,7 @@
             "list": false,
             "command-line-key": "[ESTMOV]",
             "type": "String",
-            "id": "estmov",
+            "id": "input_estmov",
             "description": "1 or 0. Estimate movements if set."
         },
         {
@@ -69,7 +69,7 @@
             "list": false,
             "command-line-key": "[FWHM]",
             "type": "Number",
-            "id": "fwhm",
+            "id": "input_fwhm",
             "description": "A float. Fwhm (in mm) of gaussian smoothing kernel."
         },
         {
@@ -80,7 +80,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -90,7 +90,7 @@
             "list": false,
             "command-line-key": "[IN_FILE]",
             "type": "File",
-            "id": "in_file",
+            "id": "input_in_file",
             "description": "An existing file name. Name of 4d file with images."
         },
         {
@@ -100,7 +100,7 @@
             "list": false,
             "command-line-key": "[INTERP]",
             "type": "String",
-            "id": "interp",
+            "id": "input_interp",
             "description": "'spline' or 'linear'. Image interpolation model, linear or spline."
         },
         {
@@ -110,7 +110,7 @@
             "list": false,
             "command-line-key": "[MAX_ITER]",
             "type": "Number",
-            "id": "max_iter",
+            "id": "input_max_iter",
             "description": "An integer (int or long). Max # of non-linear iterations."
         },
         {
@@ -120,7 +120,7 @@
             "list": false,
             "command-line-key": "[MINMET]",
             "type": "String",
-            "id": "minmet",
+            "id": "input_minmet",
             "description": "0 or 1. Minimisation method 0=levenberg-marquardt, 1=scaled conjugate gradient."
         },
         {
@@ -130,7 +130,7 @@
             "list": false,
             "command-line-key": "[NUMPREC]",
             "type": "String",
-            "id": "numprec",
+            "id": "input_numprec",
             "description": "'double' or 'float'. Precision for representing hessian, double or float."
         },
         {
@@ -140,7 +140,7 @@
             "list": false,
             "command-line-key": "[OUT_BASE]",
             "type": "String",
-            "id": "out_base",
+            "id": "input_out_base",
             "description": "A file name. Base-name of output files (spline coefficients (hz) and movement parameters)."
         },
         {
@@ -150,7 +150,7 @@
             "list": false,
             "command-line-key": "[OUT_CORRECTED]",
             "type": "String",
-            "id": "out_corrected",
+            "id": "input_out_corrected",
             "description": "A file name. Name of 4d image file with unwarped images."
         },
         {
@@ -160,7 +160,7 @@
             "list": false,
             "command-line-key": "[OUT_FIELD]",
             "type": "String",
-            "id": "out_field",
+            "id": "input_out_field",
             "description": "A file name. Name of image file with field (hz)."
         },
         {
@@ -170,7 +170,7 @@
             "list": false,
             "command-line-key": "[OUT_LOGFILE]",
             "type": "String",
-            "id": "out_logfile",
+            "id": "input_out_logfile",
             "description": "A file name. Name of log-file."
         },
         {
@@ -180,7 +180,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -190,7 +190,7 @@
             "list": true,
             "command-line-key": "[READOUT_TIMES]",
             "type": "Number",
-            "id": "readout_times",
+            "id": "input_readout_times",
             "description": "A list of items which are a float. Readout times (dwell times by # phase-encode steps minus 1)."
         },
         {
@@ -200,7 +200,7 @@
             "list": false,
             "command-line-key": "[REG_LAMBDA]",
             "type": "Number",
-            "id": "reg_lambda",
+            "id": "input_reg_lambda",
             "description": "A float. Lambda weighting value of the regularisation term."
         },
         {
@@ -210,7 +210,7 @@
             "list": false,
             "command-line-key": "[REGMOD]",
             "type": "String",
-            "id": "regmod",
+            "id": "input_regmod",
             "description": "'bending_energy' or 'membrane_energy'. Regularisation term implementation. defaults to bending_energy. note that the two functions have vastly different scales. the membrane energy is based on the first derivatives and the bending energy on the second derivatives. the second derivatives will typically be much smaller than the first derivatives, so input lambda will have to be larger for bending_energy to yield approximately the same level of regularisation."
         },
         {
@@ -220,7 +220,7 @@
             "list": false,
             "command-line-key": "[REGRID]",
             "type": "String",
-            "id": "regrid",
+            "id": "input_regrid",
             "description": "1 or 0. If set (=1), the calculations are done in a different grid."
         },
         {
@@ -230,7 +230,7 @@
             "list": false,
             "command-line-key": "[SCALE]",
             "type": "String",
-            "id": "scale",
+            "id": "input_scale",
             "description": "0 or 1. If set (=1), the images are individually scaled to a common mean."
         },
         {
@@ -240,7 +240,7 @@
             "list": false,
             "command-line-key": "[SPLINEORDER]",
             "type": "Number",
-            "id": "splineorder",
+            "id": "input_splineorder",
             "description": "An integer (int or long). Order of spline, 2->qadratic spline, 3->cubic spline."
         },
         {
@@ -250,7 +250,7 @@
             "list": false,
             "command-line-key": "[SSQLAMBDA]",
             "type": "String",
-            "id": "ssqlambda",
+            "id": "input_ssqlambda",
             "description": "1 or 0. Weight lambda by the current value of the ssd. if used (=1), the effective weight of regularisation term becomes higher for the initial iterations, therefore initial steps are a little smoother than they would without weighting. this reduces the risk of finding a local minimum."
         },
         {
@@ -260,7 +260,7 @@
             "list": false,
             "command-line-key": "[SUBSAMP]",
             "type": "Number",
-            "id": "subsamp",
+            "id": "input_subsamp",
             "description": "An integer (int or long). Sub-sampling scheme."
         },
         {
@@ -270,7 +270,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -280,7 +280,7 @@
             "list": false,
             "command-line-key": "[WARP_RES]",
             "type": "Number",
-            "id": "warp_res",
+            "id": "input_warp_res",
             "description": "A float. (approximate) resolution (in mm) of warp basis for the different sub-sampling levels."
         }
     ],
@@ -295,35 +295,35 @@
             "optional": true,
             "type": "File",
             "name": "Out corrected",
-            "id": "out_corrected"
+            "id": "output+out_corrected"
         },
         {
             "path-template": "[OUT_FIELD]",
             "optional": true,
             "type": "File",
             "name": "Out field",
-            "id": "out_field"
+            "id": "output+out_field"
         },
         {
             "path-template": "[OUT_BASE]_fieldcoef.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Out fieldcoef",
-            "id": "out_fieldcoef"
+            "id": "output+out_fieldcoef"
         },
         {
             "path-template": "[OUT_LOGFILE]",
             "optional": true,
             "type": "File",
             "name": "Out logfile",
-            "id": "out_logfile"
+            "id": "output+out_logfile"
         },
         {
             "path-template": "[OUT_BASE]_movpar.txt",
             "optional": true,
             "type": "File",
             "name": "Out movpar",
-            "id": "out_movpar"
+            "id": "output+out_movpar"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

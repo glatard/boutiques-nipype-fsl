@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[AFFINE_FILE]",
             "type": "File",
-            "id": "affine_file",
+            "id": "input_affine_file",
             "description": "An existing file name. Name of file containing affine transform."
         },
         {
@@ -17,7 +17,7 @@
             "list": true,
             "command-line-key": "[APPLY_INMASK]",
             "type": "String",
-            "id": "apply_inmask",
+            "id": "input_apply_inmask",
             "description": "A list of items which are 0 or 1. List of iterations to use input mask on (1 to use, 0 to skip)."
         },
         {
@@ -27,7 +27,7 @@
             "list": true,
             "command-line-key": "[APPLY_INTENSITY_MAPPING]",
             "type": "String",
-            "id": "apply_intensity_mapping",
+            "id": "input_apply_intensity_mapping",
             "description": "A list of items which are 0 or 1. List of subsampling levels to apply intensity mapping for (0 to skip, 1 to apply)."
         },
         {
@@ -37,7 +37,7 @@
             "list": true,
             "command-line-key": "[APPLY_REFMASK]",
             "type": "String",
-            "id": "apply_refmask",
+            "id": "input_apply_refmask",
             "description": "A list of items which are 0 or 1. List of iterations to use reference mask on (1 to use, 0 to skip)."
         },
         {
@@ -47,7 +47,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -57,7 +57,7 @@
             "list": false,
             "command-line-key": "[BIAS_REGULARIZATION_LAMBDA]",
             "type": "Number",
-            "id": "bias_regularization_lambda",
+            "id": "input_bias_regularization_lambda",
             "description": "A float. Weight of regularisation for bias-field, default 10000."
         },
         {
@@ -67,7 +67,7 @@
             "list": false,
             "command-line-key": "[BIASFIELD_RESOLUTION]",
             "type": "Number",
-            "id": "biasfield_resolution",
+            "id": "input_biasfield_resolution",
             "description": "A tuple of the form: (an integer (int or long), an integer (int or long), an integer (int or long)). Resolution (in mm) of bias-field modelling local intensities, default 50, 50, 50."
         },
         {
@@ -77,7 +77,7 @@
             "list": false,
             "command-line-key": "[CONFIG_FILE]",
             "type": "File",
-            "id": "config_file",
+            "id": "input_config_file",
             "description": "'t1_2_mni152_2mm' or 'fa_2_fmrib58_1mm' or an existing file name. Name of config file specifying command line arguments."
         },
         {
@@ -87,7 +87,7 @@
             "list": false,
             "command-line-key": "[DERIVE_FROM_REF]",
             "type": "String",
-            "id": "derive_from_ref",
+            "id": "input_derive_from_ref",
             "description": "A boolean. If true, ref image is used to calculate derivatives. default false."
         },
         {
@@ -98,7 +98,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -108,7 +108,7 @@
             "list": false,
             "command-line-key": "[FIELD_FILE]",
             "type": "String",
-            "id": "field_file",
+            "id": "input_field_file",
             "description": "A boolean or a file name. Name of output file with field or true."
         },
         {
@@ -118,7 +118,7 @@
             "list": false,
             "command-line-key": "[FIELDCOEFF_FILE]",
             "type": "String",
-            "id": "fieldcoeff_file",
+            "id": "input_fieldcoeff_file",
             "description": "A boolean or a file name. Name of output file with field coefficients or true."
         },
         {
@@ -128,7 +128,7 @@
             "list": false,
             "command-line-key": "[HESSIAN_PRECISION]",
             "type": "String",
-            "id": "hessian_precision",
+            "id": "input_hessian_precision",
             "description": "'double' or 'float'. Precision for representing hessian, double or float. default double."
         },
         {
@@ -139,7 +139,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -149,7 +149,7 @@
             "list": false,
             "command-line-key": "[IN_FILE]",
             "type": "File",
-            "id": "in_file",
+            "id": "input_in_file",
             "description": "An existing file name. Name of input image."
         },
         {
@@ -159,7 +159,7 @@
             "list": true,
             "command-line-key": "[IN_FWHM]",
             "type": "Number",
-            "id": "in_fwhm",
+            "id": "input_in_fwhm",
             "description": "A list of items which are an integer (int or long). Fwhm (in mm) of gaussian smoothing kernel for input volume, default [6, 4, 2, 2]."
         },
         {
@@ -169,7 +169,7 @@
             "list": false,
             "command-line-key": "[IN_INTENSITYMAP_FILE]",
             "type": "File",
-            "id": "in_intensitymap_file",
+            "id": "input_in_intensitymap_file",
             "description": "An existing file name. Name of file/files containing initial intensity mapingusually generated by previos fnirt run."
         },
         {
@@ -179,7 +179,7 @@
             "list": false,
             "command-line-key": "[INMASK_FILE]",
             "type": "File",
-            "id": "inmask_file",
+            "id": "input_inmask_file",
             "description": "An existing file name. Name of file with mask in input image space."
         },
         {
@@ -189,7 +189,7 @@
             "list": false,
             "command-line-key": "[INMASK_VAL]",
             "type": "Number",
-            "id": "inmask_val",
+            "id": "input_inmask_val",
             "description": "A float. Value to mask out in --in image. default =0.0."
         },
         {
@@ -199,7 +199,7 @@
             "list": false,
             "command-line-key": "[INTENSITY_MAPPING_MODEL]",
             "type": "String",
-            "id": "intensity_mapping_model",
+            "id": "input_intensity_mapping_model",
             "description": "'none' or 'global_linear' or 'global_non_linearlocal_linear' or 'global_non_linear_with_bias' or 'local_non_linear'. Model for intensity-mapping."
         },
         {
@@ -209,7 +209,7 @@
             "list": false,
             "command-line-key": "[INTENSITY_MAPPING_ORDER]",
             "type": "Number",
-            "id": "intensity_mapping_order",
+            "id": "input_intensity_mapping_order",
             "description": "An integer (int or long). Order of poynomial for mapping intensities, default 5."
         },
         {
@@ -219,7 +219,7 @@
             "list": false,
             "command-line-key": "[INWARP_FILE]",
             "type": "File",
-            "id": "inwarp_file",
+            "id": "input_inwarp_file",
             "description": "An existing file name. Name of file containing initial non-linear warps."
         },
         {
@@ -229,7 +229,7 @@
             "list": false,
             "command-line-key": "[JACOBIAN_FILE]",
             "type": "String",
-            "id": "jacobian_file",
+            "id": "input_jacobian_file",
             "description": "A boolean or a file name. Name of file for writing out the jacobianof the field (for diagnostic or vbm purposes)."
         },
         {
@@ -239,7 +239,7 @@
             "list": false,
             "command-line-key": "[JACOBIAN_RANGE]",
             "type": "Number",
-            "id": "jacobian_range",
+            "id": "input_jacobian_range",
             "description": "A tuple of the form: (a float, a float). Allowed range of jacobian determinants, default 0.01, 100.0."
         },
         {
@@ -249,7 +249,7 @@
             "list": false,
             "command-line-key": "[LOG_FILE]",
             "type": "String",
-            "id": "log_file",
+            "id": "input_log_file",
             "description": "A file name. Name of log-file."
         },
         {
@@ -259,7 +259,7 @@
             "list": true,
             "command-line-key": "[MAX_NONLIN_ITER]",
             "type": "Number",
-            "id": "max_nonlin_iter",
+            "id": "input_max_nonlin_iter",
             "description": "A list of items which are an integer (int or long). Max # of non-linear iterations list, default [5, 5, 5, 5]."
         },
         {
@@ -269,7 +269,7 @@
             "list": false,
             "command-line-key": "[MODULATEDREF_FILE]",
             "type": "String",
-            "id": "modulatedref_file",
+            "id": "input_modulatedref_file",
             "description": "A boolean or a file name. Name of file for writing out intensity modulated--ref (for diagnostic purposes)."
         },
         {
@@ -279,7 +279,7 @@
             "list": false,
             "command-line-key": "[OUT_INTENSITYMAP_FILE]",
             "type": "String",
-            "id": "out_intensitymap_file",
+            "id": "input_out_intensitymap_file",
             "description": "A boolean or a file name. Name of files for writing information pertaining to intensity mapping."
         },
         {
@@ -289,7 +289,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -299,7 +299,7 @@
             "list": false,
             "command-line-key": "[REF_FILE]",
             "type": "File",
-            "id": "ref_file",
+            "id": "input_ref_file",
             "description": "An existing file name. Name of reference image."
         },
         {
@@ -309,7 +309,7 @@
             "list": true,
             "command-line-key": "[REF_FWHM]",
             "type": "Number",
-            "id": "ref_fwhm",
+            "id": "input_ref_fwhm",
             "description": "A list of items which are an integer (int or long). Fwhm (in mm) of gaussian smoothing kernel for ref volume, default [4, 2, 0, 0]."
         },
         {
@@ -319,7 +319,7 @@
             "list": false,
             "command-line-key": "[REFMASK_FILE]",
             "type": "File",
-            "id": "refmask_file",
+            "id": "input_refmask_file",
             "description": "An existing file name. Name of file with mask in reference space."
         },
         {
@@ -329,7 +329,7 @@
             "list": false,
             "command-line-key": "[REFMASK_VAL]",
             "type": "Number",
-            "id": "refmask_val",
+            "id": "input_refmask_val",
             "description": "A float. Value to mask out in --ref image. default =0.0."
         },
         {
@@ -339,7 +339,7 @@
             "list": true,
             "command-line-key": "[REGULARIZATION_LAMBDA]",
             "type": "Number",
-            "id": "regularization_lambda",
+            "id": "input_regularization_lambda",
             "description": "A list of items which are a float. Weight of regularisation, default depending on --ssqlambda and --regmod switches. see user documetation."
         },
         {
@@ -349,7 +349,7 @@
             "list": false,
             "command-line-key": "[REGULARIZATION_MODEL]",
             "type": "String",
-            "id": "regularization_model",
+            "id": "input_regularization_model",
             "description": "'membrane_energy' or 'bending_energy'. Model for regularisation of warp-field [membrane_energy bending_energy], default bending_energy."
         },
         {
@@ -359,7 +359,7 @@
             "list": false,
             "command-line-key": "[SKIP_IMPLICIT_IN_MASKING]",
             "type": "String",
-            "id": "skip_implicit_in_masking",
+            "id": "input_skip_implicit_in_masking",
             "description": "A boolean. Skip implicit masking  based on valuein --in image. default = 0."
         },
         {
@@ -369,7 +369,7 @@
             "list": false,
             "command-line-key": "[SKIP_IMPLICIT_REF_MASKING]",
             "type": "String",
-            "id": "skip_implicit_ref_masking",
+            "id": "input_skip_implicit_ref_masking",
             "description": "A boolean. Skip implicit masking  based on valuein --ref image. default = 0."
         },
         {
@@ -379,7 +379,7 @@
             "list": false,
             "command-line-key": "[SKIP_INMASK]",
             "type": "String",
-            "id": "skip_inmask",
+            "id": "input_skip_inmask",
             "description": "A boolean. Skip specified inmask if set, default false."
         },
         {
@@ -389,7 +389,7 @@
             "list": false,
             "command-line-key": "[SKIP_INTENSITY_MAPPING]",
             "type": "String",
-            "id": "skip_intensity_mapping",
+            "id": "input_skip_intensity_mapping",
             "description": "A boolean. Skip estimate intensity-mapping default false."
         },
         {
@@ -399,7 +399,7 @@
             "list": false,
             "command-line-key": "[SKIP_LAMBDA_SSQ]",
             "type": "String",
-            "id": "skip_lambda_ssq",
+            "id": "input_skip_lambda_ssq",
             "description": "A boolean. If true, lambda is not weighted by current ssq, default false."
         },
         {
@@ -409,7 +409,7 @@
             "list": false,
             "command-line-key": "[SKIP_REFMASK]",
             "type": "String",
-            "id": "skip_refmask",
+            "id": "input_skip_refmask",
             "description": "A boolean. Skip specified refmask if set, default false."
         },
         {
@@ -419,7 +419,7 @@
             "list": false,
             "command-line-key": "[SPLINE_ORDER]",
             "type": "Number",
-            "id": "spline_order",
+            "id": "input_spline_order",
             "description": "An integer (int or long). Order of spline, 2->qadratic spline, 3->cubic spline. default=3."
         },
         {
@@ -429,7 +429,7 @@
             "list": true,
             "command-line-key": "[SUBSAMPLING_SCHEME]",
             "type": "Number",
-            "id": "subsampling_scheme",
+            "id": "input_subsampling_scheme",
             "description": "A list of items which are an integer (int or long). Sub-sampling scheme, list, default [4, 2, 1, 1]."
         },
         {
@@ -439,7 +439,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -449,7 +449,7 @@
             "list": false,
             "command-line-key": "[WARP_RESOLUTION]",
             "type": "Number",
-            "id": "warp_resolution",
+            "id": "input_warp_resolution",
             "description": "A tuple of the form: (an integer (int or long), an integer (int or long), an integer (int or long)). (approximate) resolution (in mm) of warp basis in x-, y- and z-direction, default 10, 10, 10."
         },
         {
@@ -459,7 +459,7 @@
             "list": false,
             "command-line-key": "[WARPED_FILE]",
             "type": "String",
-            "id": "warped_file",
+            "id": "input_warped_file",
             "description": "A file name. Name of output image."
         }
     ],
@@ -474,49 +474,49 @@
             "optional": true,
             "type": "File",
             "name": "Field file",
-            "id": "field_file"
+            "id": "output+field_file"
         },
         {
             "path-template": "[IN_FILE]_fieldwarp.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Fieldcoeff file",
-            "id": "fieldcoeff_file"
+            "id": "output+fieldcoeff_file"
         },
         {
             "path-template": "[IN_FILE]_field_jacobian.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Jacobian file",
-            "id": "jacobian_file"
+            "id": "output+jacobian_file"
         },
         {
             "path-template": "[LOG_FILE]",
             "optional": true,
             "type": "File",
             "name": "Log file",
-            "id": "log_file"
+            "id": "output+log_file"
         },
         {
             "path-template": "[IN_FILE]_modulated.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Modulatedref file",
-            "id": "modulatedref_file"
+            "id": "output+modulatedref_file"
         },
         {
             "path-template": "[IN_FILE]_intmap.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Out intensitymap file",
-            "id": "out_intensitymap_file"
+            "id": "output+out_intensitymap_file"
         },
         {
             "path-template": "[WARPED_FILE]",
             "optional": true,
             "type": "File",
             "name": "Warped file",
-            "id": "warped_file"
+            "id": "output+warped_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

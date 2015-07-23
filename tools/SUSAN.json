@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -17,7 +17,7 @@
             "list": false,
             "command-line-key": "[BRIGHTNESS_THRESHOLD]",
             "type": "Number",
-            "id": "brightness_threshold",
+            "id": "input_brightness_threshold",
             "description": "A float. Brightness threshold and should be greater than noise level and less than contrast of edges to be preserved."
         },
         {
@@ -28,7 +28,7 @@
             "list": false,
             "command-line-key": "[DIMENSION]",
             "type": "String",
-            "id": "dimension",
+            "id": "input_dimension",
             "description": "3 or 2. Within-plane (2) or fully 3d (3)."
         },
         {
@@ -39,7 +39,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -49,7 +49,7 @@
             "list": false,
             "command-line-key": "[FWHM]",
             "type": "Number",
-            "id": "fwhm",
+            "id": "input_fwhm",
             "description": "A float. Fwhm of smoothing, in mm, gets converted using sqrt(8*log(2))."
         },
         {
@@ -60,7 +60,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -70,7 +70,7 @@
             "list": false,
             "command-line-key": "[IN_FILE]",
             "type": "File",
-            "id": "in_file",
+            "id": "input_in_file",
             "description": "An existing file name. Filename of input timeseries."
         },
         {
@@ -80,7 +80,7 @@
             "list": false,
             "command-line-key": "[OUT_FILE]",
             "type": "String",
-            "id": "out_file",
+            "id": "input_out_file",
             "description": "A file name. Output file name."
         },
         {
@@ -90,7 +90,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -100,7 +100,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -111,7 +111,7 @@
             "list": true,
             "command-line-key": "[USANS]",
             "type": "File",
-            "id": "usans",
+            "id": "input_usans",
             "description": "A list of at most 2 items which are a tuple of the form: (an existing file name, a float). Determines whether the smoothing area (usan) is to be found from secondary images (0, 1 or 2). a negative value for any brightness threshold will auto-set the threshold at 10% of the robust range."
         },
         {
@@ -122,7 +122,7 @@
             "list": false,
             "command-line-key": "[USE_MEDIAN]",
             "type": "String",
-            "id": "use_median",
+            "id": "input_use_median",
             "description": "1 or 0. Whether to use a local median filter in the cases where single-point noise is detected."
         }
     ],
@@ -137,7 +137,7 @@
             "optional": true,
             "type": "File",
             "name": "Smoothed file",
-            "id": "smoothed_file"
+            "id": "output+smoothed_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

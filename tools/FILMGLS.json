@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -17,7 +17,7 @@
             "list": false,
             "command-line-key": "[AUTOCORR_ESTIMATE_ONLY]",
             "type": "String",
-            "id": "autocorr_estimate_only",
+            "id": "input_autocorr_estimate_only",
             "description": "A boolean. Perform autocorrelation estimation only."
         },
         {
@@ -27,7 +27,7 @@
             "list": false,
             "command-line-key": "[AUTOCORR_NOESTIMATE]",
             "type": "String",
-            "id": "autocorr_noestimate",
+            "id": "input_autocorr_noestimate",
             "description": "A boolean. Do not estimate autocorrs."
         },
         {
@@ -37,7 +37,7 @@
             "list": false,
             "command-line-key": "[BRIGHTNESS_THRESHOLD]",
             "type": "Number",
-            "id": "brightness_threshold",
+            "id": "input_brightness_threshold",
             "description": "An integer >= 0. Susan brightness threshold, otherwise it is estimated."
         },
         {
@@ -47,7 +47,7 @@
             "list": false,
             "command-line-key": "[DESIGN_FILE]",
             "type": "File",
-            "id": "design_file",
+            "id": "input_design_file",
             "description": "An existing file name. Design matrix file."
         },
         {
@@ -58,7 +58,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -68,7 +68,7 @@
             "list": false,
             "command-line-key": "[FIT_ARMODEL]",
             "type": "String",
-            "id": "fit_armodel",
+            "id": "input_fit_armodel",
             "description": "A boolean. Fits autoregressive model - default is to use tukey with m=sqrt(numvols)."
         },
         {
@@ -78,7 +78,7 @@
             "list": false,
             "command-line-key": "[FULL_DATA]",
             "type": "String",
-            "id": "full_data",
+            "id": "input_full_data",
             "description": "A boolean. Output full data."
         },
         {
@@ -89,7 +89,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -99,7 +99,7 @@
             "list": false,
             "command-line-key": "[IN_FILE]",
             "type": "File",
-            "id": "in_file",
+            "id": "input_in_file",
             "description": "An existing file name. Input data file."
         },
         {
@@ -109,7 +109,7 @@
             "list": false,
             "command-line-key": "[MASK_SIZE]",
             "type": "Number",
-            "id": "mask_size",
+            "id": "input_mask_size",
             "description": "An integer (int or long). Susan mask size."
         },
         {
@@ -119,7 +119,7 @@
             "list": false,
             "command-line-key": "[MULTITAPER_PRODUCT]",
             "type": "Number",
-            "id": "multitaper_product",
+            "id": "input_multitaper_product",
             "description": "An integer (int or long). Multitapering with slepian tapers and num is the time-bandwidth product."
         },
         {
@@ -129,7 +129,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_PWDATA]",
             "type": "String",
-            "id": "output_pwdata",
+            "id": "input_output_pwdata",
             "description": "A boolean. Output prewhitened data and average design matrix."
         },
         {
@@ -139,7 +139,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -150,7 +150,7 @@
             "list": false,
             "command-line-key": "[RESULTS_DIR]",
             "type": "String",
-            "id": "results_dir",
+            "id": "input_results_dir",
             "description": "A directory name. Directory to store results in."
         },
         {
@@ -160,7 +160,7 @@
             "list": false,
             "command-line-key": "[SMOOTH_AUTOCORR]",
             "type": "String",
-            "id": "smooth_autocorr",
+            "id": "input_smooth_autocorr",
             "description": "A boolean. Smooth auto corr estimates."
         },
         {
@@ -170,7 +170,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -181,7 +181,7 @@
             "list": false,
             "command-line-key": "[THRESHOLD]",
             "type": "Number",
-            "id": "threshold",
+            "id": "input_threshold",
             "description": "A floating point number >= 0.0. Threshold."
         },
         {
@@ -191,7 +191,7 @@
             "list": false,
             "command-line-key": "[TUKEY_WINDOW]",
             "type": "Number",
-            "id": "tukey_window",
+            "id": "input_tukey_window",
             "description": "An integer (int or long). Tukey window size to estimate autocorr."
         },
         {
@@ -201,7 +201,7 @@
             "list": false,
             "command-line-key": "[USE_PAVA]",
             "type": "String",
-            "id": "use_pava",
+            "id": "input_use_pava",
             "description": "A boolean. Estimates autocorr using pava."
         }
     ],
@@ -216,49 +216,49 @@
             "optional": true,
             "type": "File",
             "name": "Corrections",
-            "id": "corrections"
+            "id": "output+corrections"
         },
         {
             "path-template": "dof",
             "optional": true,
             "type": "File",
             "name": "Dof file",
-            "id": "dof_file"
+            "id": "output+dof_file"
         },
         {
             "path-template": "logfile",
             "optional": true,
             "type": "File",
             "name": "Logfile",
-            "id": "logfile"
+            "id": "output+logfile"
         },
         {
             "path-template": "res4d.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Residual4d",
-            "id": "residual4d"
+            "id": "output+residual4d"
         },
         {
             "path-template": "[RESULTS_DIR]",
             "optional": true,
             "type": "File",
             "name": "Results dir",
-            "id": "results_dir"
+            "id": "output+results_dir"
         },
         {
             "path-template": "sigmasquareds.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Sigmasquareds",
-            "id": "sigmasquareds"
+            "id": "output+sigmasquareds"
         },
         {
             "path-template": "threshac1.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Thresholdac",
-            "id": "thresholdac"
+            "id": "output+thresholdac"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

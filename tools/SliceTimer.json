@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -17,7 +17,7 @@
             "list": false,
             "command-line-key": "[CUSTOM_ORDER]",
             "type": "File",
-            "id": "custom_order",
+            "id": "input_custom_order",
             "description": "An existing file name. Filename of single-column custom interleave order file (first slice is referred to as 1 not 0)."
         },
         {
@@ -27,7 +27,7 @@
             "list": false,
             "command-line-key": "[CUSTOM_TIMINGS]",
             "type": "File",
-            "id": "custom_timings",
+            "id": "input_custom_timings",
             "description": "An existing file name. Slice timings, in fractions of tr, range 0:1 (default is 0.5 = no shift)."
         },
         {
@@ -38,7 +38,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -48,7 +48,7 @@
             "list": false,
             "command-line-key": "[GLOBAL_SHIFT]",
             "type": "Number",
-            "id": "global_shift",
+            "id": "input_global_shift",
             "description": "A float. Shift in fraction of tr, range 0:1 (default is 0.5 = no shift)."
         },
         {
@@ -59,7 +59,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -69,7 +69,7 @@
             "list": false,
             "command-line-key": "[IN_FILE]",
             "type": "File",
-            "id": "in_file",
+            "id": "input_in_file",
             "description": "An existing file name. Filename of input timeseries."
         },
         {
@@ -79,7 +79,7 @@
             "list": false,
             "command-line-key": "[INDEX_DIR]",
             "type": "String",
-            "id": "index_dir",
+            "id": "input_index_dir",
             "description": "A boolean. Slice indexing from top to bottom."
         },
         {
@@ -89,7 +89,7 @@
             "list": false,
             "command-line-key": "[INTERLEAVED]",
             "type": "String",
-            "id": "interleaved",
+            "id": "input_interleaved",
             "description": "A boolean. Use interleaved acquisition."
         },
         {
@@ -99,7 +99,7 @@
             "list": false,
             "command-line-key": "[OUT_FILE]",
             "type": "String",
-            "id": "out_file",
+            "id": "input_out_file",
             "description": "A file name. Filename of output timeseries."
         },
         {
@@ -109,7 +109,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -119,7 +119,7 @@
             "list": false,
             "command-line-key": "[SLICE_DIRECTION]",
             "type": "String",
-            "id": "slice_direction",
+            "id": "input_slice_direction",
             "description": "1 or 2 or 3. Direction of slice acquisition (x=1, y=2, z=3) - default is z."
         },
         {
@@ -129,7 +129,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -139,7 +139,7 @@
             "list": false,
             "command-line-key": "[TIME_REPETITION]",
             "type": "Number",
-            "id": "time_repetition",
+            "id": "input_time_repetition",
             "description": "A float. Specify tr of data - default is 3s."
         }
     ],
@@ -154,7 +154,7 @@
             "optional": true,
             "type": "File",
             "name": "Slice time corrected file",
-            "id": "slice_time_corrected_file"
+            "id": "output+slice_time_corrected_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

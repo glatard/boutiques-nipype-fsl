@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -18,7 +18,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -29,7 +29,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -39,7 +39,7 @@
             "list": false,
             "command-line-key": "[MASK]",
             "type": "File",
-            "id": "mask",
+            "id": "input_mask",
             "description": "An existing file name. Mask file."
         },
         {
@@ -49,7 +49,7 @@
             "list": false,
             "command-line-key": "[NO_DEACTIVATION_CLASS]",
             "type": "String",
-            "id": "no_deactivation_class",
+            "id": "input_no_deactivation_class",
             "description": "A boolean. Enforces no deactivation class."
         },
         {
@@ -59,7 +59,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -69,7 +69,7 @@
             "list": false,
             "command-line-key": "[SPATIAL_DATA_FILE]",
             "type": "File",
-            "id": "spatial_data_file",
+            "id": "input_spatial_data_file",
             "description": "An existing file name. Statistics spatial map."
         },
         {
@@ -79,7 +79,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         }
     ],
@@ -94,14 +94,14 @@
             "optional": true,
             "type": "File",
             "name": "Activation p map",
-            "id": "activation_p_map"
+            "id": "output+activation_p_map"
         },
         {
             "path-template": "w1_mean.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Null p map",
-            "id": "null_p_map"
+            "id": "output+null_p_map"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

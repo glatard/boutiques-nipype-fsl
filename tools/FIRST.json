@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[AFFINE_FILE]",
             "type": "File",
-            "id": "affine_file",
+            "id": "input_affine_file",
             "description": "An existing file name. Affine matrix to use (e.g. img2std.mat) (does not re-run registration)."
         },
         {
@@ -17,7 +17,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -27,7 +27,7 @@
             "list": false,
             "command-line-key": "[BRAIN_EXTRACTED]",
             "type": "String",
-            "id": "brain_extracted",
+            "id": "input_brain_extracted",
             "description": "A boolean. Input structural image is already brain-extracted."
         },
         {
@@ -38,7 +38,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -49,7 +49,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -59,7 +59,7 @@
             "list": false,
             "command-line-key": "[IN_FILE]",
             "type": "File",
-            "id": "in_file",
+            "id": "input_in_file",
             "description": "An existing file name. Input data file."
         },
         {
@@ -69,7 +69,7 @@
             "list": true,
             "command-line-key": "[LIST_OF_SPECIFIC_STRUCTURES]",
             "type": "String",
-            "id": "list_of_specific_structures",
+            "id": "input_list_of_specific_structures",
             "description": "A list of at least 1 items which are a string. Runs only on the specified structures (e.g. l_hipp, r_hippl_accu, r_accu, l_amyg, r_amygl_caud, r_caud, l_pall, r_palll_puta, r_puta, l_thal, r_thal, brstem."
         },
         {
@@ -80,7 +80,7 @@
             "list": false,
             "command-line-key": "[METHOD]",
             "type": "String",
-            "id": "method",
+            "id": "input_method",
             "description": "'auto' or 'fast' or 'none'. Method must be one of auto, fast, none, or it can be entered using the 'method_as_numerical_threshold' input."
         },
         {
@@ -90,7 +90,7 @@
             "list": false,
             "command-line-key": "[METHOD_AS_NUMERICAL_THRESHOLD]",
             "type": "Number",
-            "id": "method_as_numerical_threshold",
+            "id": "input_method_as_numerical_threshold",
             "description": "A float. Specify a numerical threshold value or use the 'method' input to choose auto, fast, or none."
         },
         {
@@ -100,7 +100,7 @@
             "list": false,
             "command-line-key": "[NO_CLEANUP]",
             "type": "String",
-            "id": "no_cleanup",
+            "id": "input_no_cleanup",
             "description": "A boolean. Input structural image is already brain-extracted."
         },
         {
@@ -111,7 +111,7 @@
             "list": false,
             "command-line-key": "[OUT_FILE]",
             "type": "String",
-            "id": "out_file",
+            "id": "input_out_file",
             "description": "A file name. Output data file."
         },
         {
@@ -121,7 +121,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -131,7 +131,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -141,7 +141,7 @@
             "list": false,
             "command-line-key": "[VERBOSE]",
             "type": "String",
-            "id": "verbose",
+            "id": "input_verbose",
             "description": "A boolean. Use verbose logging."
         }
     ],
@@ -156,14 +156,14 @@
             "optional": true,
             "type": "File",
             "name": "Original segmentations",
-            "id": "original_segmentations"
+            "id": "output+original_segmentations"
         },
         {
             "path-template": "[OUT_FILE]_all_none_firstseg.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Segmentation file",
-            "id": "segmentation_file"
+            "id": "output+segmentation_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

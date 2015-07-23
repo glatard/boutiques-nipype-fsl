@@ -8,7 +8,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -18,7 +18,7 @@
             "list": false,
             "command-line-key": "[NUM_COPES]",
             "type": "Number",
-            "id": "num_copes",
+            "id": "input_num_copes",
             "description": "An integer >= 1. Number of copes to be combined."
         }
     ],
@@ -32,21 +32,21 @@
             "optional": true,
             "type": "File",
             "name": "Design con",
-            "id": "design_con"
+            "id": "output+design_con"
         },
         {
             "path-template": "design.grp",
             "optional": true,
             "type": "File",
             "name": "Design grp",
-            "id": "design_grp"
+            "id": "output+design_grp"
         },
         {
             "path-template": "design.mat",
             "optional": true,
             "type": "File",
             "name": "Design mat",
-            "id": "design_mat"
+            "id": "output+design_mat"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

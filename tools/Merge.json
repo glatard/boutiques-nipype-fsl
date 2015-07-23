@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -17,7 +17,7 @@
             "list": false,
             "command-line-key": "[DIMENSION]",
             "type": "String",
-            "id": "dimension",
+            "id": "input_dimension",
             "description": "'t' or 'x' or 'y' or 'z' or 'a'. Dimension along which to merge, optionally set tr input when dimension is t."
         },
         {
@@ -28,7 +28,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -39,7 +39,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -49,7 +49,7 @@
             "list": true,
             "command-line-key": "[IN_FILES]",
             "type": "File",
-            "id": "in_files",
+            "id": "input_in_files",
             "description": "A list of items which are an existing file name. No description provided."
         },
         {
@@ -59,7 +59,7 @@
             "list": false,
             "command-line-key": "[MERGED_FILE]",
             "type": "String",
-            "id": "merged_file",
+            "id": "input_merged_file",
             "description": "A file name. No description provided."
         },
         {
@@ -69,7 +69,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -79,7 +79,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -89,7 +89,7 @@
             "list": false,
             "command-line-key": "[TR]",
             "type": "Number",
-            "id": "tr",
+            "id": "input_tr",
             "description": "A float. Use to specify tr in seconds (default is 1.00 sec), overrides dimension and sets it to tr."
         }
     ],
@@ -104,7 +104,7 @@
             "optional": true,
             "type": "File",
             "name": "Merged file",
-            "id": "merged_file"
+            "id": "output+merged_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ALT_DATA_FILE]",
             "type": "File",
-            "id": "alt_data_file",
+            "id": "input_alt_data_file",
             "description": "An existing file name. 4d non-fa data to project onto skeleton."
         },
         {
@@ -17,7 +17,7 @@
             "list": false,
             "command-line-key": "[ALT_SKELETON]",
             "type": "File",
-            "id": "alt_skeleton",
+            "id": "input_alt_skeleton",
             "description": "An existing file name. Alternate skeleton to use."
         },
         {
@@ -27,7 +27,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -37,7 +37,7 @@
             "list": false,
             "command-line-key": "[DATA_FILE]",
             "type": "File",
-            "id": "data_file",
+            "id": "input_data_file",
             "description": "An existing file name. 4d data to project onto skeleton (usually fa)."
         },
         {
@@ -47,7 +47,7 @@
             "list": false,
             "command-line-key": "[DISTANCE_MAP]",
             "type": "File",
-            "id": "distance_map",
+            "id": "input_distance_map",
             "description": "An existing file name. Distance map image."
         },
         {
@@ -58,7 +58,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -69,7 +69,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -79,7 +79,7 @@
             "list": false,
             "command-line-key": "[IN_FILE]",
             "type": "File",
-            "id": "in_file",
+            "id": "input_in_file",
             "description": "An existing file name. Input image (typcially mean fa volume)."
         },
         {
@@ -89,7 +89,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -99,7 +99,7 @@
             "list": false,
             "command-line-key": "[PROJECT_DATA]",
             "type": "String",
-            "id": "project_data",
+            "id": "input_project_data",
             "description": "A boolean. Project data onto skeleton."
         },
         {
@@ -109,7 +109,7 @@
             "list": false,
             "command-line-key": "[PROJECTED_DATA]",
             "type": "String",
-            "id": "projected_data",
+            "id": "input_projected_data",
             "description": "A file name. Input data projected onto skeleton."
         },
         {
@@ -119,7 +119,7 @@
             "list": false,
             "command-line-key": "[SEARCH_MASK_FILE]",
             "type": "File",
-            "id": "search_mask_file",
+            "id": "input_search_mask_file",
             "description": "An existing file name. Mask in which to use alternate search rule."
         },
         {
@@ -129,7 +129,7 @@
             "list": false,
             "command-line-key": "[SKELETON_FILE]",
             "type": "String",
-            "id": "skeleton_file",
+            "id": "input_skeleton_file",
             "description": "A boolean or a file name. Write out skeleton image."
         },
         {
@@ -139,7 +139,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -149,7 +149,7 @@
             "list": false,
             "command-line-key": "[THRESHOLD]",
             "type": "Number",
-            "id": "threshold",
+            "id": "input_threshold",
             "description": "A float. Skeleton threshold value."
         },
         {
@@ -160,7 +160,7 @@
             "list": false,
             "command-line-key": "[USE_CINGULUM_MASK]",
             "type": "String",
-            "id": "use_cingulum_mask",
+            "id": "input_use_cingulum_mask",
             "description": "A boolean. Perform alternate search using built-in cingulum mask."
         }
     ],
@@ -175,14 +175,14 @@
             "optional": true,
             "type": "File",
             "name": "Projected data",
-            "id": "projected_data"
+            "id": "output+projected_data"
         },
         {
             "path-template": "[IN_FILE]_skeleton",
             "optional": true,
             "type": "File",
             "name": "Skeleton file",
-            "id": "skeleton_file"
+            "id": "output+skeleton_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

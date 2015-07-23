@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -18,7 +18,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -29,7 +29,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -39,7 +39,7 @@
             "list": true,
             "command-line-key": "[IN_FILE]",
             "type": "File",
-            "id": "in_file",
+            "id": "input_in_file",
             "description": "An existing file name or a list of items which are an existing file name. File with motion parameters."
         },
         {
@@ -49,7 +49,7 @@
             "list": false,
             "command-line-key": "[IN_SOURCE]",
             "type": "String",
-            "id": "in_source",
+            "id": "input_in_source",
             "description": "'spm' or 'fsl'. Which program generated the motion parameter file - fsl, spm."
         },
         {
@@ -59,7 +59,7 @@
             "list": false,
             "command-line-key": "[OUT_FILE]",
             "type": "String",
-            "id": "out_file",
+            "id": "input_out_file",
             "description": "A file name. Image to write."
         },
         {
@@ -69,7 +69,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -79,7 +79,7 @@
             "list": false,
             "command-line-key": "[PLOT_SIZE]",
             "type": "Number",
-            "id": "plot_size",
+            "id": "input_plot_size",
             "description": "A tuple of the form: (an integer (int or long), an integer (int or long)). Plot image height and width."
         },
         {
@@ -89,7 +89,7 @@
             "list": false,
             "command-line-key": "[PLOT_TYPE]",
             "type": "String",
-            "id": "plot_type",
+            "id": "input_plot_type",
             "description": "'rotations' or 'translations' or 'displacement'. Which motion type to plot - rotations, translations, displacement."
         },
         {
@@ -99,7 +99,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         }
     ],
@@ -114,7 +114,7 @@
             "optional": true,
             "type": "File",
             "name": "Out file",
-            "id": "out_file"
+            "id": "output+out_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

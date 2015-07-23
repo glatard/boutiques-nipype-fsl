@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[AFFINE_MAT]",
             "type": "File",
-            "id": "affine_mat",
+            "id": "input_affine_mat",
             "description": "An existing file name. Filename for affine transformation matrix."
         },
         {
@@ -17,7 +17,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -28,7 +28,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -39,7 +39,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -49,7 +49,7 @@
             "list": false,
             "command-line-key": "[IN_FILE]",
             "type": "File",
-            "id": "in_file",
+            "id": "input_in_file",
             "description": "An existing file name. Filename for input vector or tensor field."
         },
         {
@@ -59,7 +59,7 @@
             "list": false,
             "command-line-key": "[INTERPOLATION]",
             "type": "String",
-            "id": "interpolation",
+            "id": "input_interpolation",
             "description": "'nearestneighbour' or 'trilinear' or 'sinc' or 'spline'. Interpolation method : nearestneighbour, trilinear (default), sinc or spline."
         },
         {
@@ -69,7 +69,7 @@
             "list": false,
             "command-line-key": "[MASK]",
             "type": "File",
-            "id": "mask",
+            "id": "input_mask",
             "description": "An existing file name. Brain mask in input space."
         },
         {
@@ -79,7 +79,7 @@
             "list": false,
             "command-line-key": "[OUT_FILE]",
             "type": "String",
-            "id": "out_file",
+            "id": "input_out_file",
             "description": "A file name. Filename for output registered vector or tensor field."
         },
         {
@@ -89,7 +89,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -99,7 +99,7 @@
             "list": false,
             "command-line-key": "[REF_MASK]",
             "type": "File",
-            "id": "ref_mask",
+            "id": "input_ref_mask",
             "description": "An existing file name. Brain mask in output space (useful for speed up of nonlinear reg)."
         },
         {
@@ -109,7 +109,7 @@
             "list": false,
             "command-line-key": "[REF_VOL]",
             "type": "File",
-            "id": "ref_vol",
+            "id": "input_ref_vol",
             "description": "An existing file name. Filename for reference (target) volume."
         },
         {
@@ -119,7 +119,7 @@
             "list": false,
             "command-line-key": "[ROTATION_MAT]",
             "type": "File",
-            "id": "rotation_mat",
+            "id": "input_rotation_mat",
             "description": "An existing file name. Filename for secondary affine matrixif set, this will be used for the rotation of the vector/tensor field."
         },
         {
@@ -129,7 +129,7 @@
             "list": false,
             "command-line-key": "[ROTATION_WARP]",
             "type": "File",
-            "id": "rotation_warp",
+            "id": "input_rotation_warp",
             "description": "An existing file name. Filename for secondary warp fieldif set, this will be used for the rotation of the vector/tensor field."
         },
         {
@@ -139,7 +139,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -149,7 +149,7 @@
             "list": false,
             "command-line-key": "[WARP_FIELD]",
             "type": "File",
-            "id": "warp_field",
+            "id": "input_warp_field",
             "description": "An existing file name. Filename for 4d warp field for nonlinear registration."
         }
     ],
@@ -164,7 +164,7 @@
             "optional": true,
             "type": "File",
             "name": "Out file",
-            "id": "out_file"
+            "id": "output+out_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

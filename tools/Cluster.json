@@ -7,7 +7,7 @@
             "list": false,
             "command-line-key": "[ARGS]",
             "type": "String",
-            "id": "args",
+            "id": "input_args",
             "description": "A string. Additional parameters to the command."
         },
         {
@@ -17,7 +17,7 @@
             "list": false,
             "command-line-key": "[CONNECTIVITY]",
             "type": "Number",
-            "id": "connectivity",
+            "id": "input_connectivity",
             "description": "An integer (int or long). The connectivity of voxels (default 26)."
         },
         {
@@ -27,7 +27,7 @@
             "list": false,
             "command-line-key": "[COPE_FILE]",
             "type": "String",
-            "id": "cope_file",
+            "id": "input_cope_file",
             "description": "A file name. Cope volume."
         },
         {
@@ -37,7 +37,7 @@
             "list": false,
             "command-line-key": "[DLH]",
             "type": "Number",
-            "id": "dlh",
+            "id": "input_dlh",
             "description": "A float. Smoothness estimate = sqrt(det(lambda))."
         },
         {
@@ -48,7 +48,7 @@
             "list": false,
             "command-line-key": "[ENVIRON]",
             "type": "String",
-            "id": "environ",
+            "id": "input_environ",
             "description": "A dictionary with keys which are a value of type 'str' and with values which are a value of type 'str'. Environment variables."
         },
         {
@@ -58,7 +58,7 @@
             "list": false,
             "command-line-key": "[FIND_MIN]",
             "type": "String",
-            "id": "find_min",
+            "id": "input_find_min",
             "description": "A boolean. Find minima instead of maxima."
         },
         {
@@ -68,7 +68,7 @@
             "list": false,
             "command-line-key": "[FRACTIONAL]",
             "type": "String",
-            "id": "fractional",
+            "id": "input_fractional",
             "description": "A boolean. Interprets the threshold as a fraction of the robust range."
         },
         {
@@ -79,7 +79,7 @@
             "list": false,
             "command-line-key": "[IGNORE_EXCEPTION]",
             "type": "String",
-            "id": "ignore_exception",
+            "id": "input_ignore_exception",
             "description": "A boolean. Print an error message instead of throwing an exception in case the interface fails to run."
         },
         {
@@ -89,7 +89,7 @@
             "list": false,
             "command-line-key": "[IN_FILE]",
             "type": "File",
-            "id": "in_file",
+            "id": "input_in_file",
             "description": "An existing file name. Input volume."
         },
         {
@@ -99,7 +99,7 @@
             "list": false,
             "command-line-key": "[MINCLUSTERSIZE]",
             "type": "String",
-            "id": "minclustersize",
+            "id": "input_minclustersize",
             "description": "A boolean. Prints out minimum significant cluster size."
         },
         {
@@ -109,7 +109,7 @@
             "list": false,
             "command-line-key": "[NO_TABLE]",
             "type": "String",
-            "id": "no_table",
+            "id": "input_no_table",
             "description": "A boolean. Suppresses printing of the table info."
         },
         {
@@ -119,7 +119,7 @@
             "list": false,
             "command-line-key": "[NUM_MAXIMA]",
             "type": "Number",
-            "id": "num_maxima",
+            "id": "input_num_maxima",
             "description": "An integer (int or long). No of local maxima to report."
         },
         {
@@ -129,7 +129,7 @@
             "list": false,
             "command-line-key": "[OUT_INDEX_FILE]",
             "type": "String",
-            "id": "out_index_file",
+            "id": "input_out_index_file",
             "description": "A boolean or a file name. Output of cluster index (in size order)."
         },
         {
@@ -139,7 +139,7 @@
             "list": false,
             "command-line-key": "[OUT_LOCALMAX_TXT_FILE]",
             "type": "String",
-            "id": "out_localmax_txt_file",
+            "id": "input_out_localmax_txt_file",
             "description": "A boolean or a file name. Local maxima text file."
         },
         {
@@ -149,7 +149,7 @@
             "list": false,
             "command-line-key": "[OUT_LOCALMAX_VOL_FILE]",
             "type": "String",
-            "id": "out_localmax_vol_file",
+            "id": "input_out_localmax_vol_file",
             "description": "A boolean or a file name. Output of local maxima volume."
         },
         {
@@ -159,7 +159,7 @@
             "list": false,
             "command-line-key": "[OUT_MAX_FILE]",
             "type": "String",
-            "id": "out_max_file",
+            "id": "input_out_max_file",
             "description": "A boolean or a file name. Filename for output of max image."
         },
         {
@@ -169,7 +169,7 @@
             "list": false,
             "command-line-key": "[OUT_MEAN_FILE]",
             "type": "String",
-            "id": "out_mean_file",
+            "id": "input_out_mean_file",
             "description": "A boolean or a file name. Filename for output of mean image."
         },
         {
@@ -179,7 +179,7 @@
             "list": false,
             "command-line-key": "[OUT_PVAL_FILE]",
             "type": "String",
-            "id": "out_pval_file",
+            "id": "input_out_pval_file",
             "description": "A boolean or a file name. Filename for image output of log pvals."
         },
         {
@@ -189,7 +189,7 @@
             "list": false,
             "command-line-key": "[OUT_SIZE_FILE]",
             "type": "String",
-            "id": "out_size_file",
+            "id": "input_out_size_file",
             "description": "A boolean or a file name. Filename for output of size image."
         },
         {
@@ -199,7 +199,7 @@
             "list": false,
             "command-line-key": "[OUT_THRESHOLD_FILE]",
             "type": "String",
-            "id": "out_threshold_file",
+            "id": "input_out_threshold_file",
             "description": "A boolean or a file name. Thresholded image."
         },
         {
@@ -209,7 +209,7 @@
             "list": false,
             "command-line-key": "[OUTPUT_TYPE]",
             "type": "String",
-            "id": "output_type",
+            "id": "input_output_type",
             "description": "'nifti_pair' or 'nifti_pair_gz' or 'nifti_gz' or 'nifti'. Fsl output type."
         },
         {
@@ -219,7 +219,7 @@
             "list": false,
             "command-line-key": "[PEAK_DISTANCE]",
             "type": "Number",
-            "id": "peak_distance",
+            "id": "input_peak_distance",
             "description": "A float. Minimum distance between local maxima/minima, in mm (default 0)."
         },
         {
@@ -229,7 +229,7 @@
             "list": false,
             "command-line-key": "[PTHRESHOLD]",
             "type": "Number",
-            "id": "pthreshold",
+            "id": "input_pthreshold",
             "description": "A float. P-threshold for clusters."
         },
         {
@@ -239,7 +239,7 @@
             "list": false,
             "command-line-key": "[STD_SPACE_FILE]",
             "type": "String",
-            "id": "std_space_file",
+            "id": "input_std_space_file",
             "description": "A file name. Filename for standard-space volume."
         },
         {
@@ -249,7 +249,7 @@
             "list": false,
             "command-line-key": "[TERMINAL_OUTPUT]",
             "type": "String",
-            "id": "terminal_output",
+            "id": "input_terminal_output",
             "description": "'stream' or 'allatonce' or 'file' or 'none'. Control terminal output: `stream` - displays to terminal immediately (default), `allatonce` - waits till command is finished to display output, `file` - writes output to file, `none` - output is ignored."
         },
         {
@@ -259,7 +259,7 @@
             "list": false,
             "command-line-key": "[THRESHOLD]",
             "type": "Number",
-            "id": "threshold",
+            "id": "input_threshold",
             "description": "A float. Threshold for input volume."
         },
         {
@@ -269,7 +269,7 @@
             "list": false,
             "command-line-key": "[USE_MM]",
             "type": "String",
-            "id": "use_mm",
+            "id": "input_use_mm",
             "description": "A boolean. Use mm, not voxel, coordinates."
         },
         {
@@ -279,7 +279,7 @@
             "list": false,
             "command-line-key": "[VOLUME]",
             "type": "Number",
-            "id": "volume",
+            "id": "input_volume",
             "description": "An integer (int or long). Number of voxels in the mask."
         },
         {
@@ -289,7 +289,7 @@
             "list": false,
             "command-line-key": "[WARPFIELD_FILE]",
             "type": "String",
-            "id": "warpfield_file",
+            "id": "input_warpfield_file",
             "description": "A file name. File contining warpfield."
         },
         {
@@ -299,7 +299,7 @@
             "list": false,
             "command-line-key": "[XFM_FILE]",
             "type": "String",
-            "id": "xfm_file",
+            "id": "input_xfm_file",
             "description": "A file name. Filename for linear: input->standard-space transform. non-linear: input->highres transform."
         }
     ],
@@ -314,56 +314,56 @@
             "optional": true,
             "type": "File",
             "name": "Index file",
-            "id": "index_file"
+            "id": "output+index_file"
         },
         {
             "path-template": "[IN_FILE]_localmax.txt",
             "optional": true,
             "type": "File",
             "name": "Localmax txt file",
-            "id": "localmax_txt_file"
+            "id": "output+localmax_txt_file"
         },
         {
             "path-template": "[IN_FILE]_localmax.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Localmax vol file",
-            "id": "localmax_vol_file"
+            "id": "output+localmax_vol_file"
         },
         {
             "path-template": "[IN_FILE]_max.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Max file",
-            "id": "max_file"
+            "id": "output+max_file"
         },
         {
             "path-template": "[IN_FILE]_mean.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Mean file",
-            "id": "mean_file"
+            "id": "output+mean_file"
         },
         {
             "path-template": "[IN_FILE]_pval.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Pval file",
-            "id": "pval_file"
+            "id": "output+pval_file"
         },
         {
             "path-template": "[IN_FILE]_size.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Size file",
-            "id": "size_file"
+            "id": "output+size_file"
         },
         {
             "path-template": "[IN_FILE]_threshold.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Threshold file",
-            "id": "threshold_file"
+            "id": "output+threshold_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",
