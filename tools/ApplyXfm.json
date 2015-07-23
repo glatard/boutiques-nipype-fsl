@@ -535,21 +535,21 @@
             "optional": true,
             "type": "File",
             "name": "Out file",
-            "id": "output+out_file"
+            "id": "output_out_file"
         },
         {
             "path-template": "[OUT_LOG]",
             "optional": true,
             "type": "File",
             "name": "Out log",
-            "id": "output+out_log"
+            "id": "output_out_log"
         },
         {
             "path-template": "[OUT_MATRIX_FILE]",
             "optional": true,
             "type": "File",
             "name": "Out matrix file",
-            "id": "output+out_matrix_file"
+            "id": "output_out_matrix_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

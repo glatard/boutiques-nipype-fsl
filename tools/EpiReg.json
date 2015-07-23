@@ -194,91 +194,91 @@
             "optional": true,
             "type": "File",
             "name": "Epi2str inv",
-            "id": "output+epi2str_inv"
+            "id": "output_epi2str_inv"
         },
         {
             "path-template": "[OUT_BASE].mat",
             "optional": true,
             "type": "File",
             "name": "Epi2str mat",
-            "id": "output+epi2str_mat"
+            "id": "output_epi2str_mat"
         },
         {
             "path-template": "[OUT_BASE]_fieldmaprads2epi.mat",
             "optional": true,
             "type": "File",
             "name": "Fmap2epi mat",
-            "id": "output+fmap2epi_mat"
+            "id": "output_fmap2epi_mat"
         },
         {
             "path-template": "[OUT_BASE]_fieldmap2str.mat",
             "optional": true,
             "type": "File",
             "name": "Fmap2str mat",
-            "id": "output+fmap2str_mat"
+            "id": "output_fmap2str_mat"
         },
         {
             "path-template": "[OUT_BASE]_fieldmaprads2epi.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Fmap epi",
-            "id": "output+fmap_epi"
+            "id": "output_fmap_epi"
         },
         {
             "path-template": "[OUT_BASE]_fieldmaprads2str.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Fmap str",
-            "id": "output+fmap_str"
+            "id": "output_fmap_str"
         },
         {
             "path-template": "[OUT_BASE]_fieldmap2str.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Fmapmag str",
-            "id": "output+fmapmag_str"
+            "id": "output_fmapmag_str"
         },
         {
             "path-template": "[OUT_BASE]_warp.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Fullwarp",
-            "id": "output+fullwarp"
+            "id": "output_fullwarp"
         },
         {
             "path-template": "[OUT_BASE]_1vol.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Out 1vol",
-            "id": "output+out_1vol"
+            "id": "output_out_1vol"
         },
         {
             "path-template": "[OUT_BASE].nii.gz",
             "optional": true,
             "type": "File",
             "name": "Out file",
-            "id": "output+out_file"
+            "id": "output_out_file"
         },
         {
             "path-template": "[OUT_BASE]_fieldmaprads2epi_shift.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Shiftmap",
-            "id": "output+shiftmap"
+            "id": "output_shiftmap"
         },
         {
             "path-template": "[OUT_BASE]_fast_wmedge.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Wmedge",
-            "id": "output+wmedge"
+            "id": "output_wmedge"
         },
         {
             "path-template": "[OUT_BASE]_fast_wmseg.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Wmseg",
-            "id": "output+wmseg"
+            "id": "output_wmseg"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

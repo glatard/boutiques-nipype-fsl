@@ -284,21 +284,21 @@
             "optional": true,
             "type": "File",
             "name": "Mixeltype",
-            "id": "output+mixeltype"
+            "id": "output_mixeltype"
         },
         {
             "path-template": "[OUT_BASENAME]_pveseg.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Partial volume map",
-            "id": "output+partial_volume_map"
+            "id": "output_partial_volume_map"
         },
         {
             "path-template": "[OUT_BASENAME]_seg.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Tissue class map",
-            "id": "output+tissue_class_map"
+            "id": "output_tissue_class_map"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

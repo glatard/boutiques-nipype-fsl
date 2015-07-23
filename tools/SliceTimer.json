@@ -154,7 +154,7 @@
             "optional": true,
             "type": "File",
             "name": "Slice time corrected file",
-            "id": "output+slice_time_corrected_file"
+            "id": "output_slice_time_corrected_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

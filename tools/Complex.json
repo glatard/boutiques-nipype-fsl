@@ -254,14 +254,14 @@
             "optional": true,
             "type": "File",
             "name": "Magnitude out file",
-            "id": "output+magnitude_out_file"
+            "id": "output_magnitude_out_file"
         },
         {
             "path-template": "[COMPLEX_IN_FILE]_phase.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Phase out file",
-            "id": "output+phase_out_file"
+            "id": "output_phase_out_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

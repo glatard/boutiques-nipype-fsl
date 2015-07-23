@@ -568,49 +568,49 @@
             "optional": true,
             "type": "File",
             "name": "Fdt paths",
-            "id": "output+fdt_paths"
+            "id": "output_fdt_paths"
         },
         {
             "path-template": "probtrackx.log",
             "optional": true,
             "type": "File",
             "name": "Log",
-            "id": "output+log"
+            "id": "output_log"
         },
         {
             "path-template": "lookup_tractspace_fdt_matrix2.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Lookup tractspace",
-            "id": "output+lookup_tractspace"
+            "id": "output_lookup_tractspace"
         },
         {
             "path-template": "fdt_matrix1.dot",
             "optional": true,
             "type": "File",
             "name": "Matrix1 dot",
-            "id": "output+matrix1_dot"
+            "id": "output_matrix1_dot"
         },
         {
             "path-template": "fdt_matrix2.dot",
             "optional": true,
             "type": "File",
             "name": "Matrix2 dot",
-            "id": "output+matrix2_dot"
+            "id": "output_matrix2_dot"
         },
         {
             "path-template": "fdt_matrix3.dot",
             "optional": true,
             "type": "File",
             "name": "Matrix3 dot",
-            "id": "output+matrix3_dot"
+            "id": "output_matrix3_dot"
         },
         {
             "path-template": "fdt_network_matrix",
             "optional": true,
             "type": "File",
             "name": "Network matrix",
-            "id": "output+network_matrix"
+            "id": "output_network_matrix"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

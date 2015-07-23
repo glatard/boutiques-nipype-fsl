@@ -115,14 +115,14 @@
             "optional": true,
             "type": "File",
             "name": "Dispersion",
-            "id": "output+dispersion"
+            "id": "output_dispersion"
         },
         {
             "path-template": "[OUTPUT].nii.gz",
             "optional": true,
             "type": "File",
             "name": "Dyads",
-            "id": "output+dyads"
+            "id": "output_dyads"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

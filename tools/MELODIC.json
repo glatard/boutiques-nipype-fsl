@@ -504,14 +504,14 @@
             "optional": true,
             "type": "File",
             "name": "Out dir",
-            "id": "output+out_dir"
+            "id": "output_out_dir"
         },
         {
             "path-template": "report",
             "optional": true,
             "type": "File",
             "name": "Report dir",
-            "id": "output+report_dir"
+            "id": "output_report_dir"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

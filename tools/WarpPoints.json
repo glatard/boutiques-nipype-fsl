@@ -133,7 +133,7 @@
             "optional": true,
             "type": "File",
             "name": "Out file",
-            "id": "output+out_file"
+            "id": "output_out_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

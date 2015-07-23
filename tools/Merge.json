@@ -104,7 +104,7 @@
             "optional": true,
             "type": "File",
             "name": "Merged file",
-            "id": "output+merged_file"
+            "id": "output_merged_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

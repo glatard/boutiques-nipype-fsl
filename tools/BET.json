@@ -254,28 +254,28 @@
             "optional": true,
             "type": "File",
             "name": "Mask file",
-            "id": "output+mask_file"
+            "id": "output_mask_file"
         },
         {
             "path-template": "[OUT_FILE]_mesh.vtk",
             "optional": true,
             "type": "File",
             "name": "Meshfile",
-            "id": "output+meshfile"
+            "id": "output_meshfile"
         },
         {
             "path-template": "[OUT_FILE]",
             "optional": true,
             "type": "File",
             "name": "Out file",
-            "id": "output+out_file"
+            "id": "output_out_file"
         },
         {
             "path-template": "[OUT_FILE]_overlay.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Outline file",
-            "id": "output+outline_file"
+            "id": "output_outline_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

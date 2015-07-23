@@ -53,7 +53,7 @@
             "optional": true,
             "type": "File",
             "name": "Fsf file",
-            "id": "output+fsf_file"
+            "id": "output_fsf_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

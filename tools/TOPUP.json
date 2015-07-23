@@ -295,35 +295,35 @@
             "optional": true,
             "type": "File",
             "name": "Out corrected",
-            "id": "output+out_corrected"
+            "id": "output_out_corrected"
         },
         {
             "path-template": "[OUT_FIELD]",
             "optional": true,
             "type": "File",
             "name": "Out field",
-            "id": "output+out_field"
+            "id": "output_out_field"
         },
         {
             "path-template": "[OUT_BASE]_fieldcoef.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Out fieldcoef",
-            "id": "output+out_fieldcoef"
+            "id": "output_out_fieldcoef"
         },
         {
             "path-template": "[OUT_LOGFILE]",
             "optional": true,
             "type": "File",
             "name": "Out logfile",
-            "id": "output+out_logfile"
+            "id": "output_out_logfile"
         },
         {
             "path-template": "[OUT_BASE]_movpar.txt",
             "optional": true,
             "type": "File",
             "name": "Out movpar",
-            "id": "output+out_movpar"
+            "id": "output_out_movpar"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

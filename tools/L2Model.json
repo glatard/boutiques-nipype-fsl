@@ -32,21 +32,21 @@
             "optional": true,
             "type": "File",
             "name": "Design con",
-            "id": "output+design_con"
+            "id": "output_design_con"
         },
         {
             "path-template": "design.grp",
             "optional": true,
             "type": "File",
             "name": "Design grp",
-            "id": "output+design_grp"
+            "id": "output_design_grp"
         },
         {
             "path-template": "design.mat",
             "optional": true,
             "type": "File",
             "name": "Design mat",
-            "id": "output+design_mat"
+            "id": "output_design_mat"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

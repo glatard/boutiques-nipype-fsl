@@ -94,14 +94,14 @@
             "optional": true,
             "type": "File",
             "name": "Activation p map",
-            "id": "output+activation_p_map"
+            "id": "output_activation_p_map"
         },
         {
             "path-template": "w1_mean.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Null p map",
-            "id": "output+null_p_map"
+            "id": "output_null_p_map"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

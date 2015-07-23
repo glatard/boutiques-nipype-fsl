@@ -84,7 +84,7 @@
             "optional": true,
             "type": "File",
             "name": "Out roi",
-            "id": "output+out_roi"
+            "id": "output_out_roi"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

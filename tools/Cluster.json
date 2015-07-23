@@ -314,56 +314,56 @@
             "optional": true,
             "type": "File",
             "name": "Index file",
-            "id": "output+index_file"
+            "id": "output_index_file"
         },
         {
             "path-template": "[IN_FILE]_localmax.txt",
             "optional": true,
             "type": "File",
             "name": "Localmax txt file",
-            "id": "output+localmax_txt_file"
+            "id": "output_localmax_txt_file"
         },
         {
             "path-template": "[IN_FILE]_localmax.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Localmax vol file",
-            "id": "output+localmax_vol_file"
+            "id": "output_localmax_vol_file"
         },
         {
             "path-template": "[IN_FILE]_max.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Max file",
-            "id": "output+max_file"
+            "id": "output_max_file"
         },
         {
             "path-template": "[IN_FILE]_mean.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Mean file",
-            "id": "output+mean_file"
+            "id": "output_mean_file"
         },
         {
             "path-template": "[IN_FILE]_pval.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Pval file",
-            "id": "output+pval_file"
+            "id": "output_pval_file"
         },
         {
             "path-template": "[IN_FILE]_size.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Size file",
-            "id": "output+size_file"
+            "id": "output_size_file"
         },
         {
             "path-template": "[IN_FILE]_threshold.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Threshold file",
-            "id": "output+threshold_file"
+            "id": "output_threshold_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

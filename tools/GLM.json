@@ -274,84 +274,84 @@
             "optional": true,
             "type": "File",
             "name": "Out cope",
-            "id": "output+out_cope"
+            "id": "output_out_cope"
         },
         {
             "path-template": "[OUT_DATA_NAME]",
             "optional": true,
             "type": "File",
             "name": "Out data",
-            "id": "output+out_data"
+            "id": "output_out_data"
         },
         {
             "path-template": "[OUT_F_NAME]",
             "optional": true,
             "type": "File",
             "name": "Out f",
-            "id": "output+out_f"
+            "id": "output_out_f"
         },
         {
             "path-template": "[OUT_FILE]",
             "optional": true,
             "type": "File",
             "name": "Out file",
-            "id": "output+out_file"
+            "id": "output_out_file"
         },
         {
             "path-template": "[OUT_P_NAME]",
             "optional": true,
             "type": "File",
             "name": "Out p",
-            "id": "output+out_p"
+            "id": "output_out_p"
         },
         {
             "path-template": "[OUT_PF_NAME]",
             "optional": true,
             "type": "File",
             "name": "Out pf",
-            "id": "output+out_pf"
+            "id": "output_out_pf"
         },
         {
             "path-template": "[OUT_RES_NAME]",
             "optional": true,
             "type": "File",
             "name": "Out res",
-            "id": "output+out_res"
+            "id": "output_out_res"
         },
         {
             "path-template": "[OUT_SIGSQ_NAME]",
             "optional": true,
             "type": "File",
             "name": "Out sigsq",
-            "id": "output+out_sigsq"
+            "id": "output_out_sigsq"
         },
         {
             "path-template": "[OUT_T_NAME]",
             "optional": true,
             "type": "File",
             "name": "Out t",
-            "id": "output+out_t"
+            "id": "output_out_t"
         },
         {
             "path-template": "[OUT_VARCB_NAME]",
             "optional": true,
             "type": "File",
             "name": "Out varcb",
-            "id": "output+out_varcb"
+            "id": "output_out_varcb"
         },
         {
             "path-template": "[OUT_VNSCALES_NAME]",
             "optional": true,
             "type": "File",
             "name": "Out vnscales",
-            "id": "output+out_vnscales"
+            "id": "output_out_vnscales"
         },
         {
             "path-template": "[OUT_Z_NAME]",
             "optional": true,
             "type": "File",
             "name": "Out z",
-            "id": "output+out_z"
+            "id": "output_out_z"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

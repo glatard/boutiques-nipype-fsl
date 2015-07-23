@@ -156,14 +156,14 @@
             "optional": true,
             "type": "File",
             "name": "Original segmentations",
-            "id": "output+original_segmentations"
+            "id": "output_original_segmentations"
         },
         {
             "path-template": "[OUT_FILE]_all_none_firstseg.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Segmentation file",
-            "id": "output+segmentation_file"
+            "id": "output_segmentation_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

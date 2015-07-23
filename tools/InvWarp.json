@@ -164,7 +164,7 @@
             "optional": true,
             "type": "File",
             "name": "Inverse warp",
-            "id": "output+inverse_warp"
+            "id": "output_inverse_warp"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

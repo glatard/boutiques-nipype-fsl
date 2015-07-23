@@ -114,14 +114,14 @@
             "optional": true,
             "type": "File",
             "name": "Distance map",
-            "id": "output+distance_map"
+            "id": "output_distance_map"
         },
         {
             "path-template": "[IN_FILE]_lclmax",
             "optional": true,
             "type": "File",
             "name": "Local max file",
-            "id": "output+local_max_file"
+            "id": "output_local_max_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

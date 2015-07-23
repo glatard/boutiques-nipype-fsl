@@ -198,28 +198,28 @@
             "optional": true,
             "type": "File",
             "name": "Exf mask",
-            "id": "output+exf_mask"
+            "id": "output_exf_mask"
         },
         {
             "path-template": "[EXFDW]",
             "optional": true,
             "type": "File",
             "name": "Exfdw",
-            "id": "output+exfdw"
+            "id": "output_exfdw"
         },
         {
             "path-template": "[EPIDW]",
             "optional": true,
             "type": "File",
             "name": "Unwarped file",
-            "id": "output+unwarped_file"
+            "id": "output_unwarped_file"
         },
         {
             "path-template": "[VSM].nii.gz",
             "optional": true,
             "type": "File",
             "name": "Vsm file",
-            "id": "output+vsm_file"
+            "id": "output_vsm_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

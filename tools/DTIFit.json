@@ -225,77 +225,77 @@
             "optional": true,
             "type": "File",
             "name": "Fa",
-            "id": "output+FA"
+            "id": "output_FA"
         },
         {
             "path-template": "[BASE_NAME]_L1.nii.gz",
             "optional": true,
             "type": "File",
             "name": "L1",
-            "id": "output+L1"
+            "id": "output_L1"
         },
         {
             "path-template": "[BASE_NAME]_L2.nii.gz",
             "optional": true,
             "type": "File",
             "name": "L2",
-            "id": "output+L2"
+            "id": "output_L2"
         },
         {
             "path-template": "[BASE_NAME]_L3.nii.gz",
             "optional": true,
             "type": "File",
             "name": "L3",
-            "id": "output+L3"
+            "id": "output_L3"
         },
         {
             "path-template": "[BASE_NAME]_MD.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Md",
-            "id": "output+MD"
+            "id": "output_MD"
         },
         {
             "path-template": "[BASE_NAME]_MO.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Mo",
-            "id": "output+MO"
+            "id": "output_MO"
         },
         {
             "path-template": "[BASE_NAME]_S0.nii.gz",
             "optional": true,
             "type": "File",
             "name": "S0",
-            "id": "output+S0"
+            "id": "output_S0"
         },
         {
             "path-template": "[BASE_NAME]_V1.nii.gz",
             "optional": true,
             "type": "File",
             "name": "V1",
-            "id": "output+V1"
+            "id": "output_V1"
         },
         {
             "path-template": "[BASE_NAME]_V2.nii.gz",
             "optional": true,
             "type": "File",
             "name": "V2",
-            "id": "output+V2"
+            "id": "output_V2"
         },
         {
             "path-template": "[BASE_NAME]_V3.nii.gz",
             "optional": true,
             "type": "File",
             "name": "V3",
-            "id": "output+V3"
+            "id": "output_V3"
         },
         {
             "path-template": "[BASE_NAME]_tensor.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Tensor",
-            "id": "output+tensor"
+            "id": "output_tensor"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

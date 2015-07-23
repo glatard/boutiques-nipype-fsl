@@ -127,7 +127,7 @@
             "optional": true,
             "type": "File",
             "name": "Out fieldmap",
-            "id": "output+out_fieldmap"
+            "id": "output_out_fieldmap"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

@@ -216,49 +216,49 @@
             "optional": true,
             "type": "File",
             "name": "Corrections",
-            "id": "output+corrections"
+            "id": "output_corrections"
         },
         {
             "path-template": "dof",
             "optional": true,
             "type": "File",
             "name": "Dof file",
-            "id": "output+dof_file"
+            "id": "output_dof_file"
         },
         {
             "path-template": "logfile",
             "optional": true,
             "type": "File",
             "name": "Logfile",
-            "id": "output+logfile"
+            "id": "output_logfile"
         },
         {
             "path-template": "res4d.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Residual4d",
-            "id": "output+residual4d"
+            "id": "output_residual4d"
         },
         {
             "path-template": "[RESULTS_DIR]",
             "optional": true,
             "type": "File",
             "name": "Results dir",
-            "id": "output+results_dir"
+            "id": "output_results_dir"
         },
         {
             "path-template": "sigmasquareds.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Sigmasquareds",
-            "id": "output+sigmasquareds"
+            "id": "output_sigmasquareds"
         },
         {
             "path-template": "threshac1.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Thresholdac",
-            "id": "output+thresholdac"
+            "id": "output_thresholdac"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

@@ -224,7 +224,7 @@
             "optional": true,
             "type": "File",
             "name": "Unwrapped phase file",
-            "id": "output+unwrapped_phase_file"
+            "id": "output_unwrapped_phase_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

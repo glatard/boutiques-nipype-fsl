@@ -95,7 +95,7 @@
             "optional": true,
             "type": "File",
             "name": "Eddy corrected",
-            "id": "output+eddy_corrected"
+            "id": "output_eddy_corrected"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

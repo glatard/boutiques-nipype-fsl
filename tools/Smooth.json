@@ -94,7 +94,7 @@
             "optional": true,
             "type": "File",
             "name": "Smoothed file",
-            "id": "output+smoothed_file"
+            "id": "output_smoothed_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

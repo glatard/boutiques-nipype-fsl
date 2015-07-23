@@ -474,49 +474,49 @@
             "optional": true,
             "type": "File",
             "name": "Field file",
-            "id": "output+field_file"
+            "id": "output_field_file"
         },
         {
             "path-template": "[IN_FILE]_fieldwarp.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Fieldcoeff file",
-            "id": "output+fieldcoeff_file"
+            "id": "output_fieldcoeff_file"
         },
         {
             "path-template": "[IN_FILE]_field_jacobian.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Jacobian file",
-            "id": "output+jacobian_file"
+            "id": "output_jacobian_file"
         },
         {
             "path-template": "[LOG_FILE]",
             "optional": true,
             "type": "File",
             "name": "Log file",
-            "id": "output+log_file"
+            "id": "output_log_file"
         },
         {
             "path-template": "[IN_FILE]_modulated.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Modulatedref file",
-            "id": "output+modulatedref_file"
+            "id": "output_modulatedref_file"
         },
         {
             "path-template": "[IN_FILE]_intmap.nii.gz",
             "optional": true,
             "type": "File",
             "name": "Out intensitymap file",
-            "id": "output+out_intensitymap_file"
+            "id": "output_out_intensitymap_file"
         },
         {
             "path-template": "[WARPED_FILE]",
             "optional": true,
             "type": "File",
             "name": "Warped file",
-            "id": "output+warped_file"
+            "id": "output_warped_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

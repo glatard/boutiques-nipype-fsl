@@ -428,14 +428,14 @@
             "optional": true,
             "type": "File",
             "name": "Fdt paths",
-            "id": "output+fdt_paths"
+            "id": "output_fdt_paths"
         },
         {
             "path-template": "probtrackx.log",
             "optional": true,
             "type": "File",
             "name": "Log",
-            "id": "output+log"
+            "id": "output_log"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

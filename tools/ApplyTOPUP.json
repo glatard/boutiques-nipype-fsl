@@ -154,7 +154,7 @@
             "optional": true,
             "type": "File",
             "name": "Out corrected",
-            "id": "output+out_corrected"
+            "id": "output_out_corrected"
         }
     ],
     "docker-image": "glatard/nipype_fsl",

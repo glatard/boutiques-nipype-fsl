@@ -175,14 +175,14 @@
             "optional": true,
             "type": "File",
             "name": "Projected data",
-            "id": "output+projected_data"
+            "id": "output_projected_data"
         },
         {
             "path-template": "[IN_FILE]_skeleton",
             "optional": true,
             "type": "File",
             "name": "Skeleton file",
-            "id": "output+skeleton_file"
+            "id": "output_skeleton_file"
         }
     ],
     "docker-image": "glatard/nipype_fsl",
